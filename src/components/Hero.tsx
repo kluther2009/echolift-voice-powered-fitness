@@ -124,30 +124,30 @@ const Hero = () => {
                 </div>
                 
                 {/* iPhone Frame */}
-                <div className="relative w-72 h-[580px] rounded-[3rem] bg-gradient-to-b from-[#2a2a2e] to-[#1a1a1e] p-[3px] shadow-2xl">
+                <div className="relative w-[280px] h-[605px] rounded-[3.2rem] bg-gradient-to-b from-[#2a2a2e] to-[#1a1a1e] p-[4px] shadow-2xl overflow-hidden">
                   {/* Side buttons */}
                   <div className="absolute -left-[2px] top-28 w-[3px] h-8 bg-[#2a2a2e] rounded-l-sm" />
                   <div className="absolute -left-[2px] top-44 w-[3px] h-12 bg-[#2a2a2e] rounded-l-sm" />
                   <div className="absolute -left-[2px] top-60 w-[3px] h-12 bg-[#2a2a2e] rounded-l-sm" />
                   <div className="absolute -right-[2px] top-36 w-[3px] h-16 bg-[#2a2a2e] rounded-r-sm" />
                   
-                  {/* Inner frame with subtle shine */}
-                  <div className="relative w-full h-full rounded-[2.8rem] bg-gradient-to-br from-[#1c1c1e] to-[#0a0a0a] p-[2px] overflow-hidden">
-                    {/* Shine effect */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-[2.8rem] pointer-events-none" />
-                    
-                    {/* Screen */}
+                  {/* Inner bezel */}
+                  <div className="relative w-full h-full rounded-[2.9rem] bg-black overflow-hidden">
+                    {/* Screen with proper clipping */}
                     <motion.div 
                       animate={{ opacity: [0.98, 1, 0.98] }}
                       transition={{ duration: 3, repeat: Infinity }}
-                      className="w-full h-full rounded-[2.7rem] overflow-hidden bg-black"
+                      className="absolute inset-[2px] rounded-[2.8rem] overflow-hidden"
                     >
                       <img 
                         src={appScreenshot} 
                         alt="EchoLift App Screenshot" 
-                        className="w-full h-full object-cover object-top"
+                        className="w-full h-full object-contain"
                       />
                     </motion.div>
+                    
+                    {/* Shine effect on top */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-transparent rounded-[2.9rem] pointer-events-none z-10" />
                   </div>
                 </div>
               </div>
