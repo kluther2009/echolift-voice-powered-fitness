@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Mic, ArrowDown, Sparkles } from "lucide-react";
+import { ArrowDown, Sparkles } from "lucide-react";
+import appScreenshot from "@/assets/app-screenshot.png";
 
 const Hero = () => {
   return (
@@ -116,57 +117,37 @@ const Hero = () => {
                 {/* Glow behind phone */}
                 <div className="absolute inset-0 -z-10 bg-gradient-to-b from-primary/40 via-ai-purple/30 to-transparent blur-[80px] rounded-full scale-90" />
                 
-                {/* Phone Frame - Modern bezeless */}
-                <div className="relative w-72 h-[600px] rounded-[3.5rem] bg-gradient-to-b from-background-surface to-background-elevated p-2 shadow-2xl border border-border/50">
-                  {/* Screen */}
-                  <div className="w-full h-full rounded-[3rem] bg-background overflow-hidden relative">
-                    {/* Dynamic Island */}
-                    <div className="absolute top-3 left-1/2 -translate-x-1/2 w-28 h-7 bg-foreground/90 rounded-full" />
+                {/* Pulsing rings around the phone */}
+                <div className="absolute inset-0 flex items-center justify-center -z-5">
+                  <div className="absolute w-80 h-[640px] rounded-[4rem] bg-primary/5 pulse-ring" />
+                  <div className="absolute w-[340px] h-[680px] rounded-[4.5rem] bg-primary/3 pulse-ring" style={{ animationDelay: '0.5s' }} />
+                </div>
+                
+                {/* iPhone Frame */}
+                <div className="relative w-72 h-[580px] rounded-[3rem] bg-gradient-to-b from-[#2a2a2e] to-[#1a1a1e] p-[3px] shadow-2xl">
+                  {/* Side buttons */}
+                  <div className="absolute -left-[2px] top-28 w-[3px] h-8 bg-[#2a2a2e] rounded-l-sm" />
+                  <div className="absolute -left-[2px] top-44 w-[3px] h-12 bg-[#2a2a2e] rounded-l-sm" />
+                  <div className="absolute -left-[2px] top-60 w-[3px] h-12 bg-[#2a2a2e] rounded-l-sm" />
+                  <div className="absolute -right-[2px] top-36 w-[3px] h-16 bg-[#2a2a2e] rounded-r-sm" />
+                  
+                  {/* Inner frame with subtle shine */}
+                  <div className="relative w-full h-full rounded-[2.8rem] bg-gradient-to-br from-[#1c1c1e] to-[#0a0a0a] p-[2px] overflow-hidden">
+                    {/* Shine effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-[2.8rem] pointer-events-none" />
                     
-                    {/* Status bar */}
-                    <div className="flex justify-between items-center px-8 pt-14 pb-4">
-                      <span className="text-sm font-semibold">9:41</span>
-                      <div className="flex items-center gap-1.5">
-                        <div className="flex gap-0.5">
-                          {[1, 2, 3, 4].map((i) => (
-                            <div key={i} className="w-1 h-2 rounded-sm bg-foreground/70" />
-                          ))}
-                        </div>
-                        <div className="w-6 h-3 rounded-sm bg-success relative">
-                          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-0.5 h-1.5 bg-success rounded-l-sm -mr-0.5" />
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* App Content */}
-                    <div className="px-6 pt-2 space-y-5">
-                      <div className="text-center">
-                        <h2 className="font-display text-xl font-bold mb-1">Guided Input</h2>
-                        <p className="text-xs text-muted-foreground">Speak your workout</p>
-                      </div>
-                      
-                      {/* Pulsing Mic with enhanced animation */}
-                      <div className="relative flex justify-center py-6">
-                        <div className="absolute w-36 h-36 rounded-full bg-primary/10 pulse-ring" />
-                        <div className="absolute w-28 h-28 rounded-full bg-primary/15 pulse-ring" style={{ animationDelay: '0.3s' }} />
-                        <div className="absolute w-20 h-20 rounded-full bg-primary/20 pulse-ring" style={{ animationDelay: '0.6s' }} />
-                        <motion.div
-                          animate={{ scale: [1, 1.05, 1] }}
-                          transition={{ duration: 1.5, repeat: Infinity }}
-                          className="relative w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center glow-primary"
-                        >
-                          <Mic className="w-7 h-7 text-primary-foreground" />
-                        </motion.div>
-                      </div>
-                      
-                      {/* Input Fields - Modern style */}
-                      <div className="space-y-2.5">
-                        <InputField label="Exercise" value="Bench Press" active />
-                        <InputField label="Sets" value="4" />
-                        <InputField label="Reps" value="8" />
-                        <InputField label="Weight" value="185 lbs" />
-                      </div>
-                    </div>
+                    {/* Screen */}
+                    <motion.div 
+                      animate={{ opacity: [0.98, 1, 0.98] }}
+                      transition={{ duration: 3, repeat: Infinity }}
+                      className="w-full h-full rounded-[2.7rem] overflow-hidden bg-black"
+                    >
+                      <img 
+                        src={appScreenshot} 
+                        alt="EchoLift App Screenshot" 
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </motion.div>
                   </div>
                 </div>
               </div>
@@ -195,16 +176,5 @@ const Hero = () => {
     </section>
   );
 };
-
-const InputField = ({ label, value, active = false }: { label: string; value: string; active?: boolean }) => (
-  <div className={`flex items-center justify-between px-4 py-3.5 rounded-2xl border transition-all ${
-    active 
-      ? 'border-primary/50 bg-primary/10' 
-      : 'border-border bg-background-elevated/50'
-  }`}>
-    <span className="text-xs text-muted-foreground uppercase tracking-wider font-medium">{label}</span>
-    <span className={`font-display font-semibold ${active ? 'text-primary' : 'text-foreground'}`}>{value}</span>
-  </div>
-);
 
 export default Hero;
