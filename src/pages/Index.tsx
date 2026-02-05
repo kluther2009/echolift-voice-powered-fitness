@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import FeaturesShowcase from "@/components/FeaturesShowcase";
 import VoiceLogicSection from "@/components/VoiceLogicSection";
 import PrivacySection from "@/components/PrivacySection";
 import AISection from "@/components/AISection";
@@ -11,6 +12,7 @@ const Index = () => {
     <div className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
       <Hero />
+      <FeaturesShowcase />
       <VoiceLogicSection />
       <PrivacySection />
       <AISection />
