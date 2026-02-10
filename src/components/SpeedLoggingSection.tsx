@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Ghost, Globe, Zap, Clock, ArrowUpRight } from "lucide-react";
+import { Ghost, Globe, Zap, Clock, ArrowUpRight, TrendingUp, Video } from "lucide-react";
 
 const SpeedLoggingSection = () => {
   const features = [
@@ -17,6 +17,16 @@ const SpeedLoggingSection = () => {
       icon: Globe,
       title: "Locale-Aware",
       description: "Period & comma decimal separators supported."
+    },
+    {
+      icon: TrendingUp,
+      title: "Instant Performance Review",
+      description: "Tap any exercise to see PRs, trends & history."
+    },
+    {
+      icon: Video,
+      title: "Saved Exercise Videos",
+      description: "Instantly pull up saved TikTok, Insta & YouTube guides."
     }
   ];
 
