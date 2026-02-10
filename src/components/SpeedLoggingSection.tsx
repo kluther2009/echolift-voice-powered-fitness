@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Ghost, Globe, Zap, Clock, ArrowUpRight, TrendingUp, Video } from "lucide-react";
+import ghostScreenshot from "@/assets/ghost-screenshot.png";
 
 const SpeedLoggingSection = () => {
   const features = [
