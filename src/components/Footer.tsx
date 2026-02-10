@@ -120,9 +120,7 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
               {/* Logo */}
               <a href="#" className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center">
-                  <span className="text-primary-foreground font-display font-bold">E</span>
-                </div>
+                <img src={echoliftLogo} alt="EchoLift" className="w-9 h-9 rounded-xl" />
                 <span className="font-display font-semibold text-lg">EchoLift</span>
               </a>
               
