@@ -123,35 +123,4 @@ const SpeedLoggingSection = () => {
   );
 };
 
-const GhostInputField = ({ 
-  label, 
-  value, 
-  ghostValue,
-  highlight = false
-}: { 
-  label: string; 
-  value: string; 
-  ghostValue?: string;
-  highlight?: boolean;
-}) => (
-  <div className={`flex items-center justify-between px-5 py-4 rounded-2xl border transition-all ${
-    highlight 
-      ? 'border-primary/50 bg-primary/5' 
-      : 'border-border bg-background-elevated/50'
-  }`}>
-    <span className="text-xs text-muted-foreground uppercase tracking-wider font-medium">{label}</span>
-    <div className="text-right">
-      <span className={`font-display font-semibold ${highlight ? 'text-primary' : 'text-foreground'}`}>
-        {value}
-      </span>
-      {ghostValue && (
-        <div className="text-xs text-muted-foreground/50 font-mono mt-0.5 flex items-center justify-end gap-1">
-          <Ghost className="w-3 h-3" />
-          {ghostValue}
-        </div>
-      )}
-    </div>
-  </div>
-);
-
 export default SpeedLoggingSection;
