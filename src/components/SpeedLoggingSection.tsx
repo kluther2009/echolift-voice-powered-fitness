@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Ghost, Globe, Zap, Clock, ArrowUpRight, TrendingUp, Video } from "lucide-react";
+import ghostScreenshot from "@/assets/ghost-screenshot.png";
 
 const SpeedLoggingSection = () => {
   const features = [
@@ -97,32 +98,22 @@ const SpeedLoggingSection = () => {
               {/* Glow */}
               <div className="absolute inset-0 bg-primary/20 blur-[80px] rounded-full scale-75" />
               
-              <div className="relative glass-card p-8 lg:p-10 w-full max-w-sm">
-                <div className="flex items-center justify-between mb-8">
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <Ghost className="w-4 h-4" />
-                    <span>Ghost values from last session</span>
-                  </div>
+              {/* iPhone Frame */}
+              <div className="relative w-[280px] h-[570px] rounded-[3rem] border-[6px] border-foreground/20 bg-black shadow-2xl shadow-primary/20 overflow-hidden">
+                {/* Notch */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120px] h-[30px] bg-black rounded-b-2xl z-10" />
+                
+                {/* Screenshot */}
+                <div className="absolute inset-[2px] rounded-[2.6rem] overflow-hidden">
+                  <img 
+                    src={ghostScreenshot} 
+                    alt="EchoLift Ghost System - instant performance review" 
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 
-                <div className="space-y-3">
-                  <GhostInputField label="Exercise" value="Deadlift" />
-                  <GhostInputField label="Sets" value="5" ghostValue="5" />
-                  <GhostInputField label="Reps" value="5" ghostValue="5" />
-                  <GhostInputField label="Weight" value="315" ghostValue="315 lbs" highlight />
-                </div>
-                
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full mt-10 py-4 rounded-2xl bg-gradient-to-r from-primary to-primary-glow text-primary-foreground font-display font-semibold glow-primary transition-all hover:shadow-lg hover:shadow-primary/25"
-                >
-                  Log Set
-                </motion.button>
-                
-                <p className="text-center text-xs text-muted-foreground mt-4">
-                  Tap to confirm or swipe to adjust
-                </p>
+                {/* Shine effect */}
+                <div className="absolute inset-0 rounded-[2.6rem] bg-gradient-to-tr from-white/5 to-transparent pointer-events-none z-20" />
               </div>
             </div>
           </motion.div>
@@ -131,36 +122,5 @@ const SpeedLoggingSection = () => {
     </section>
   );
 };
-
-const GhostInputField = ({ 
-  label, 
-  value, 
-  ghostValue,
-  highlight = false
-}: { 
-  label: string; 
-  value: string; 
-  ghostValue?: string;
-  highlight?: boolean;
-}) => (
-  <div className={`flex items-center justify-between px-5 py-4 rounded-2xl border transition-all ${
-    highlight 
-      ? 'border-primary/50 bg-primary/5' 
-      : 'border-border bg-background-elevated/50'
-  }`}>
-    <span className="text-xs text-muted-foreground uppercase tracking-wider font-medium">{label}</span>
-    <div className="text-right">
-      <span className={`font-display font-semibold ${highlight ? 'text-primary' : 'text-foreground'}`}>
-        {value}
-      </span>
-      {ghostValue && (
-        <div className="text-xs text-muted-foreground/50 font-mono mt-0.5 flex items-center justify-end gap-1">
-          <Ghost className="w-3 h-3" />
-          {ghostValue}
-        </div>
-      )}
-    </div>
-  </div>
-);
 
 export default SpeedLoggingSection;
