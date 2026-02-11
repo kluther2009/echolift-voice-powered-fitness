@@ -5,6 +5,7 @@ import VoiceLogicSection from "@/components/VoiceLogicSection";
 import PrivacySection from "@/components/PrivacySection";
 import AISection from "@/components/AISection";
 import SpeedLoggingSection from "@/components/SpeedLoggingSection";
+import PricingSection from "@/components/PricingSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <PrivacySection />
       <AISection />
       <SpeedLoggingSection />
+      <PricingSection />
       <Footer />
     </div>
   );
