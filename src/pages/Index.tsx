@@ -18,6 +18,7 @@ const Index = () => {
       <PrivacySection />
       <AISection />
       <SpeedLoggingSection />
+      <PricingSection />
       <Footer />
     </div>
   );
