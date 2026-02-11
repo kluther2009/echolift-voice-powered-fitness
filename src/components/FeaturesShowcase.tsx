@@ -137,7 +137,7 @@ const FeaturesShowcase = () => {
         </motion.div>
 
         {/* Feature cards navigation - horizontal scroll on mobile */}
-        <div className="mb-12 overflow-x-auto pb-4 -mx-6 px-6 scrollbar-hide">
+        <div className="mb-12 overflow-x-auto pb-4 -mx-6 px-6" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
           <div className="flex gap-3 min-w-max">
             {features.map((feature, index) => (
               <button
