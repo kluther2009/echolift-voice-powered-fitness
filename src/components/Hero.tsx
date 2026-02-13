@@ -64,7 +64,7 @@ const Hero = () => {
               
               {/* Subhead */}
               <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                The world's first voice-guided, local-first workout tracker.{" "}
+                The world's first voice-activated, local-first workout tracker.{" "}
                 <span className="text-foreground font-medium">No accounts. No tracking. No limits.</span>
               </p>
               
