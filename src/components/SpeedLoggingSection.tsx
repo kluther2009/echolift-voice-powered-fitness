@@ -113,7 +113,7 @@ const SpeedLoggingSection = () => {
                 </div>
                 
                 {/* Shine effect */}
-                <div className="absolute inset-0 rounded-[2.6rem] bg-gradient-to-tr from-white/5 to-transparent pointer-events-none z-20" />
+                {/* Removed shine overlay for crystal clear screenshot */}
               </div>
             </div>
           </motion.div>
