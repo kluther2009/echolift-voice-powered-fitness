@@ -134,17 +134,14 @@ const Hero = () => {
                   {/* Inner bezel */}
                   <div className="relative w-full h-full rounded-[2.9rem] bg-black overflow-hidden">
                     {/* Screen with proper clipping */}
-                    <motion.div 
-                      animate={{ opacity: [0.98, 1, 0.98] }}
-                      transition={{ duration: 3, repeat: Infinity }}
-                      className="absolute inset-[2px] rounded-[2.8rem] overflow-hidden"
-                    >
+                    <div className="absolute inset-[2px] rounded-[2.8rem] overflow-hidden">
                       <img 
                         src={appScreenshot} 
                         alt="EchoLift App Screenshot" 
                         className="w-full h-full object-contain"
+                        style={{ imageRendering: 'auto', willChange: 'transform', transform: 'translateZ(0)' }}
                       />
-                    </motion.div>
+                    </div>
                     
                     {/* Shine effect on top */}
                     <div className="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-transparent rounded-[2.9rem] pointer-events-none z-10" />
