@@ -212,7 +212,7 @@ const FeaturesShowcase = () => {
                   </AnimatePresence>
                   
                   {/* Shine */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent rounded-[2.8rem] pointer-events-none z-10" />
+                  {/* Removed shine overlay for crystal clear screenshots */}
                 </div>
               </div>
             </div>
