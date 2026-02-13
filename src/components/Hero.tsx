@@ -144,7 +144,7 @@ const Hero = () => {
                     </div>
                     
                     {/* Shine effect on top */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-transparent rounded-[2.9rem] pointer-events-none z-10" />
+                    {/* Removed shine overlay to keep screenshot crystal clear */}
                   </div>
                 </div>
               </div>
