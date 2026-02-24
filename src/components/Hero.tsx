@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Sparkles, Mail } from "lucide-react";
+import { ArrowDown, Sparkles } from "lucide-react";
 import appScreenshot from "@/assets/app-screenshot.png";
 
 const Hero = () => {
