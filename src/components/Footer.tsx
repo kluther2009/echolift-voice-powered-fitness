@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Mail, MessageCircle, ArrowUpRight, Sparkles, Bell } from "lucide-react";
+import { Mail, MessageCircle, ArrowUpRight, Sparkles } from "lucide-react";
 import echoliftLogo from "@/assets/echolift-logo.png";
 
 const Footer = () => {
@@ -22,18 +22,18 @@ const Footer = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Start Lifting Smarter</span>
+              <span className="text-sm font-medium text-primary">Available Now</span>
             </div>
             
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Be First to
+              Ready to
               <br />
-              <span className="text-gradient-primary">Lift Smarter</span>
+              <span className="text-gradient-primary">Lift Smarter?</span>
             </h2>
             
             <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
-              Be the first to know when EchoLift hits the App Store. 
-              Sign up and we'll notify you on launch day.
+              Download EchoLift on the App Store and start logging workouts 
+              at the speed of sound.
             </p>
             
             <motion.div
@@ -42,9 +42,9 @@ const Footer = () => {
               className="inline-block"
             >
               <Button variant="hero" size="xl" className="text-base px-8" asChild>
-                <a href="mailto:support@echolift.app?subject=Notify%20me%20when%20EchoLift%20launches&body=Hi%2C%20please%20let%20me%20know%20when%20EchoLift%20is%20available%20on%20the%20App%20Store!">
-                  <Mail className="w-5 h-5 mr-2" />
-                  Get Notified
+                <a href="https://apps.apple.com/nl/app/echolift/id6757499671?l=en-GB" target="_blank" rel="noopener noreferrer">
+                  <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                  Download on App Store
                 </a>
               </Button>
             </motion.div>
