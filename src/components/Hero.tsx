@@ -52,7 +52,7 @@ const Hero = () => {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
                 </span>
-                <span className="text-sm font-medium text-primary">Coming Soon • Voice-First • 100% Private</span>
+                <span className="text-sm font-medium text-primary">Available Now • Voice-First • 100% Private</span>
               </motion.div>
               
               {/* Main headline - Extra bold, tighter tracking */}
