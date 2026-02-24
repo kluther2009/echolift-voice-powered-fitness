@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Mail, MessageCircle, ArrowUpRight, Sparkles, Bell } from "lucide-react";
+import { Mail, MessageCircle, ArrowUpRight, Sparkles } from "lucide-react";
 import echoliftLogo from "@/assets/echolift-logo.png";
 
 const Footer = () => {
