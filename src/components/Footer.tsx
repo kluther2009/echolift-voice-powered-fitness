@@ -22,18 +22,18 @@ const Footer = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Start Lifting Smarter</span>
+              <span className="text-sm font-medium text-primary">Available Now</span>
             </div>
             
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Be First to
+              Ready to
               <br />
-              <span className="text-gradient-primary">Lift Smarter</span>
+              <span className="text-gradient-primary">Lift Smarter?</span>
             </h2>
             
             <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
-              Be the first to know when EchoLift hits the App Store. 
-              Sign up and we'll notify you on launch day.
+              Download EchoLift on the App Store and start logging workouts 
+              at the speed of sound.
             </p>
             
             <motion.div
