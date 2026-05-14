@@ -97,14 +97,12 @@ const PricingSection = () => {
             </div>
 
             <div className="mb-2">
-              <span className="text-lg text-muted-foreground line-through mr-3">$59.99</span>
-              <span className="font-display text-5xl font-bold text-gradient-primary">$14.99</span>
+              <span className="font-display text-5xl font-bold text-gradient-primary">$4.99</span>
               <span className="text-muted-foreground ml-2 text-sm">Lifetime</span>
             </div>
 
             <p className="text-sm text-muted-foreground mb-8">
-              Also available: <span className="text-foreground/80">$2.99/mo</span> or{" "}
-              <span className="text-foreground/80">$11.99/yr</span>
+              One-time purchase. No subscriptions.
             </p>
 
             <ul className="space-y-4 mb-10 flex-1">
