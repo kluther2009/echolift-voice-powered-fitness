@@ -78,7 +78,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        display: ['Space Grotesk', 'sans-serif'],
+        display: ['Anton', 'Arial Narrow', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       keyframes: {

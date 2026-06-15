@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Ghost, Globe, Zap, Clock, ArrowUpRight, TrendingUp, Video } from "lucide-react";
+import { Ghost, Trophy, Zap, Clock, ArrowUpRight, TrendingUp, Video } from "lucide-react";
 import ghostScreenshot from "@/assets/ghost-screenshot.png";
 
 const SpeedLoggingSection = () => {
@@ -15,9 +15,9 @@ const SpeedLoggingSection = () => {
       description: "Confirm or adjust. Zero typing required."
     },
     {
-      icon: Globe,
-      title: "Locale-Aware",
-      description: "Period & comma decimal separators supported."
+      icon: Trophy,
+      title: "PR Celebrations",
+      description: "Beat your best and the app erupts — Siri even announces it mid-set."
     },
     {
       icon: TrendingUp,
@@ -58,8 +58,8 @@ const SpeedLoggingSection = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-              Input fields pre-fill with your heaviest historical weights and reps. 
-              Log entire sets with a single tap—or just confirm what you've always been lifting.
+              Every input pre-fills with your heaviest set ever. Match it with one tap —
+              or beat it and let the confetti fly.
             </p>
             
             {/* Feature list - Modern horizontal cards */}

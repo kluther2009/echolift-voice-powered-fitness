@@ -4,7 +4,7 @@
 
 /* EchoLift 2.0 - Cutting Edge Design System */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @layer base {
   :root {
@@ -20,18 +20,18 @@
     --popover: 240 8% 8%;
     --popover-foreground: 0 0% 98%;
 
-    /* Electric Blue Primary - More vivid */
-    --primary: 217 100% 60%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 100% 65%;
+    /* Volt Green Primary - gym energy */
+    --primary: 72 100% 50%;
+    --primary-foreground: 240 10% 4%;
+    --primary-glow: 72 100% 62%;
 
     /* Mint Green Success - Brighter */
     --success: 160 84% 50%;
     --success-foreground: 0 0% 100%;
 
-    /* AI Purple Gradient - More saturated */
-    --ai-purple: 265 85% 65%;
-    --ai-purple-light: 280 100% 75%;
+    /* AI accent - mint-to-lime, stays athletic */
+    --ai-purple: 160 84% 48%;
+    --ai-purple-light: 100 90% 55%;
 
     /* Secondary & Muted */
     --secondary: 240 6% 15%;
@@ -40,8 +40,8 @@
     --muted-foreground: 240 5% 55%;
 
     /* Accent */
-    --accent: 217 100% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 72 100% 50%;
+    --accent-foreground: 240 10% 4%;
 
     /* Destructive */
     --destructive: 0 90% 60%;
@@ -49,9 +49,9 @@
 
     /* Borders & Inputs */
     --border: 240 5% 18%;
-    --border-glow: 217 100% 60%;
+    --border-glow: 72 100% 50%;
     --input: 240 6% 12%;
-    --ring: 217 100% 60%;
+    --ring: 72 100% 50%;
 
     --radius: 1rem;
 
@@ -86,9 +86,24 @@
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
-  /* Display font - Modern geometric */
+  /* Display font - Athletic condensed */
   .font-display {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Anton', 'Arial Narrow', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  /* Big headlines: uppercase athletic poster type */
+  h1.font-display,
+  h2.font-display,
+  h3.font-display {
+    text-transform: uppercase;
+    letter-spacing: 0.005em;
+  }
+
+  ::selection {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
   }
 
   /* Technical/Mono font */
@@ -98,7 +113,7 @@
 
   /* Numeric display */
   .font-numeric {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Anton', sans-serif;
     font-variant-numeric: tabular-nums;
   }
 }

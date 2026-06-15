@@ -52,20 +52,20 @@ const Hero = () => {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
                 </span>
-                <span className="text-sm font-medium text-primary">Available Now • Voice-First • 100% Private</span>
+                <span className="text-sm font-medium text-primary">Hands-Free AirPods Gym Tracker • Zero Subscriptions</span>
               </motion.div>
               
               {/* Main headline - Extra bold, tighter tracking */}
               <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-[0.9] mb-6">
-                Log at the
+                Log Workouts
                 <br />
-                <span className="text-gradient-primary">Speed of Sound.</span>
+                <span className="text-gradient-primary">Hands-Free.</span>
               </h1>
               
               {/* Subhead */}
               <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                The world's first voice-activated, local-first workout tracker.{" "}
-                <span className="text-foreground font-medium">No accounts. No tracking. No limits.</span>
+                Keep your hands on the barbell and your phone in your gym bag. Speak your sets naturally, and Siri tracks the weight and reps.{" "}
+                <span className="text-foreground font-medium">No typing. No account. Stay fully in the zone.</span>
               </p>
               
               {/* CTA buttons */}
@@ -92,16 +92,16 @@ const Hero = () => {
                 className="flex flex-wrap gap-8 mt-12 justify-center lg:justify-start"
               >
                 <div className="text-center lg:text-left">
-                  <div className="font-display text-3xl font-bold text-primary">100%</div>
-                  <div className="text-sm text-muted-foreground">On-Device</div>
+                  <div className="font-display text-3xl font-bold text-primary">0</div>
+                  <div className="text-sm text-muted-foreground">Taps Mid-Set</div>
                 </div>
                 <div className="text-center lg:text-left">
-                  <div className="font-display text-3xl font-bold text-success">0ms</div>
-                  <div className="text-sm text-muted-foreground">Cloud Latency</div>
+                  <div className="font-display text-3xl font-bold text-success">3s</div>
+                  <div className="text-sm text-muted-foreground">To Log a Set</div>
                 </div>
                 <div className="text-center lg:text-left">
-                  <div className="font-display text-3xl font-bold text-ai-purple">∞</div>
-                  <div className="text-sm text-muted-foreground">Data Ownership</div>
+                  <div className="font-display text-3xl font-bold text-ai-purple">100%</div>
+                  <div className="text-sm text-muted-foreground">Private, On-Device</div>
                 </div>
               </motion.div>
             </motion.div>

@@ -36,8 +36,8 @@ const features = [
   {
     id: "ai-coach",
     title: "AI Coach",
-    subtitle: "Analyze, roast, and meme",
-    description: "Get progress analysis, find weak points, create plans, or let AI roast your routine. Even generate workout memes.",
+    subtitle: "On-device, 100% private",
+    description: "Progress analysis, weak points, plateau breakers, monthly recaps — even a roast. All on your iPhone, nothing in the cloud.",
     icon: Brain,
     image: featureAiCoach,
     color: "from-ai-purple/20 to-primary/20",
@@ -47,8 +47,8 @@ const features = [
   {
     id: "progress",
     title: "Strength Trends",
-    subtitle: "Track PRs over time",
-    description: "Visualize your progress with beautiful charts. See personal records and strength curves for every exercise.",
+    subtitle: "PRs & estimated 1RM",
+    description: "Charts for every lift — flip between top weight and estimated 1RM. Watch your strength curve climb set by set.",
     icon: BarChart3,
     image: featureProgress,
     color: "from-primary/20 to-success/20",
@@ -69,8 +69,8 @@ const features = [
   {
     id: "logbook",
     title: "Workout Logbook",
-    subtitle: "Simple history view",
-    description: "Review all your workouts with exercise details, weights, reps, and personal notes in one clean list.",
+    subtitle: "This Week at a glance",
+    description: "A This Week card up top, then every session below. Search any lift, filter by muscle group, find any set in seconds.",
     icon: ClipboardList,
     image: featureLogbook,
     color: "from-success/20 to-emerald-500/20",
@@ -80,8 +80,8 @@ const features = [
   {
     id: "history",
     title: "Volume Analytics",
-    subtitle: "Weekly & monthly stats",
-    description: "Track total volume, movements per week, and top exercises. See your training consistency over time.",
+    subtitle: "Muscle Focus chart",
+    description: "Sets per muscle group per week, total volume, top lifts. Spot what you're hammering — and what you're skipping.",
     icon: Calendar,
     image: featureHistory,
     color: "from-orange-500/20 to-primary/20",
@@ -131,8 +131,8 @@ const FeaturesShowcase = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground leading-relaxed">
-            From muscle maps to AI coaching, technique videos to progress charts.
-            Built for serious lifters.
+            Muscle maps, AI coaching, PR charts, technique videos.
+            Built by lifters, for lifters.
           </p>
         </motion.div>
 

@@ -16,7 +16,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Hero CTA button with glow effect
-        hero: "bg-primary text-primary-foreground font-semibold shadow-lg glow-primary hover:scale-105 hover:shadow-xl active:scale-100",
+        hero: "bg-primary text-primary-foreground font-display uppercase tracking-wide shadow-lg glow-primary hover:scale-105 hover:shadow-xl active:scale-100",
         // Glass button for cards
         glass: "glass-card-subtle text-foreground hover:bg-background-surface border-0",
         // Success state button

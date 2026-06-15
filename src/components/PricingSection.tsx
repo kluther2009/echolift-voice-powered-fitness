@@ -5,16 +5,16 @@ import { Button } from "@/components/ui/button";
 const PricingSection = () => {
   const coreFeatures = [
     "Unlimited Voice Logging",
-    "Offline & Private (Local-First)",
-    "Last 30 Days History",
+    "100% Offline & Private",
+    "Last 30 Days Logbook",
     "Standard Exercise Library",
   ];
 
   const proFeatures = [
-    "AI Coach & Roast My Routine",
-    "Unlimited History & Analytics",
-    "Advanced Muscle Heatmaps",
-    "Support Independent Development",
+    "Smart AI Coach Insights",
+    "Trophy Case & PR Celebrations",
+    "Unlimited Logbook & Progress Charts",
+    "Independent Developer Support",
   ];
 
   return (

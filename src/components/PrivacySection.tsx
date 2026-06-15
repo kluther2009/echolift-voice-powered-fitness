@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Smartphone, Download, Lock, FileJson } from "lucide-react";
+import { Shield, Smartphone, Download, Lock, FileJson, Calendar, Trophy } from "lucide-react";
 
 const PrivacySection = () => {
   const features = [
@@ -87,59 +87,60 @@ const PrivacySection = () => {
           ))}
         </div>
         
-        {/* Code preview - Modern terminal style */}
+        {/* Workout History Card Mockup */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="max-w-3xl mx-auto"
+          className="max-w-xl mx-auto"
         >
-          <div className="glass-card overflow-hidden">
-            {/* Terminal header */}
-            <div className="flex items-center justify-between px-5 py-4 border-b border-border/50 bg-background-elevated/50">
+          <div className="glass-card overflow-hidden border-glow-hover">
+            {/* Card Header */}
+            <div className="flex items-center justify-between px-6 py-5 border-b border-border/30 bg-background-elevated/20">
               <div className="flex items-center gap-3">
-                <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-destructive/80" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-success/80" />
-                </div>
-                <span className="text-xs text-muted-foreground font-mono ml-2">workout_history.jsonl</span>
+                <Calendar className="w-5 h-5 text-success" />
+                <span className="font-display font-semibold text-foreground">Workout History</span>
               </div>
-              <div className="text-xs text-muted-foreground font-mono">~/Documents/EchoLift/</div>
+              <span className="text-xs text-muted-foreground font-medium">Monday, June 15</span>
             </div>
             
-            {/* Code content */}
-            <div className="p-6 font-mono text-sm overflow-x-auto">
-              <pre className="space-y-2">
-                <code className="block text-muted-foreground">
-                  <span className="text-success">{"{"}</span>
-                  <span className="text-primary">"date"</span>:<span className="text-foreground">"2024-01-15"</span>,
-                  <span className="text-primary">"exercise"</span>:<span className="text-foreground">"Bench Press"</span>,
-                  <span className="text-primary">"sets"</span>:<span className="text-ai-purple">4</span>,
-                  <span className="text-primary">"reps"</span>:<span className="text-ai-purple">8</span>,
-                  <span className="text-primary">"weight"</span>:<span className="text-ai-purple">185</span>
-                  <span className="text-success">{"}"}</span>
-                </code>
-                <code className="block text-muted-foreground">
-                  <span className="text-success">{"{"}</span>
-                  <span className="text-primary">"date"</span>:<span className="text-foreground">"2024-01-15"</span>,
-                  <span className="text-primary">"exercise"</span>:<span className="text-foreground">"Incline DB Press"</span>,
-                  <span className="text-primary">"sets"</span>:<span className="text-ai-purple">3</span>,
-                  <span className="text-primary">"reps"</span>:<span className="text-ai-purple">10</span>,
-                  <span className="text-primary">"weight"</span>:<span className="text-ai-purple">65</span>
-                  <span className="text-success">{"}"}</span>
-                </code>
-                <code className="block text-muted-foreground">
-                  <span className="text-success">{"{"}</span>
-                  <span className="text-primary">"date"</span>:<span className="text-foreground">"2024-01-15"</span>,
-                  <span className="text-primary">"exercise"</span>:<span className="text-foreground">"Cable Flyes"</span>,
-                  <span className="text-primary">"sets"</span>:<span className="text-ai-purple">3</span>,
-                  <span className="text-primary">"reps"</span>:<span className="text-ai-purple">12</span>,
-                  <span className="text-primary">"weight"</span>:<span className="text-ai-purple">30</span>
-                  <span className="text-success">{"}"}</span>
-                </code>
-              </pre>
+            {/* Card Content (Logs List) */}
+            <div className="p-6 space-y-4">
+              <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
+                <div>
+                  <h4 className="font-display font-semibold text-sm">Bench Press</h4>
+                  <p className="text-xs text-muted-foreground mt-1">4 sets × 8 reps @ 85 kg</p>
+                </div>
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-500 text-[10px] font-semibold uppercase tracking-wider">
+                  <Trophy className="w-3 h-3" />
+                  New PR
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
+                <div>
+                  <h4 className="font-display font-semibold text-sm">Incline Dumbbell Press</h4>
+                  <p className="text-xs text-muted-foreground mt-1">3 sets × 10 reps @ 30 kg</p>
+                </div>
+                <span className="text-xs text-muted-foreground">Volume: 900 kg</span>
+              </div>
+
+              <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
+                <div>
+                  <h4 className="font-display font-semibold text-sm">Cable Flyes</h4>
+                  <p className="text-xs text-muted-foreground mt-1">3 sets × 12 reps @ 14 kg</p>
+                </div>
+                <span className="text-xs text-muted-foreground">Volume: 504 kg</span>
+              </div>
+            </div>
+
+            {/* Card Footer */}
+            <div className="px-6 py-4 bg-success/5 border-t border-border/30 flex items-center gap-3">
+              <Lock className="w-4 h-4 text-success shrink-0" />
+              <p className="text-xs text-muted-foreground leading-normal">
+                Stored locally on your device. Secured by default. Automatically backed up to your personal iCloud Drive container.
+              </p>
             </div>
           </div>
         </motion.div>
