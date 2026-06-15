@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Smartphone, Download, Lock, FileJson, Calendar, Trophy } from "lucide-react";
+import { Shield, Smartphone, Download, Lock, FileJson, Calendar, Trophy, Sparkles, Brain } from "lucide-react";
 
 const PrivacySection = () => {
   const features = [
@@ -40,27 +40,141 @@ const PrivacySection = () => {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-success/10 border border-success/20 mb-8">
             <Shield className="w-4 h-4 text-success" />
-            <span className="text-sm font-medium text-success">Data Sovereignty</span>
+            <span className="text-sm font-medium text-success">Privacy & Insights</span>
           </div>
           
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-            Your Data Stays in
+            Private Logging.
             <br />
-            <span className="text-success">Your Pocket.</span>
+            <span className="text-success">Smart Insights.</span>
           </h2>
           
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Workout history is stored in transparent, locally accessible{" "}
-            <code className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-background-surface border border-border font-mono text-sm">
-              <FileJson className="w-3.5 h-3.5 text-success" />
-              .jsonl
-            </code>{" "}
-            format on your iPhone—never on a cloud server.
+            Your workout history stays completely in your pocket. EchoLift stores your logs locally
+            on-device and generates private coaching insights offline.
           </p>
         </motion.div>
+
+        {/* Bento Grid: Two Column Visual */}
+        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+          {/* Card 1: Workout History Mockup */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="glass-card overflow-hidden border-glow-hover h-full flex flex-col justify-between">
+              <div>
+                {/* Card Header */}
+                <div className="flex items-center justify-between px-6 py-5 border-b border-border/30 bg-background-elevated/20">
+                  <div className="flex items-center gap-3">
+                    <Calendar className="w-5 h-5 text-success" />
+                    <span className="font-display font-semibold text-foreground">Workout History</span>
+                  </div>
+                  <span className="text-xs text-muted-foreground font-medium">Monday, June 15</span>
+                </div>
+                
+                {/* Card Content */}
+                <div className="p-6 space-y-4">
+                  <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
+                    <div>
+                      <h4 className="font-display font-semibold text-sm">Bench Press</h4>
+                      <p className="text-xs text-muted-foreground mt-1">4 sets × 8 reps @ 85 kg</p>
+                    </div>
+                    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-500 text-[10px] font-semibold uppercase tracking-wider">
+                      <Trophy className="w-3 h-3" />
+                      New PR
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
+                    <div>
+                      <h4 className="font-display font-semibold text-sm">Incline Dumbbell Press</h4>
+                      <p className="text-xs text-muted-foreground mt-1">3 sets × 10 reps @ 30 kg</p>
+                    </div>
+                    <span className="text-xs text-muted-foreground">Volume: 900 kg</span>
+                  </div>
+
+                  <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
+                    <div>
+                      <h4 className="font-display font-semibold text-sm">Cable Flyes</h4>
+                      <p className="text-xs text-muted-foreground mt-1">3 sets × 12 reps @ 14 kg</p>
+                    </div>
+                    <span className="text-xs text-muted-foreground">Volume: 504 kg</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card Footer */}
+              <div className="px-6 py-4 bg-success/5 border-t border-border/30 flex items-center gap-3">
+                <Lock className="w-4 h-4 text-success shrink-0" />
+                <p className="text-xs text-muted-foreground leading-normal">
+                  Stored locally as raw logbooks. Mirrors automatically to your personal iCloud Drive folder.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Card 2: Coach's Briefing Mockup */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="glass-card overflow-hidden border-glow-hover h-full flex flex-col justify-between">
+              <div>
+                {/* Card Header */}
+                <div className="flex items-center justify-between px-6 py-5 border-b border-border/30 bg-background-elevated/20">
+                  <div className="flex items-center gap-3">
+                    <Sparkles className="w-5 h-5 text-ai-purple" />
+                    <span className="font-display font-semibold text-foreground">Coach's Briefing</span>
+                  </div>
+                  <span className="text-xs text-muted-foreground font-medium">On-Device AI</span>
+                </div>
+                
+                {/* Card Content */}
+                <div className="p-6 space-y-4">
+                  <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
+                    <div>
+                      <h4 className="font-display font-semibold text-sm">Weekly Volume</h4>
+                      <p className="text-xs text-muted-foreground mt-1">Total sets are up +12% vs last week</p>
+                    </div>
+                    <span className="text-xs text-success font-medium">On Track</span>
+                  </div>
+
+                  <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
+                    <div>
+                      <h4 className="font-display font-semibold text-sm">Plateau Alert</h4>
+                      <p className="text-xs text-muted-foreground mt-1">Bench Press flat for 4 sessions</p>
+                    </div>
+                    <span className="text-xs text-yellow-500 font-medium">Deload Advised</span>
+                  </div>
+
+                  <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
+                    <div>
+                      <h4 className="font-display font-semibold text-sm">Lagging Focus</h4>
+                      <p className="text-xs text-muted-foreground mt-1">Quads and Legs not trained in 6 days</p>
+                    </div>
+                    <span className="text-xs text-muted-foreground">Attention</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card Footer */}
+              <div className="px-6 py-4 bg-ai-purple/5 border-t border-border/30 flex items-center gap-3">
+                <Brain className="w-4 h-4 text-ai-purple shrink-0" />
+                <p className="text-xs text-muted-foreground leading-normal">
+                  Local AI coach works fully offline. Secure deep-linking to ChatGPT & Gemini is integrated.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
         
         {/* Feature cards - Bento grid style */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -86,64 +200,6 @@ const PrivacySection = () => {
             </motion.div>
           ))}
         </div>
-        
-        {/* Workout History Card Mockup */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="max-w-xl mx-auto"
-        >
-          <div className="glass-card overflow-hidden border-glow-hover">
-            {/* Card Header */}
-            <div className="flex items-center justify-between px-6 py-5 border-b border-border/30 bg-background-elevated/20">
-              <div className="flex items-center gap-3">
-                <Calendar className="w-5 h-5 text-success" />
-                <span className="font-display font-semibold text-foreground">Workout History</span>
-              </div>
-              <span className="text-xs text-muted-foreground font-medium">Monday, June 15</span>
-            </div>
-            
-            {/* Card Content (Logs List) */}
-            <div className="p-6 space-y-4">
-              <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
-                <div>
-                  <h4 className="font-display font-semibold text-sm">Bench Press</h4>
-                  <p className="text-xs text-muted-foreground mt-1">4 sets × 8 reps @ 85 kg</p>
-                </div>
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-500 text-[10px] font-semibold uppercase tracking-wider">
-                  <Trophy className="w-3 h-3" />
-                  New PR
-                </div>
-              </div>
-
-              <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
-                <div>
-                  <h4 className="font-display font-semibold text-sm">Incline Dumbbell Press</h4>
-                  <p className="text-xs text-muted-foreground mt-1">3 sets × 10 reps @ 30 kg</p>
-                </div>
-                <span className="text-xs text-muted-foreground">Volume: 900 kg</span>
-              </div>
-
-              <div className="flex items-center justify-between p-4 rounded-xl bg-background-elevated/40 border border-border/30">
-                <div>
-                  <h4 className="font-display font-semibold text-sm">Cable Flyes</h4>
-                  <p className="text-xs text-muted-foreground mt-1">3 sets × 12 reps @ 14 kg</p>
-                </div>
-                <span className="text-xs text-muted-foreground">Volume: 504 kg</span>
-              </div>
-            </div>
-
-            {/* Card Footer */}
-            <div className="px-6 py-4 bg-success/5 border-t border-border/30 flex items-center gap-3">
-              <Lock className="w-4 h-4 text-success shrink-0" />
-              <p className="text-xs text-muted-foreground leading-normal">
-                Stored locally on your device. Secured by default. Automatically backed up to your personal iCloud Drive container.
-              </p>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
