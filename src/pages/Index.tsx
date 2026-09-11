@@ -1,21 +1,44 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import VoiceLogicSection from "@/components/VoiceLogicSection";
-import PrivacySection from "@/components/PrivacySection";
-import PricingSection from "@/components/PricingSection";
-import Footer from "@/components/Footer";
+import { useState } from "react";
+import { ArrowUpRight, ArrowRight, AudioLines, Rotate3D, Heart, ShieldCheck, Menu, X, Check } from "lucide-react";
+import screenshot from "@/assets/workout-current.png";
+import progress from "@/assets/progress-current.png";
+import echoliftLogo from "@/assets/echolift-logo.png";
+import "./landing.css";
 
-const Index = () => {
-  return (
-    <div className="min-h-screen bg-background overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <VoiceLogicSection />
-      <PrivacySection />
-      <PricingSection />
-      <Footer />
-    </div>
-  );
-};
-
-export default Index;
+const store = "https://apps.apple.com/app/id6757499671";
+const faqs = [
+  ["Do I need the latest iPhone?", "The core tracker supports iOS 17.6 and later. Siri logging depends on Siri availability and your settings; it does not require Apple Intelligence. Heart-rate tracking needs iOS 26 and compatible hardware."],
+  ["Do I need AirPods?", "No. Log through Siri on your iPhone or use the manual controls. For heart-rate tracking you need compatible heart-rate hardware, such as AirPods Pro 3. Ordinary AirPods do not measure heart rate."],
+  ["What does the AI Coach require?", "On-device coaching requires an Apple Intelligence–compatible iPhone, supported software and language, and Apple Intelligence enabled. You can use workout logging and exercise demonstrations without it."],
+  ["Can I bring my own routine?", "Yes. Build your own plans, track sets and weights, and use your history to follow your progress. You can export your workout history as CSV."],
+  ["Where is my workout history stored?", "Your history is stored locally on your iPhone. Optional iCloud workout-log backup is available. Manual logging and bundled animations work offline; Siri availability can depend on your device and connection."],
+];
+function Download({ light = false }: { light?: boolean }) {
+  return <a className={`el-button ${light ? "el-button-light" : ""}`} href={store} target="_blank" rel="noopener noreferrer">Download on the App Store <ArrowUpRight size={18} /></a>;
+}
+export default function Index() {
+  const [menu, setMenu] = useState(false);
+  const [view, setView] = useState("form");
+  const [demoOpen, setDemoOpen] = useState(false);
+  return <div className="el-site" id="top">
+    <header className="el-header"><a className="el-brand" href="#top"><img className="el-original-logo" src={echoliftLogo} alt="" />EchoLift<span className="el-brand-dot">.</span></a>
+      <nav aria-label="Main navigation" className={menu ? "is-open" : ""}>{[["#features", "The experience"], ["#compatibility", "Compatibility"], ["#pricing", "Get EchoLift"]].map(([href, name]) => <a key={href} href={href} onClick={() => setMenu(false)}>{name}</a>)}</nav>
+      <a className="el-nav-cta" href={store} target="_blank" rel="noopener noreferrer">Get the app <ArrowUpRight size={16} /></a><button className="el-menu" aria-label={menu ? "Close menu" : "Open menu"} aria-expanded={menu} onClick={() => setMenu(!menu)}>{menu ? <X /> : <Menu />}</button>
+    </header>
+    <main>
+      <section className="el-hero el-wrap">
+        <div className="el-hero-copy"><p className="el-eyebrow"><span /> YOUR TRAINING. UNINTERRUPTED.</p><h1>Stay in<br />your <em>flow.</em></h1><p className="el-intro">The strength tracker that listens.<br />Log your sets with Siri, explore exercises in 3D and make every session count.</p><Download /><p className="el-fine">Made for iPhone. No EchoLift account required.</p><div className="el-hero-note"><span className="el-small-line" /> Built by a lifter. Refined between sets.</div></div>
+        <div className="el-hero-stage"><div className="el-stage-label">LESS SCREEN TIME. MORE TRAINING.</div><a className="el-phone" href={screenshot} target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution workout screenshot"><img src={screenshot} alt="Current EchoLift workout screen showing sample logged sets" fetchPriority="high" width={1206} height={2622} /></a><div className="el-voice-chip"><span className="el-chip-icon"><AudioLines /></span><div><small>YOU SAY IT. ECHOLIFT LOGS IT.</small><p>“Log bench press in EchoLift”</p></div></div><div className="el-stage-bottom"><span>Tap screen for full resolution · Sample data</span><span>01 / WORKOUT</span></div></div>
+      </section>
+      <div className="el-strip el-wrap"><span>A more focused way to train</span><span><AudioLines size={17} /> Voice logging</span><span><Rotate3D size={17} /> 3D exercise form</span><span><Heart size={17} /> Heart-rate tracking*</span><span><ShieldCheck size={17} /> Your history, on device</span></div>
+      <section id="features" className="el-section el-wrap"><div className="el-section-heading"><p className="el-eyebrow">01 / THE EXPERIENCE</p><h2>Built around your workout.<br /><span>And out of its way.</span></h2></div>
+        <div className="el-voice-feature"><div className="el-feature-copy"><AudioLines className="el-feature-icon" /><h3>Rack the weight.<br />Say the set.</h3><p>Keep your attention on your training. Tell Siri your exercise, sets, reps and weight, then listen to the confirmation.</p><a href="#compatibility" className="el-text-link">Find out what works with your iPhone <ArrowRight size={17} /></a></div><div className="el-conversation"><div className="el-conversation-top"><AudioLines size={18} /><span>AN EXAMPLE CONVERSATION</span></div><p className="el-bubble el-you">“Hey Siri, log bench press in EchoLift.”</p><p className="el-bubble el-siri">Sets, reps and weight?</p><p className="el-bubble el-you">“3 by 10 at 80.”</p><p className="el-confirm"><Check size={17} /> Bench press · 3 × 10 at 80</p><p className="el-conversation-note">Hear your entry. Check it. Get back to lifting.</p></div></div>
+        <div className="el-product-grid"><article className="el-form-card"><div className="el-card-heading"><p className="el-eyebrow">A BETTER VIEW OF EVERY REP</p><h3>See the form.<br />Find your angle.</h3><p>Try a chest fly right here. Rotate and zoom to explore the movement, then discover more exercises inside EchoLift.</p></div><div className="el-tabs" role="group" aria-label="Product preview"><button aria-pressed={view === "form"} onClick={() => setView("form")}>Exercise form</button><button aria-pressed={view === "progress"} onClick={() => setView("progress")}>Your progress</button></div><div className={`el-product-image ${view === "progress" ? "el-progress" : ""}`}>{view === "form" ? (demoOpen ? <iframe src="/demos/chest-fly/index.html" title="Interactive chest fly exercise: drag to rotate, pinch to zoom" className="el-exercise-demo" /> : <button className="el-launch-demo" onClick={() => setDemoOpen(true)}><Rotate3D size={42} /><strong>Try the chest fly in 3D</strong><span>Rotate, zoom and explore the movement</span><span className="el-demo-start">Launch interactive demo →</span></button>) : <img src={progress} alt="EchoLift strength progress chart" loading="lazy" />}</div><p className="el-image-caption">{view === "progress" && <a href={progress} target="_blank" rel="noopener noreferrer" className="el-full-resolution">Open full-resolution screenshot ↗</a>}{view === "form" ? "Interactive chest fly from the EchoLift animation studio. Drag to rotate; pinch or use + / − to zoom." : "Current app screen with sample data. Your results reflect your own workouts."}</p></article>
+        <div className="el-side-cards"><article className="el-heart-card"><Heart size={25} /><h3>A pulse on<br />your session.</h3><p>See live heart rate and a session chart alongside your lifts, with compatible hardware.</p><div className="el-pulse" aria-hidden="true"><svg viewBox="0 0 400 80"><path d="M0 45 H70 L85 38 L98 47 H135 L148 20 L161 66 L179 8 L196 47 H248 L264 37 L278 47 H400" /></svg></div><a className="el-text-link" href="#compatibility">Check compatibility <ArrowRight size={17} /></a></article><article className="el-history-card"><ShieldCheck size={25} /><h3>Your work.<br />Your record.</h3><p>Build your plans, follow strength trends and keep your workout history on your iPhone. No account to create.</p><a className="el-text-link" href="/privacy">Explore your privacy <ArrowRight size={17} /></a></article></div></div>
+      </section>
+      <section className="el-philosophy"><div className="el-wrap el-philosophy-inner"><p className="el-eyebrow">BUILT FROM REAL EXPERIENCE</p><h2>Thirty years under the bar.<br /><span>A little less time on the phone.</span></h2><p>EchoLift is an independent app built by a lifter with over 30 years of training experience, and refined with feedback from people using it in their own workouts.</p></div></section>
+      <section id="compatibility" className="el-section el-wrap el-faq-layout"><div><p className="el-eyebrow">02 / THE DETAILS</p><h2>Your routine.<br />Your iPhone.<br /><span>Your questions.</span></h2><p className="el-detail-intro">Start with the essentials. Explore more with compatible devices.</p><p className="el-fine">*Heart-rate tracking requires iOS 26 and a compatible sensor. On-device AI requires Apple Intelligence.</p></div><div className="el-faq">{faqs.map(([q,a]) => <details key={q}><summary>{q}<span>+</span></summary><p>{a}</p></details>)}</div></section>
+      <section id="pricing" className="el-download el-wrap"><div><p className="el-eyebrow">YOUR NEXT SESSION STARTS HERE</p><h2>More lifting.<br /><span>Less admin.</span></h2><p>Get EchoLift and find your flow.</p><Download light /><p className="el-download-note">Lifetime Pro upgrade available. One purchase, no recurring subscription.<br />See the app for current pricing, trial details and included features.</p></div><div className="el-download-symbol" aria-hidden="true"><AudioLines /></div></section>
+    </main><footer className="el-footer el-wrap"><a className="el-brand" href="#top">EchoLift.</a><p>Made for the work you put in.</p><div><a href="/privacy">Privacy</a><a href="mailto:support@echolift.app">Contact</a><span>© {new Date().getFullYear()} EchoLift</span></div></footer>
+  </div>;
+}

@@ -1,0 +1,2774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/png;base64,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qqcbnSUrreaoBYoAqGz3OywXS370Z36Qv/a3fopnXjrD737wU0znMw69PuI/yEeO1tXqvYcgQXKKiweaCE6i6HZTWUW+d57Fzjbzhw5gKNkiBCML+ErH+tvvbGkroa2noNFM6VryFSCzjz386RdPsC2ZX/71v8rbH76f//H5r/Evfu536CQxS5OoZgPugzd3mksBlMMLZKosdckbfux+zp+/yIM/9lre8WMPk58Qtjd32H//QebH9tNvLenNEcskHFEhb/ZDB9lBpZbUoS30ztaa8sKXniWtdaw/dJSt3JPNMcshuwlmzmKnJ4W2Jy5oaR60xkkBsahV3FjOe1741mn23bGXY284zMr+PVzbusm9b72T1z14nC/992+yfKUPIBjK46700ksd33vPjWs3Wb9zP//qox/gP33kk9h6x5VsvHDyHIudJUfefhd7b7mNzA5TZBeiNsV31HdPjUAXXXgCvPLkJebH93L7m+5G0gTdWyzsTdP32l9GR0yUkaqcoqwu4J1YbG9y4dRFjt57iD1793DJNznx1Au87wM/wyPvfDPv+r33c2Njg32rq4VElXDwjuDJfTb2H9vDj/+FN3P56jV6nAvnLvOjb3sdl9MOp85cYMeXnD/5Ip/5N/8B38l00w4SJX6loHxSISUlSSoqbydoijSYhLSZufHcFfq58/invsp0MiXjqJbXXQYeUtIWaFJES3lbW2Iigmr5Pp8q50+8yJVzV3n4Ha9jniZcZZuzFy5y4Ng6j5/4LoceWOdt7349X/n041hPUSvMShYQga3Nm/y5P/9D/OMP/SIf+re/w9m8ycb2DgePHuAq25x4+ru86T0Pc/DwOtefutYaeW3mJ5qpta+YnYLUUiq3zoW8NDQLr/nhe+mXS6584km61IGWMZgCx4XbZLMYhRrye/bSFc5esoEJSCqNUet7pmuJtWNrLBFeuXqDre0t9t1zK5//5Bf46x94L/e94S4+91+/xCrz8C3xrnx1zNkcmPC5b36N+YEDPHv5Cle3N0kH9nD95g0uX3qZv/TbH+C1B+9lk+1KSodcvKs95W3wS0YhUZ27FSMhu7TGSAujqt96q9y9NUBHBRBDL3Af+/jVX/qX5AMzriFcOH+VycoKi+kqz710luVq4pnfPwPbhquHQuTeWTC51T2r/MnH/i+f+4+f5R/93q9y5fJ12DNnQydc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">
+<title>EchoLift Rig Studio</title>
+<!-- vendored so the studio runs offline, straight off disk, with no CDN -->
+<script src="vendor/three.min.js"></script>
+<script src="vendor/OrbitControls.js"></script>
+<script src="skeleton.js"></script>
+<script src="poses.js"></script>
+<style>
+/* ── EchoLift tokens (from Theme.swift) ───────────────────────── */
+:root{
+  --accent:#4073FF;
+  --mint:#33D999;
+  --amber:#FFA000;
+  --red:#FF4D5E;
+
+  --bg:#F2F3F6;
+  --surface:rgba(255,255,255,.82);
+  --surface-solid:#FFFFFF;
+  --line:rgba(20,24,34,.12);
+  --ink:#14161C;
+  --ink-2:#525A69;
+  --ink-3:#858C9B;
+  --viewport-a:#E9ECF2;
+  --viewport-b:#CFD5E0;
+  --shadow:0 8px 28px rgba(20,26,40,.13);
+}
+:root[data-theme="dark"]{
+  --bg:#141416;
+  --surface:rgba(35,35,40,.80);
+  --surface-solid:#232327;
+  --line:rgba(255,255,255,.11);
+  --ink:#EDEEF2;
+  --ink-2:#AEB4C0;
+  --ink-3:#7E8593;
+  --viewport-a:#26272C;
+  --viewport-b:#141518;
+  --shadow:0 8px 28px rgba(0,0,0,.5);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background:var(--bg);color:var(--ink);
+  font:14px/1.45 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+  display:flex;flex-direction:column;overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+
+/* ── header ───────────────────────────────────────────────────── */
+header{
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  padding:10px 18px;border-bottom:1px solid var(--line);
+  background:var(--surface-solid);z-index:20;
+}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:14px;letter-spacing:-.01em}
+.mark{width:22px;height:22px;border-radius:6px;flex:none;display:block;
+  /* the icon is already a rounded square on transparent, so it only needs a
+     touch of lift to sit on either theme without a plate behind it */
+  box-shadow:0 1px 3px rgba(0,0,0,.35)}
+.brand small{font-weight:500;color:var(--ink-3);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+
+.seg{display:flex;gap:2px;background:var(--bg);padding:3px;border-radius:9px;border:1px solid var(--line)}
+.seg button{
+  border:0;background:transparent;color:var(--ink-2);cursor:pointer;
+  font:600 12.5px/1 inherit;padding:7px 12px;border-radius:6px;transition:.14s;white-space:nowrap;
+}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff;box-shadow:0 1px 4px rgba(64,115,255,.4)}
+.seg.quiet button[aria-pressed="true"]{background:var(--ink);color:var(--bg);box-shadow:none}
+.spacer{flex:1}
+.iconbtn{
+  border:1px solid var(--line);background:transparent;color:var(--ink-2);
+  border-radius:8px;padding:7px 11px;cursor:pointer;font:600 12px/1 inherit;transition:.14s;
+}
+.iconbtn:hover{color:var(--ink);border-color:var(--ink-3)}
+
+/* ── stage ────────────────────────────────────────────────────── */
+#stage{flex:1;position:relative;min-height:0;cursor:grab}
+#stage:active{cursor:grabbing}
+#stage canvas{display:block}
+
+.panel{
+  position:absolute;background:var(--surface);border:1px solid var(--line);
+  border-radius:14px;box-shadow:var(--shadow);
+  -webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);
+  z-index:6;
+}
+.panel h4{
+  font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-3);padding:11px 14px 0;
+}
+
+/* phase panel */
+#phasePanel{top:16px;left:16px;width:246px;padding-bottom:12px}
+.phase-name{padding:6px 14px 2px;font-size:15px;font-weight:700;letter-spacing:-.015em}
+.targets{padding:8px 14px 2px;display:flex;flex-wrap:wrap;gap:5px}
+.targets span{font-size:10.5px;letter-spacing:.03em;text-transform:uppercase;
+  padding:2px 7px;border-radius:99px;border:1px solid var(--line);color:var(--ink-2)}
+.targets span.p{background:color-mix(in srgb,var(--mint) 18%,transparent);
+  border-color:color-mix(in srgb,var(--mint) 45%,transparent);color:var(--ink-1)}
+.phase-cue{padding:0 14px;font-size:12.2px;color:var(--ink-2);line-height:1.4}
+.track{display:flex;gap:3px;padding:11px 14px 0}
+.track i{height:3px;flex:1;border-radius:2px;background:var(--line);transition:background .2s}
+.track i.on{background:var(--accent)}
+
+/* metrics panel */
+#metricPanel{top:16px;right:16px;width:290px;padding-bottom:8px}
+.m-row{
+  display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:10px;
+  padding:8px 14px;border-top:1px solid var(--line);
+}
+.m-row:first-of-type{border-top:0;margin-top:6px}
+.m-name{font-size:12.4px;color:var(--ink-2);line-height:1.25}
+.m-name b{display:block;color:var(--ink);font-weight:600;font-size:12.6px}
+.m-name span{font-size:10.5px;color:var(--ink-3)}
+.m-val{font-size:14px;font-weight:700;letter-spacing:-.02em;min-width:62px;text-align:right}
+.m-flag{
+  width:9px;height:9px;border-radius:50%;flex:none;
+  box-shadow:0 0 0 3px color-mix(in srgb, currentColor 18%, transparent);
+}
+.ok{color:var(--mint)} .bad{color:var(--red)} .warn{color:var(--amber)}
+.m-flag.ok{background:var(--mint)} .m-flag.bad{background:var(--red)} .m-flag.warn{background:var(--amber)}
+
+#verdict{
+  margin:8px 14px 4px;padding:8px 11px;border-radius:9px;
+  font-size:11.6px;font-weight:600;line-height:1.35;
+  background:color-mix(in srgb,var(--mint) 15%,transparent);color:var(--mint);
+}
+#verdict.bad{background:color-mix(in srgb,var(--red) 15%,transparent);color:var(--red)}
+
+/* legend */
+#legend{
+  position:absolute;left:16px;bottom:16px;z-index:6;
+  display:flex;gap:14px;align-items:center;
+  font-size:11px;color:var(--ink-3);
+  background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:7px 12px;box-shadow:var(--shadow);
+  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
+}
+#legend span{display:flex;align-items:center;gap:6px}
+#legend em{width:16px;height:3px;border-radius:2px;font-style:normal}
+
+/* fault banner */
+#faultBanner{
+  position:absolute;left:50%;transform:translateX(-50%);top:16px;z-index:8;
+  background:var(--red);color:#fff;font-size:11.5px;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;
+  padding:7px 15px;border-radius:20px;box-shadow:0 4px 16px rgba(255,77,94,.45);
+  display:none;
+}
+#faultBanner.show{display:block}
+
+/* ── dock ─────────────────────────────────────────────────────── */
+.dock{
+  border-top:1px solid var(--line);background:var(--surface-solid);
+  padding:11px 18px 13px;display:flex;flex-direction:column;gap:9px;z-index:20;
+}
+.tl{display:flex;align-items:center;gap:13px}
+.tl .t{font-size:11.5px;color:var(--ink-3);min-width:52px}
+.tl .t.r{text-align:right}
+#scrub{
+  flex:1;-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;
+  background:var(--line);outline:none;cursor:pointer;
+}
+#scrub::-webkit-slider-thumb{
+  -webkit-appearance:none;width:16px;height:16px;border-radius:50%;
+  background:var(--accent);border:2.5px solid var(--surface-solid);
+  box-shadow:0 1px 5px rgba(64,115,255,.55);cursor:pointer;
+}
+#scrub::-moz-range-thumb{
+  width:16px;height:16px;border-radius:50%;background:var(--accent);
+  border:2.5px solid var(--surface-solid);cursor:pointer;
+}
+.row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.play{
+  width:38px;height:38px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--accent);color:#fff;font-size:13px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 3px 10px rgba(64,115,255,.42);transition:.14s;
+}
+.play:hover{transform:scale(1.05)}
+.faulttoggle{
+  border:1px solid var(--line);background:transparent;color:var(--ink-2);
+  border-radius:8px;padding:8px 13px;cursor:pointer;font:600 12px/1 inherit;transition:.14s;
+  display:flex;align-items:center;gap:7px;
+}
+.faulttoggle:hover{border-color:var(--ink-3);color:var(--ink)}
+.faulttoggle[aria-pressed="true"]{
+  background:var(--red);border-color:var(--red);color:#fff;
+}
+.faulttoggle i{width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.8}
+.hint{font-size:11px;color:var(--ink-3)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:900px){
+  #phasePanel,#metricPanel{position:static;width:auto;margin:0}
+  .panel{border-radius:0;border-left:0;border-right:0}
+}
+</style>
+<style>
+html,body{height:100%;overflow:hidden;font-family:Inter,system-ui,sans-serif}
+header,#phasePanel,#metricPanel,#legend,#faultBanner,#faultBtn,#hint,#spdTabs{display:none!important}
+#stage{position:absolute!important;inset:0 0 100px!important;width:100%!important;height:calc(100% - 100px)!important;min-height:0!important}
+.dock{position:absolute!important;bottom:0!important;left:0!important;right:0!important;height:100px!important;box-sizing:border-box;padding:12px 18px!important;background:#191c22!important;color:#fafafa}
+.dock .row{gap:10px}.demo-help{position:absolute;top:14px;left:16px;z-index:3;color:#b7bdc7;font-size:11px;pointer-events:none}.demo-tools{margin-left:auto;display:flex;gap:6px}.demo-tools button{background:#303640;color:white;border:1px solid #565d68;border-radius:6px;padding:7px 10px;cursor:pointer}button:focus-visible,input:focus-visible{outline:2px solid #a9c4ff;outline-offset:3px}
+</style></head>
+<body>
+
+<header>
+  <div class="brand"><img class="mark" src="data:image/png;base64,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qqcbnSUrreaoBYoAqGz3OywXS370Z36Qv/a3fopnXjrD737wU0znMw69PuI/yEeO1tXqvYcgQXKKiweaCE6i6HZTWUW+d57Fzjbzhw5gKNkiBCML+ErH+tvvbGkroa2noNFM6VryFSCzjz386RdPsC2ZX/71v8rbH76f//H5r/Evfu536CQxS5OoZgPugzd3mksBlMMLZKosdckbfux+zp+/yIM/9lre8WMPk58Qtjd32H//QebH9tNvLenNEcskHFEhb/ZDB9lBpZbUoS30ztaa8sKXniWtdaw/dJSt3JPNMcshuwlmzmKnJ4W2Jy5oaR60xkkBsahV3FjOe1741mn23bGXY284zMr+PVzbusm9b72T1z14nC/992+yfKUPIBjK46700ksd33vPjWs3Wb9zP//qox/gP33kk9h6x5VsvHDyHIudJUfefhd7b7mNzA5TZBeiNsV31HdPjUAXXXgCvPLkJebH93L7m+5G0gTdWyzsTdP32l9GR0yUkaqcoqwu4J1YbG9y4dRFjt57iD1793DJNznx1Au87wM/wyPvfDPv+r33c2Njg32rq4VElXDwjuDJfTb2H9vDj/+FN3P56jV6nAvnLvOjb3sdl9MOp85cYMeXnD/5Ip/5N/8B38l00w4SJX6loHxSISUlSSoqbydoijSYhLSZufHcFfq58/invsp0MiXjqJbXXQYeUtIWaFJES3lbW2Iigmr5Pp8q50+8yJVzV3n4Ha9jniZcZZuzFy5y4Ng6j5/4LoceWOdt7349X/n041hPUSvMShYQga3Nm/y5P/9D/OMP/SIf+re/w9m8ycb2DgePHuAq25x4+ru86T0Pc/DwOtefutYaeW3mJ5qpta+YnYLUUiq3zoW8NDQLr/nhe+mXS6584km61IGWMZgCx4XbZLMYhRrye/bSFc5esoEJSCqNUet7pmuJtWNrLBFeuXqDre0t9t1zK5//5Bf46x94L/e94S4+91+/xCrz8C3xrnx1zNkcmPC5b36N+YEDPHv5Cle3N0kH9nD95g0uX3qZv/TbH+C1B+9lk+1KSodcvKs95W3wS0YhUZ27FSMhu7TGSAujqt96q9y9NUBHBRBDL3Af+/jVX/qX5AMzriFcOH+VycoKi+kqz710luVq4pnfPwPbhquHQuTeWTC51T2r/MnH/i+f+4+f5R/93q9y5fJ12DNnQydc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" alt="">EchoLift <small>Rig Studio</small></div>
+
+  <div class="seg" id="exTabs" role="group" aria-label="Exercise"></div>
+
+  <div class="spacer"></div>
+
+  <div class="seg quiet" id="camTabs" role="group" aria-label="Camera"></div>
+  <button class="iconbtn" id="themeBtn">Light</button>
+  <button class="iconbtn" id="exportBtn">Export JSON</button>
+</header>
+
+<div id="stage"><span class="demo-help">Chest fly · Drag to rotate · Pinch to zoom</span>
+  <div class="panel" id="phasePanel">
+    <h4><span id="exMeta">—</span></h4>
+    <div class="phase-name" id="phaseName">—</div>
+    <div class="phase-cue" id="phaseCue">—</div>
+    <div class="targets" id="targets"></div>
+    <div class="track" id="track"></div>
+  </div>
+
+  <div class="panel" id="metricPanel">
+    <h4>Live measurement <span class="mono" id="tPct" style="float:right;color:var(--ink-3)">0%</span></h4>
+    <div id="metrics"></div>
+    <div id="verdict">Form within tolerance</div>
+  </div>
+
+  <div id="faultBanner">Fault injected — <span id="faultName"></span></div>
+
+  <div id="legend">
+    <span><em style="background:#33D999"></em>bar path (actual)</span>
+    <span><em style="background:#4073FF"></em>target muscle</span>
+    <span>drag to orbit · scroll to zoom</span>
+  </div>
+</div>
+
+<div class="dock">
+  <div class="tl">
+    <span class="t mono" id="tNow">0.00s</span>
+    <input type="range" id="scrub" min="0" max="1000" value="0" aria-label="Timeline">
+    <span class="t mono r" id="tEnd">3.50s</span>
+  </div>
+  <div class="row">
+    <button class="play" id="playBtn" aria-label="Play or pause">❚❚</button>
+    <button class="iconbtn" id="resetBtn">Restart</button>
+    <div class="seg" id="spdTabs" role="group" aria-label="Speed"></div>
+    <div class="demo-tools"><button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">−</button><button id="resetView">Reset view</button></div><button class="faulttoggle" id="faultBtn" aria-pressed="false"><i></i><span id="faultLabel">Show common error</span></button>
+    <div class="spacer"></div>
+    <span class="hint" id="hint">One rig · poses are data · every number below is measured from the rig · figure is 165 cm</span>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   EchoLift Rig Studio
+   One skeleton. Exercises are keyframe data. Every HUD number is
+   measured from live bone world-positions — nothing is asserted.
+   ═══════════════════════════════════════════════════════════════ */
+
+const V3 = THREE.Vector3;
+const rad = d => d * Math.PI / 180;
+const deg = r => r * 180 / Math.PI;
+const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
+const smooth = p => p*p*(3-2*p);
+
+/* ── 1. SKELETON ───────────────────────────────────────────────
+   Defined in skeleton.js, shared with the solver so the two can never
+   drift apart. That file also carries RULES — the anatomical contract
+   every generated pose is validated against at build time.       */
+
+/* ── 2. EXERCISES AS DATA ──────────────────────────────────────
+   Adding an exercise = adding an object here. No new scene, no
+   new geometry, no new code path.
+   Angles in DEGREES. root = whole-body transform (lets the bench
+   press reuse the standing rig, lying down).                    */
+const P = window.POSES;
+const EX = {
+
+dumbbellPress:{"id": "dumbbellPress", "name": "Dumbbell Press", "family": "Horizontal press", "group": "chest", "slug": "dumbbell-press", "equipment": "dumbbells", "bench": true, "muscles": ["chest", "upperArmL", "upperArmR"], "targets": {"primary": ["Pectorals"], "secondary": ["Triceps", "Front deltoids"]}, "root": {"pos": [0.3, 0.58, 0], "rot": [0, 0, 90]}, "focus": [0.15, 0.8, 0], "cams": {"side": [0.02, 1.35, 3.15], "front": [3.15, 1.35, 0.02], "threeQ": [2.35, 1.75, 2.35], "top": [0.32, 3.3, 0.02]}, "defaultCam": "threeQ", "fault": null, "metrics": []},
+benchPress:{
+  name:'Bench Press', group:'chest', slug:'bench-press',
+  family:'Horizontal press', muscles:['chest','upperArmL','upperArmR'],
+  targets:{ primary:['Pectorals'], secondary:['Triceps','Front deltoids'] },
+  equipment:'barbell', bench:true,
+  cams:{ side:[0.02,1.35,3.15], front:[3.15,1.35,0.02], threeQ:[2.35,1.75,2.35], top:[0.32,3.3,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0.30,0.58,0], rot:[0,0,90] }, focus:[0.15,0.80,0],
+  fault:{ name:'Elbows flared to 90°', from:0.14,
+          delta:{ shoulderL:{rx:32}, shoulderR:{rx:-32} } },
+  metrics:['elbowAngle','elbowFlare','barJPath','wristStack'],
+},
+
+declineBenchPress:{
+  name:'Decline Bench Press', group:'chest', slug:'decline-bench-press',
+  family:'Horizontal press', muscles:['chest','upperArmL','upperArmR'],
+  targets:{ primary:['Pectorals'], secondary:['Triceps','Front deltoids'] },
+  equipment:'barbell', bench:false, machine:'decline',
+  cams:{ side:[0.02,1.15,3.6], front:[3.6,1.15,0.02], threeQ:[2.6,1.75,2.6], top:[0.32,3.6,0.02] },
+  defaultCam:'side',
+  /* the flat bench's quarter turn plus 22 degrees of decline — see ROOT in
+     solve.js, the two have to agree or the figure floats off the pad */
+  root:{ pos:[0.24,0.86,0], rot:[0,0,112] }, focus:[0.30,0.82,0],
+  fault:{ name:'Elbows flared to 90°', from:0.14,
+          delta:{ shoulderL:{rx:32}, shoulderR:{rx:-32} } },
+  metrics:['elbowAngle','elbowFlare','wristStack'],
+},
+
+inclineBenchPress:{
+  name:'Incline Bench Press', group:'chest', slug:'incline-bench-press',
+  family:'Horizontal press', muscles:['chest','upperArmL','upperArmR'],
+  targets:{ primary:['Pectorals (upper)'], secondary:['Front deltoids','Triceps'] },
+  equipment:'barbell', bench:false, machine:'incline',
+  cams:{ side:[0.02,1.05,3.9], front:[3.9,1.05,0.02], threeQ:[2.85,1.75,2.85], top:[0.32,3.9,0.02] },
+  defaultCam:'side',
+  /* the flat bench's quarter turn MINUS 32 degrees — see ROOT in solve.js */
+  root:{ pos:[0.16,0.50,0], rot:[0,0,58] }, focus:[0.02,0.72,0],
+  fault:{ name:'Elbows flared to 90°', from:0.14,
+          delta:{ shoulderL:{rx:32}, shoulderR:{rx:-32} } },
+  metrics:['elbowAngle','elbowFlare','wristStack'],
+},
+
+hipAdduction:{
+  name:'Inner Hip Adductor', group:'legs', slug:'inner-hip-adductor',
+  family:'Hip isolation', muscles:['quadL','quadR'],
+  targets:{ primary:['Adductors'], secondary:['Gluteus medius','Hamstrings'] },
+  equipment:'handles', bench:false, machine:'adductor',
+  cams:{ front:[3.20,1.05,0.02], threeQ:[2.45,1.30,2.45], side:[0.02,1.15,3.20], top:[0.30,3.3,0.02] },
+  defaultCam:'front',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.18,0.72,0],
+  fault:{ name:'Torso folded forward to help the knees close', from:0.12 },
+  metrics:['adductClose','kneeValgus','spineNeutral'],
+},
+
+hipAbduction:{
+  name:'Outer Hip Abductor', group:'legs', slug:'outer-hip-abductor',
+  family:'Hip isolation', muscles:['gluteL','gluteR'],
+  targets:{ primary:['Gluteus medius'], secondary:['Gluteus maximus','Tensor fasciae latae'] },
+  equipment:'handles', bench:false, machine:'abductor',
+  /* FRONT, and for once that is not a compromise: the whole movement is a
+     pair of knees opening, which from the side is two legs on top of each
+     other and from the front is the entire lift. */
+  cams:{ front:[3.20,1.05,0.02], threeQ:[2.45,1.30,2.45], side:[0.02,1.15,3.20], top:[0.30,3.3,0.02] },
+  defaultCam:'front',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.18,0.72,0],
+  fault:{ name:'Torso thrown back to help the hips open', from:0.12 },
+  metrics:['abductRange','kneeValgus','spineNeutral'],
+},
+
+lunge:{
+  name:'Lunge', group:'quads', slug:'lunge', family:'Dumbbell forward lunge',
+  muscles:['quadL','quadR','gluteL','gluteR'],
+  targets:{primary:['Quadriceps','Glutes'],secondary:['Hamstrings','Core']},
+  equipment:'dumbbells', bench:false,
+  cams:{threeQ:[3.2,1.65,3.5],side:[0.35,1.2,4.0],front:[4.2,1.25,0.02],top:[0.35,4.2,0.02]},
+  defaultCam:'threeQ',root:{pos:[0,0,0],rot:[0,0,0]},focus:[0.35,0.87,0],
+  metrics:['spineNeutral'],
+},
+
+frontRaise:{
+  name:'Front Raise', group:'shoulders', slug:'front-raise',
+  family:'Shoulder isolation', muscles:['deltL','deltR'],
+  targets:{ primary:['Front deltoids'], secondary:['Lateral deltoids','Upper chest'] },
+  equipment:'dumbbells', bench:false,
+  /* 3/4 for the same reason the lateral raise needs it, mirrored: the arc is
+     sagittal so the SIDE reads the movement, but the dumbbells lie ACROSS
+     the body and are two discs from there. 3/4 keeps both. */
+  cams:{ threeQ:[2.80,1.55,2.80], side:[0.02,1.15,3.55], front:[3.55,1.10,0.02], top:[0.20,3.7,0.02] },
+  defaultCam:'threeQ',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.18,0.95,0],
+  fault:{ name:'Rocked back to throw the weights up', from:0.10 },
+  metrics:['flyLock','raiseTop','torsoStill'],
+},
+
+straightArmPulldown:{
+  name:'Straight Arm Pulldown', group:'back', slug:'straight-arm-pulldown',
+  family:'Vertical pull', muscles:['latL','latR','upperBackL','upperBackR'],
+  targets:{ primary:['Lats'], secondary:['Teres major','Long head triceps'] },
+  equipment:'pushbar', bench:false, machine:'tower',
+  cams:{ side:[0.02,1.20,4.3], threeQ:[3.15,1.75,3.15], front:[4.3,1.20,0.02], top:[0.02,4.4,0.02] },
+  defaultCam:'side',
+  root:{ pos:[-0.55,0,0], rot:[0,0,0] }, focus:[-0.02,1.02,0],
+  fault:{ name:'Torso thrown down at the bar', from:0.12 },
+  metrics:['flyLock','sweepDown','torsoStill'],
+},
+
+facePull:{
+  name:'Face Pull', group:'shoulders', slug:'face-pull',
+  family:'Shoulder isolation',
+  muscles:['deltL','deltR','upperBackL','upperBackR'],
+  targets:{ primary:['Rear deltoids','Upper back'], secondary:['Rotator cuff','Traps'] },
+  equipment:'rope', bench:false, machine:'facepull',
+  cams:{ threeQ:[2.75,1.80,2.75], side:[0.02,1.42,3.60], front:[3.60,1.42,0.02], top:[0.40,3.8,0.02] },
+  /* 3/4: from the side the elbow flare is hidden behind the torso, and from
+     the front the rope runs straight at the camera. The lift is a diagonal
+     and it wants a diagonal. */
+  defaultCam:'threeQ',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.36,1.18,0],
+  fault:{ name:'Pulled low with a shrug — elbows drop below the hands', from:0.12 },
+  metrics:['elbowHigh','faceHeight','bladeSqueeze'],
+},
+
+legPress:{
+  name:'Leg Press', group:'legsQuad', slug:'leg-press',
+  family:'Squat pattern', muscles:['quadL','quadR','gluteL','gluteR'],
+  targets:{ primary:['Quadriceps','Glutes'], secondary:['Hamstrings','Adductors'] },
+  equipment:'handles', bench:false, machine:'legpress',
+  cams:{ side:[0.02,0.95,3.9], threeQ:[2.85,1.55,2.85], front:[3.9,0.95,0.02], top:[0.42,4.0,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.42,0.58,0],
+  fault:{ name:'Knees collapsing inward under the plate', from:0.10,
+          delta:{ hipL:{rx:-11}, hipR:{rx:11} } },
+  metrics:['pressLockout','kneeValgus','spineNeutral'],
+},
+
+lateralRaise:{
+  name:'Lateral Raise', group:'shoulders', slug:'lateral-raise',
+  family:'Shoulder isolation', muscles:['deltL','deltR'],
+  targets:{ primary:['Lateral deltoids'], secondary:['Front deltoids','Traps'] },
+  equipment:'dumbbells', bench:false,
+  /* FRONT is the default here, and it is the only lift in the library where
+     that is true: the arc opens sideways, so from the side both arms are
+     edge-on and the whole movement is a dot getting wider. */
+  cams:{ threeQ:[2.30,1.45,2.30], front:[3.05,1.15,0.02], side:[0.02,1.20,3.05], top:[0.02,3.3,0.02] },
+  /* 3/4, and it is a compromise made on purpose. The ARC reads best from
+     the front — that is where a sideways sweep is a sideways sweep — but
+     the dumbbells are held fore-and-aft, so head-on they are two circles
+     and the lifter appears to be holding nothing. 3/4 keeps most of the
+     arc and all of the implement. */
+  defaultCam:'threeQ',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.02,1.10,0],
+  fault:{ name:'Heaved above the shoulders with a body swing', from:0.10 },
+  metrics:['flyLock','raiseTop','elbowLead'],
+},
+
+dips:{
+  name:'Dips', group:'chest', slug:'dips',
+  family:'Vertical press', muscles:['chest','upperArmL','upperArmR'],
+  targets:{ primary:['Pectorals (lower)'], secondary:['Triceps','Front deltoids'] },
+  equipment:'dipbars', bench:false, machine:'dip',
+  cams:{ side:[0.02,1.05,3.6], front:[3.6,1.05,0.02], threeQ:[2.65,1.75,2.65], top:[0.02,3.7,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.22,0.88,0],
+  fault:{ name:'Elbows flared out to the sides', from:0.14,
+          delta:{ shoulderL:{rx:30}, shoulderR:{rx:-30} } },
+  metrics:['elbowAngle','dipDepth','elbowBack'],
+},
+
+hipThrust:{
+  name:'Hip Thrust', group:'legs', slug:'hip-thrust',
+  family:'Hip hinge', muscles:['gluteL','gluteR','hamL','hamR'],
+  targets:{ primary:['Glutes'], secondary:['Hamstrings','Quadriceps'] },
+  equipment:'barbell', bench:false, machine:'hipthrust',
+  cams:{ side:[0.02,0.80,2.85], front:[2.85,0.80,0.02], threeQ:[2.10,1.30,2.10], top:[0.02,3.0,0.02] },
+  /* 3/4, not side: a bar that lies ACROSS the body is a dot from the side.
+     This is the only lift in the library whose implement is invisible in
+     its own best profile view. */
+  defaultCam:'threeQ',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[-0.05,0.34,0],
+  fault:{ name:'Lower back arched at lockout', from:0.55,
+          delta:{ pelvis:{rz:-16}, neck:{rz:20} } },
+  metrics:['hipLockout','shinVertical','spineNeutral'],
+},
+
+squat:{
+  name:'Squat', group:'legsQuad', slug:'squat',
+  family:'Squat pattern', muscles:['quadL','quadR','gluteL','gluteR'],
+  targets:{ primary:['Quadriceps','Glutes'], secondary:['Adductors','Spinal erectors'] },
+  equipment:'barbell', bench:false,
+  cams:{ threeQ:[2.25,1.35,2.25], front:[3.3,1.15,0.02], side:[0.02,1.25,3.3], top:[0.05,3.7,0.02] },
+  defaultCam:'threeQ',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[-0.05,0.85,0],
+  fault:{ name:'Knee valgus — knees caving in', from:0.13,
+          delta:{ hipL:{rx:-34}, hipR:{rx:34}, kneeL:{rx:26}, kneeR:{rx:-26} } },
+  metrics:['squatDepth','kneeValgus','spineNeutral','torsoAngle'],
+},
+
+deadlift:{
+  name:'Deadlift', group:'back', slug:'deadlift',
+  family:'Hinge', muscles:['backL','backR','gluteL','gluteR','hamL','hamR'],
+  targets:{ primary:['Spinal erectors','Glutes','Hamstrings'], secondary:['Quadriceps','Lats','Forearms'] },
+  equipment:'barbell', bench:false,
+  cams:{ threeQ:[2.05,1.3,2.7], side:[0.02,1.0,3.5], front:[3.35,1.1,0.02], top:[0.05,3.7,0.02] },
+  defaultCam:'threeQ',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[-0.05,0.66,0],
+  fault:{ name:'Lumbar flexion — rounded back', from:0.02,
+          delta:{ pelvis:{rz:15}, spine:{rz:-27}, chest:{rz:-18}, neck:{rz:-10} } },
+  metrics:['spineNeutral','barOverFoot','torsoAngle','hipHeight'],
+},
+
+barbellRow:{
+  name:'Barbell Row', group:'back', slug:'barbell-row',
+  family:'Horizontal pull', muscles:['latL','latR','backL','backR','upperArmL','upperArmR'],
+  targets:{ primary:['Lats','Mid-back'], secondary:['Biceps','Rear deltoids'] },
+  equipment:'barbell', bench:false,
+  cams:{ side:[0.02,1.15,3.5], back:[-3.4,1.30,0.02], threeQ:[2.6,1.45,2.6],
+         front:[3.5,1.15,0.02], top:[0.05,3.8,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.02,0.92,0],
+  fault:{ name:'Heaving — the chest rises to meet the bar', from:0.12 },
+  metrics:['rowTorso','elbowTuck','spineNeutral','barToBody'],
+},
+
+romanianDeadlift:{
+  name:'Romanian Deadlift', group:'back', slug:'romanian-deadlift',
+  family:'Hinge', muscles:['hamL','hamR','gluteL','gluteR','backL','backR'],
+  targets:{ primary:['Hamstrings','Glutes'], secondary:['Spinal erectors','Lats'] },
+  equipment:'barbell', bench:false,
+  cams:{ side:[0.02,1.05,3.5], threeQ:[2.4,1.35,2.7], front:[3.5,1.10,0.02], top:[0.05,3.8,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[-0.06,0.80,0],
+  fault:{ name:'Rounding — the spine hinges instead of the hip', from:0.10 },
+  metrics:['spineNeutral','hipTravel','barOverFoot','torsoAngle'],
+},
+
+frontSquat:{
+  name:'Front Squat', group:'legsQuad', slug:'front-squat',
+  family:'Squat pattern', muscles:['quadL','quadR','gluteL','gluteR','deltL','deltR'],
+  targets:{ primary:['Quadriceps'], secondary:['Glutes','Upper back','Front deltoids'] },
+  equipment:'barbell', bench:false,
+  cams:{ side:[0.02,1.25,3.3], threeQ:[2.25,1.4,2.25], front:[3.3,1.15,0.02], top:[0.05,3.7,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[-0.02,0.90,0],
+  fault:{ name:'Elbows drop — the rack collapses', from:0.12 },
+  metrics:['elbowHeight','torsoAngle','squatDepth','spineNeutral'],
+},
+
+pullUp:{"id": "pullUp", "name": "Pull Up", "slug": "pull-up", "group": "back", "family": "Vertical pull", "equipment": "pullupbar", "bench": false, "muscles": ["latL", "latR", "upperArmL", "upperArmR"], "targets": {"primary": ["Lats"], "secondary": ["Biceps", "Upper back"]}, "root": {"pos": [0, 0, 0], "rot": [0, 0, 0]}, "focus": [0, 1.5, 0], "cams": {"threeQ": [3.2, 2, 3.6], "side": [0, 1.6, 4.5], "front": [4.5, 1.6, 0], "back": [-4.5, 1.6, 0]}, "defaultCam": "threeQ", "fault": null, "metrics": []},
+chinUp:{"id": "chinUp", "name": "Chin Up", "slug": "chin-up", "group": "back", "family": "Vertical pull", "equipment": "pullupbar", "bench": false, "muscles": ["latL", "latR", "upperArmL", "upperArmR"], "targets": {"primary": ["Lats"], "secondary": ["Biceps", "Upper back"]}, "root": {"pos": [0, 0, 0], "rot": [0, 0, 0]}, "focus": [0, 1.5, 0], "cams": {"threeQ": [3.2, 2, 3.6], "side": [0, 1.6, 4.5], "front": [4.5, 1.6, 0], "back": [-4.5, 1.6, 0]}, "defaultCam": "threeQ", "fault": null, "metrics": []},
+
+latPulldown:{
+  name:'Lat Pulldown', group:'back', slug:'lat-pulldown',
+  family:'Vertical pull', /* the lats pull, the biceps assist — and nothing else needs saying */
+  muscles:['latL','latR','upperArmL','upperArmR'],
+  targets:{ primary:['Lats'], secondary:['Biceps'] },
+  /* the first machine lift, and the first time the rig sits down */
+  equipment:'latbar', bench:false, machine:'pulldown',
+  cams:{ side:[0.02,1.35,4.35], back:[-3.7,1.28,0.02], threeQ:[3.1,1.75,3.2],
+         front:[4.3,1.30,0.02], top:[0.35,4.4,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.18,1.10,0],
+  fault:{ name:'Heaving back — it becomes a row', from:0.12 },
+  metrics:['barToChest','pullLean','elbowAngle','spineNeutral'],
+},
+
+seatedCableRow:{
+  name:'Seated Cable Row', group:'back', slug:'seated-cable-row',
+  family:'Horizontal pull',
+  /* the mid-back does the work, the lats and biceps assist */
+  muscles:['backL','backR','latL','latR','upperArmL','upperArmR'],
+  targets:{ primary:['Mid-back','Lats'], secondary:['Biceps','Rear delts'] },
+  /* second machine, and the first narrow neutral grip in the library */
+  equipment:'vhandle', bench:false, machine:'row',
+  /* no front camera: the machine's column sits between the lifter and it.
+     Side, 3/4 and back are the views a coach actually uses here anyway. */
+  cams:{ side:[0.34,1.16,4.30], threeQ:[3.25,1.55,3.05],
+         back:[-3.95,1.16,0.02], top:[0.42,4.30,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.30,0.74,0],
+  fault:{ name:'Rowing with the torso — the swing', from:0.10 },
+  metrics:['rowSwing','elbowTuck','handleToRibs','spineNeutral'],
+},
+
+chestFly:{
+  name:'Chest Fly', group:'chest', slug:'chest-fly',
+  family:'Chest isolation',
+  muscles:['chest','deltL','deltR'],
+  targets:{ primary:['Pectorals'], secondary:['Front deltoids'] },
+  /* the first single-joint lift, and the first with two separate handles
+     rather than two ends of one bar */
+  equipment:'pecarms', bench:false, machine:'pec',
+  cams:{ front:[3.95,1.20,0.02], threeQ:[2.95,1.60,2.85], top:[0.16,4.05,0.02],
+         side:[0.02,1.28,3.95] },
+  defaultCam:'front',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.16,0.95,0],
+  fault:{ name:'The elbow closes — it becomes a press', from:0.10 },
+  metrics:['flyLock','armLevel','handSpan','spineNeutral'],
+},
+
+legCurl:{
+  name:'Leg Curl', group:'legs', slug:'lying-leg-curl',
+  family:'Knee flexion',
+  muscles:['hamL','hamR','gluteL','gluteR','calfL','calfR'],
+  targets:{ primary:['Hamstrings'], secondary:['Glutes','Calves']},
+  /* the first prone lift: the root rolls a quarter turn the OTHER way from
+     the bench press, so anterior is world down */
+  equipment:'none', bench:false, machine:'legcurl',
+  cams:{ side:[0.02,1.05,3.30], threeQ:[2.35,1.35,2.35], top:[-0.10,3.40,0.02],
+         back:[-3.30,1.05,0.02] },
+  defaultCam:'side',
+  root:{ pos:[-0.10,0.72,0], rot:[0,0,-90] }, focus:[-0.34,0.72,0],
+  fault:{ name:'Hips lift off the pad', from:0.10 },
+  metrics:['curlRange','hipOffPad','heelToGlute','thighFlat'],
+},
+
+legExtension:{
+  name:'Leg Extension', group:'legsQuad', slug:'leg-extension',
+  family:'Knee extension',
+  muscles:['quadL','quadR'],
+  targets:{ primary:['Quadriceps'], secondary:['Hip flexors']},
+  equipment:'none', bench:false, machine:'legext', rollerSide:-1,
+  cams:{ side:[0.10,1.08,3.30], threeQ:[2.40,1.45,2.40], front:[3.40,1.05,0.02],
+         top:[0.30,3.50,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.30,0.74,0],
+  fault:{ name:'Heaving the torso back', from:0.10 },
+  metrics:['extendRange','seatBack','thighFlat','spineNeutral'],
+},
+
+dumbbellCurl:{"id": "dumbbellCurl", "name": "Dumbbell Curl", "family": "Elbow flexion", "group": "biceps", "slug": "dumbbell-curl", "equipment": "dumbbells", "bench": false, "muscles": ["upperArmL", "upperArmR", "foreL", "foreR"], "targets": {"primary": ["Biceps"], "secondary": ["Forearms"]}, "root": {"pos": [0, 0, 0], "rot": [0, 0, 0]}, "focus": [0.06, 1.15, 0], "cams": {"side": [0.02, 1.2, 3.3], "front": [3.3, 1.2, 0.02], "threeQ": [2.4, 1.45, 2.4], "top": [0.1, 3.6, 0.02]}, "defaultCam": "threeQ", "fault": null, "metrics": ["elbowPinned", "torsoStill"]},
+hammerCurl:{"id": "hammerCurl", "name": "Hammer Curl", "family": "Elbow flexion", "group": "biceps", "slug": "hammer-curl", "equipment": "dumbbells", "bench": false, "muscles": ["upperArmL", "upperArmR", "foreL", "foreR"], "targets": {"primary": ["Biceps", "Brachialis"], "secondary": ["Forearms"]}, "root": {"pos": [0, 0, 0], "rot": [0, 0, 0]}, "focus": [0.06, 1.15, 0], "cams": {"side": [0.02, 1.2, 3.3], "front": [3.3, 1.2, 0.02], "threeQ": [2.4, 1.45, 2.4], "top": [0.1, 3.6, 0.02]}, "defaultCam": "threeQ", "fault": null, "metrics": ["elbowPinned", "torsoStill"]},
+
+skullcrusher:{"id": "skullcrusher", "name": "Skullcrusher", "family": "Elbow extension", "group": "triceps", "slug": "skullcrusher", "equipment": "dumbbells", "bench": true, "muscles": ["upperArmL", "upperArmR"], "targets": {"primary": ["Triceps"], "secondary": ["Forearms"]}, "root": {"pos": [0.3, 0.58, 0], "rot": [0, 0, 90]}, "focus": [0.15, 0.8, 0], "cams": {"side": [0.02, 1.35, 3.15], "front": [3.15, 1.35, 0.02], "threeQ": [2.35, 1.75, 2.35], "top": [0.32, 3.3, 0.02]}, "defaultCam": "threeQ", "fault": null, "metrics": []},
+tricepExtension:{"id": "tricepExtension", "name": "Tricep Extension", "family": "Seated overhead extension", "group": "triceps", "slug": "tricep-extension", "equipment": "singleDumbbell", "bench": false, "muscles": ["upperArmL", "upperArmR"], "targets": {"primary": ["Triceps"], "secondary": ["Forearms"]}, "root": {"pos": [0, 0, 0], "rot": [0, 0, 0]}, "focus": [-0.05, 0.85, 0], "cams": {"side": [0.02, 1.35, 4.35], "back": [-3.7, 1.28, 0.02], "threeQ": [3.1, 1.75, 3.2], "front": [4.3, 1.3, 0.02], "top": [0.35, 4.4, 0.02]}, "defaultCam": "threeQ", "fault": null, "metrics": []},
+shrug:{"id": "shrug", "name": "Shrug", "family": "Shoulder elevation", "group": "traps", "slug": "shrug", "equipment": "dumbbells", "bench": false, "muscles": [], "targets": {"primary": ["Upper trapezius"], "secondary": ["Forearms"]}, "root": {"pos": [0, 0, 0], "rot": [0, 0, 0]}, "focus": [0.06, 1.15, 0], "cams": {"side": [0.02, 1.2, 3.3], "front": [3.3, 1.2, 0.02], "threeQ": [2.4, 1.45, 2.4], "top": [0.1, 3.6, 0.02]}, "defaultCam": "threeQ", "fault": null, "metrics": []},
+barbellCurl:{
+  name:'Barbell Curl', group:'biceps', slug:'barbell-curl',
+  family:'Elbow flexion',
+  muscles:['upperArmL','upperArmR','foreL','foreR'],
+  targets:{ primary:['Biceps'], secondary:['Forearms']},
+  equipment:'barbell', bench:false,
+  cams:{ side:[0.02,1.20,3.30], front:[3.30,1.20,0.02], threeQ:[2.40,1.45,2.40],
+         top:[0.10,3.60,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.06,1.15,0],
+  fault:{ name:'Swinging — torso back, elbows forward', from:0.10 },
+  metrics:['curlTop','elbowPinned','torsoStill','spineNeutral'],
+},
+
+rearDeltFly:{
+  name:'Rear Delt Fly', group:'shoulders', slug:'rear-delt-fly',
+  family:'Shoulder isolation',
+  muscles:['deltL','deltR','upperBackL','upperBackR'],
+  targets:{ primary:['Rear deltoids','Upper back'], secondary:['Mid-back']},
+  equipment:'pecarms', bench:false, machine:'rear',
+  /* seen from BEHIND: that is where the arms opening reads, and where a
+     coach stands. The overhead view is blocked by the machine's own frame. */
+  cams:{ back:[-3.85,1.20,0.02], threeQ:[-2.95,1.60,2.85], side:[0.02,1.24,3.95] },
+  defaultCam:'back',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.16,0.95,0],
+  fault:{ name:'Chest off the pad — the elbows fold', from:0.10 },
+  metrics:['flyLock','armLevel','chestPad','spineNeutral'],
+},
+
+tricepPushdown:{
+  name:'Triceps Pushdown', group:'triceps', slug:'triceps-pushdown',
+  family:'Elbow extension',
+  muscles:['upperArmL','upperArmR'],
+  targets:{ primary:['Triceps'], secondary:['Forearms']},
+  equipment:'pushbar', bench:false, machine:'tower',
+  /* framed to hold the lifter AND the tower: the cable angle is half of
+     what makes a pushdown legible */
+  cams:{ side:[0.30,1.30,3.70], threeQ:[2.55,1.55,2.55], front:[3.60,1.25,0.02],
+         back:[-3.40,1.25,0.02] },
+  defaultCam:'side',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0.32,1.22,0],
+  fault:{ name:'Leaning in — the elbows swing forward', from:0.10 },
+  metrics:['pushLockout','elbowPinned','torsoStill','spineNeutral'],
+},
+
+overheadPress:{
+  name:'Overhead Press', group:'shoulders', slug:'overhead-press',
+  family:'Vertical press', muscles:['deltL','deltR','upperArmL','upperArmR'],
+  targets:{ primary:['Deltoids'], secondary:['Triceps','Upper traps'] },
+  equipment:'barbell', bench:false,
+  cams:{ front:[3.3,1.5,0.02], side:[0.02,1.55,3.3], threeQ:[2.4,1.8,2.4], top:[0.05,3.9,0.02] },
+  defaultCam:'front',
+  root:{ pos:[0,0,0], rot:[0,0,0] }, focus:[0,1.15,0],
+  fault:{ name:'Excessive lumbar extension — lean-back', from:0.14,
+          delta:{ pelvis:{rz:20}, spine:{rz:10}, chest:{rz:6} } },
+  metrics:['barOverFoot','elbowAngle','torsoAngle','spineNeutral'],
+},
+};
+/* the solved path data is the source of truth for timing and poses */
+for (const [k,v] of Object.entries(EX)) Object.assign(v, P[k]);
+
+/* ── 3. METRIC DEFINITIONS ─────────────────────────────────────
+   Each reads live bone world-positions. Nothing here is a
+   hardcoded string — that was the whole complaint.              */
+/* "At the end of the rep" — the one condition every end-of-range check
+   needs, and the thing twelve of them were guessing at.
+
+   `S.d` is the lift's position in its OWN range: 0 at the start, 1 at the
+   far end, shipped per sample by solve.js from the lift's profile. Every
+   profile holds at 1 for a beat, so d >= 0.98 is that hold and nothing else.
+   These checks used to be gated on hand-picked slices of the CLOCK instead
+   — `S.t > 0.34 && S.t < 0.70` and so on — which is a guess at when a given
+   lift arrives at its finish, and the guess was wrong on twelve of the
+   fifteen. Every one of them flashed red partway through the rep for the
+   crime of being partway through the rep. */
+const AT_END = S => S.d >= 0.98;
+
+const METRICS = {
+  elbowAngle:{
+    label:'Elbow angle', sub:'shoulder–elbow–wrist', unit:'°',
+    read:P => angle3(P.shoulderR, P.elbowR, P.wristR),
+    ok:v => v >= 0, fmt:v => Math.round(v)+'°',
+  },
+  rowTorso:{
+    label:'Torso hold', sub:'stays hinged between 45° and 75°', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.chest, P.hips);
+      return deg(Math.atan2(u.x, Math.max(1e-6, u.y)));
+    },
+    /* the whole point of a row is that this number does NOT move. Heaving
+       the chest up to meet the bar is the fault, and it shows here. */
+    ok:v => v >= 45 && v <= 75, fmt:v => Math.round(v)+'°',
+  },
+  hipTravel:{
+    label:'Hip travel', sub:'hips go back, not down — over 12 cm', unit:'cm',
+    read:P => -P.hips.x * 100,
+    /* a hinge is defined by the hips moving BEHIND the feet. Squatting the
+       weight down instead gives a small number here even though the bar
+       ends up in the same place. */
+    ok:(v,S) => !AT_END(S) || v >= 12, fmt:v => Math.round(v)+' cm',
+  },
+  elbowHeight:{
+    label:'Elbow carry', sub:'upper arm above -45° from horizontal', unit:'°',
+    read:P => {
+      const d = new V3().subVectors(P.elbowR, P.shoulderR);
+      return deg(Math.asin(clamp(d.y / (d.length() || 1e-6), -1, 1)));
+    },
+    /* Measured as the upper arm's ANGLE, not the elbow's height in cm. The
+       rack rotates with the torso, so a raw height reading drops 10cm just
+       from leaning — the angle isolates "did the elbows drop" from "did the
+       lifter lean". Good reps run -15° to -36°; letting the rack collapse
+       takes it past -60°. */
+    ok:v => v >= -45, fmt:v => (v>=0?'+':'') + Math.round(v)+'°',
+  },
+  barToChest:{
+    label:'Bar to chest', sub:'bar to sternum at the finish, under 17 cm', unit:'cm',
+    read:P => {
+      /* measure the BAR, not the grips: on a wide grip the hands are out on
+         the bends and the centreline that meets the chest is 8cm higher */
+      const mid = new V3().addVectors(P.handL, P.handR).multiplyScalar(0.5);
+      mid.y += GRIP_DROP;
+      /* upper sternum: the chest BONE sits mid-ribcage, and a pulldown
+         finishes at the collarbone, not the solar plexus */
+      const sternum = new V3().lerpVectors(P.chest, P.neck, 0.78);
+      return mid.distanceTo(sternum) * 100;
+    },
+    /* only meaningful at the bottom — at the top the bar is supposed to be
+       an arm's length away */
+    /* the reference is the sternum BONE and the ribcage capsule is 13cm,
+       so anything under ~17cm is the bar on the chest */
+    ok:(v,S) => !AT_END(S) || v <= 17, fmt:v => Math.round(v)+' cm',
+  },
+  chestPad:{
+    label:'Chest on the pad', sub:'torso stays 2-20° forward of vertical', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.chest, P.hips);
+      return deg(Math.atan2(u.x, Math.max(1e-6, u.y)));
+    },
+    /* the pad is the whole point of the machine: it takes the torso out of
+       the movement. Pulling off it means the back is swinging the weight. */
+    ok:v => v >= 2 && v <= 20, fmt:v => (v>=0?'+':'') + Math.round(v)+'°',
+  },
+  pushLockout:{
+    label:'Lockout', sub:'within 25° of straight at the bottom', unit:'°',
+    read:P => 180 - angle3(P.shoulderR, P.elbowR, P.wristR),
+    ok:(v,S) => !AT_END(S) || v <= 25, fmt:v => Math.round(v)+'°',
+  },
+  curlTop:{
+    label:'Curl range', sub:'past 115° of elbow flexion at the top', unit:'°',
+    read:P => 180 - angle3(P.shoulderR, P.elbowR, P.wristR),
+    ok:(v,S) => !AT_END(S) || v >= 115, fmt:v => Math.round(v)+'°',
+  },
+  elbowPinned:{
+    label:'Elbow pinned', sub:'elbow stays within 10 cm ahead of the shoulder', unit:'cm',
+    read:P => (P.elbowR.x - P.shoulderR.x) * 100,
+    /* The curl is ONE hinge. The moment the elbow travels forward the front
+       delt is lifting the bar and the biceps are along for the ride — which
+       is what a swung curl actually is. */
+    ok:v => v <= 10, fmt:v => (v>=0?'+':'') + Math.round(v)+' cm',
+  },
+  torsoStill:{
+    label:'Torso still', sub:'within 12° of vertical', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.chest, P.hips);
+      return Math.abs(deg(Math.atan2(u.x, Math.max(1e-6, u.y))));
+    },
+    ok:v => v <= 12, fmt:v => Math.round(v)+'°',
+  },
+  extendRange:{
+    label:'Knee extension', sub:'within 12° of straight at the top', unit:'°',
+    read:P => 180 - angle3(P.hipR, P.kneeR, P.ankleR),
+    ok:(v,S) => !AT_END(S) || v <= 12, fmt:v => Math.round(v)+'°',
+  },
+  seatBack:{
+    label:'Back on the pad', sub:'torso stays within 24° of vertical', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.chest, P.hips);
+      return deg(Math.atan2(-u.x, Math.max(1e-6, u.y)));
+    },
+    /* the only way past a load the quads cannot lift is to throw the torso
+       backwards, which turns a knee movement into a whole-body swing */
+    ok:v => v <= 24, fmt:v => Math.round(v)+'°',
+  },
+  curlRange:{
+    label:'Knee flexion', sub:'past 95° at the top', unit:'°',
+    read:P => 180 - angle3(P.hipR, P.kneeR, P.ankleR),
+    ok:(v,S) => !AT_END(S) || v >= 95, fmt:v => Math.round(v)+'°',
+  },
+  hipOffPad:{
+    label:'Hips on the pad', sub:'hip no more than 4 cm above the knee', unit:'cm',
+    read:P => (P.hips.y - P.kneeR.y) * 100,
+    /* Once the hamstrings run out, the only way left to move the roller is
+       to lift the pelvis and throw it. Both ends of the thigh are on the
+       same pad, so the moment the hip climbs above the knee it is off it. */
+    ok:v => v <= 4, fmt:v => (v>=0?'+':'') + Math.round(v)+' cm',
+  },
+  heelToGlute:{
+    label:'Heel to glute', sub:'under 56 cm at the top', unit:'cm',
+    read:P => P.ankleR.distanceTo(P.hipR) * 100,
+    ok:(v,S) => !AT_END(S) || v <= 56, fmt:v => Math.round(v)+' cm',
+  },
+  thighFlat:{
+    label:'Thigh flat', sub:'thigh within 8° of the pad', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.kneeR, P.hipR);
+      return deg(Math.asin(clamp(Math.abs(u.y) / (u.length() || 1e-6), 0, 1)));
+    },
+    /* the thigh is furniture in this lift: if it moves, the hip did the work */
+    ok:v => v <= 8, fmt:v => Math.round(v)+'°',
+  },
+  flyLock:{
+    label:'Elbow lock', sub:'stays between 120° and 170° all rep', unit:'°',
+    read:P => angle3(P.shoulderR, P.elbowR, P.wristR),
+    /* A fly is ONE hinge, at the shoulder. The elbow is set at the start and
+       held — the instant it starts closing, the triceps are doing the work
+       and it is a press with a longer lever. This is the whole lift in one
+       number. */
+    ok:v => v >= 120 && v <= 170, fmt:v => Math.round(v)+'°',
+  },
+  armLevel:{
+    label:'Arm level', sub:'hand within 8 cm of shoulder height', unit:'cm',
+    read:P => (P.handR.y - P.shoulderR.y) * 100,
+    /* the arc is horizontal. Hands sinking below the shoulders means the
+       load has been handed to the front delts. */
+    ok:v => Math.abs(v) <= 8, fmt:v => (v>=0?'+':'') + Math.round(v)+' cm',
+  },
+  handSpan:{
+    label:'Hand span', sub:'handles meet at the finish, under 30 cm', unit:'cm',
+    read:P => Math.abs(P.handR.z - P.handL.z) * 100,
+    ok:(v,S) => !AT_END(S) || v <= 30, fmt:v => Math.round(v)+' cm',
+  },
+  elbowTuck:{
+    label:'Elbow tuck', sub:'upper arm within 25° of the sagittal plane', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.elbowR, P.shoulderR);
+      const lateral = Math.abs(P.elbowR.z - P.shoulderR.z);
+      return deg(Math.asin(clamp(lateral / (u.length() || 1e-6), 0, 1)));
+    },
+    /* what a coach means by "tuck your elbows" — how far the upper arm
+       swings OUT to the side, not its angle from the torso. A row drives
+       the elbow back past the ribs; letting it wing out turns the lift into
+       a wide upright row and hands the work to the rear delts.
+
+       45° was far too loose to be a check: the row peaked at 29° and read
+       green the whole way while the elbows visibly winged. The rule engine
+       holds this lift to 22° now, and the studio should not be reporting a
+       looser standard than the build gate. */
+    ok:v => v <= 25, fmt:v => Math.round(v)+'°',
+  },
+  rowSwing:{
+    label:'Torso swing', sub:'stays between 12° back and 28° forward', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.chest, P.hips);
+      return deg(Math.atan2(u.x, Math.max(1e-6, u.y)));
+    },
+    /* A seated row is allowed to move — about 20° forward at the stretch,
+       upright at the finish. What it is not allowed to do is keep going:
+       past 12° behind vertical the lower back is doing the pulling and the
+       back is not. Positive = leaning forward. */
+    ok:v => v >= -12 && v <= 28, fmt:v => (v>=0?'+':'') + Math.round(v)+'°',
+  },
+  barToBody:{
+    label:'Bar to body', sub:'bar reaches the lower ribs, under 22 cm', unit:'cm',
+    read:P => {
+      const mid = new V3().addVectors(P.handL, P.handR).multiplyScalar(0.5);
+      const ribs = new V3().lerpVectors(P.hips, P.chest, 0.85);
+      return mid.distanceTo(ribs) * 100;
+    },
+    /* This replaced `barOverFoot` on the barbell row, which was flashing red
+       for 14 samples of every rep and was right to, in the sense that the
+       number really was 14cm — and wrong, because that is not a fault. The
+       lifter is hinged 48°, so the shoulders are 14cm in front of the
+       mid-foot and a hanging bar is 1mm under the shoulder. It could not be
+       anywhere else. "Bar over mid-foot" is a balance cue for lifts done
+       STANDING; asking it of a hinge is asking a question that has no good
+       answer. What a row is actually judged on is whether the bar reaches
+       the body, so that is what it reads now. */
+    ok:(v,S) => !AT_END(S) || v <= 22, fmt:v => Math.round(v)+' cm',
+  },
+  handleToRibs:{
+    label:'Handle to ribs', sub:'handle reaches the lower ribs, under 24 cm', unit:'cm',
+    read:P => {
+      const mid = new V3().addVectors(P.handL, P.handR).multiplyScalar(0.5);
+      /* the lower ribs, measured ON the torso — so leaning away from the
+         handle counts as not finishing the pull, which is exactly what
+         the swing is doing */
+      const ribs = new V3().lerpVectors(P.hips, P.chest, 0.85);
+      return mid.distanceTo(ribs) * 100;
+    },
+    ok:(v,S) => !AT_END(S) || v <= 24, fmt:v => Math.round(v)+' cm',
+  },
+  pullLean:{
+    label:'Lean back', sub:'torso from vertical, under 20°', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.chest, P.hips);
+      return deg(Math.atan2(-u.x, Math.max(1e-6, u.y)));
+    },
+    /* a pulldown leans back a little on purpose. Past about 20° the lats
+       stop being the prime mover and it turns into a seated row. */
+    ok:v => v <= 20, fmt:v => Math.round(v)+'°',
+  },
+  elbowFlare:{
+    label:'Elbow flare', sub:'abduction out of the sagittal plane, under 78°', unit:'°',
+    read:P => {
+      /* what a coach means by flare is how far the elbow is out to the SIDE,
+         not its total angle from the torso axis — at bench lockout the arm is
+         legitimately perpendicular to a supine torso. */
+      const u = new V3().subVectors(P.elbowR, P.shoulderR);
+      const lateral = Math.abs(P.elbowR.z - P.shoulderR.z);
+      return deg(Math.asin(clamp(lateral / (u.length() || 1e-6), 0, 1)));
+    },
+    ok:v => v <= 78, fmt:v => Math.round(v)+'°',
+  },
+  wristStack:{
+    label:'Wrist stack', sub:'forearm vertical at the bottom', unit:'cm',
+    read:P => Math.hypot(P.wristR.x - P.elbowR.x, P.wristR.z - P.elbowR.z) * 100,
+    /* only meaningful where the forearm is supposed to be vertical — at
+       lockout a wide grip legitimately angles the forearm outward */
+    ok:(v,S) => !AT_END(S) || v <= 9, fmt:v => v.toFixed(1)+' cm',
+  },
+  barOverFoot:{
+    label:'Bar over mid-foot', sub:'horizontal offset from the ankle', unit:'cm',
+    read:(P,S) => (S.bar.x - ((P.ankleR.x + P.ankleL.x)/2 + 0.045)) * 100,
+    ok:(v,S) => S.t < 0.30 || Math.abs(v) <= 11, fmt:v => (v>=0?'+':'')+v.toFixed(1)+' cm',
+  },
+  barJPath:{
+    label:'Bar path', sub:'a bench press bar travels a shallow J, 2\u201310 cm', unit:'cm',
+    read:(P,S) => Math.abs(S.bar.x - S.barStartX) * 100,
+    ok:(v,S) => !AT_END(S) || (v >= 2 && v <= 10),
+    fmt:v => v.toFixed(1)+' cm',
+  },
+  barDrift:{
+    label:'Bar drift', sub:'horizontal travel from start', unit:'cm',
+    read:(P,S) => (S.bar.x - S.barStartX) * 100,
+    ok:v => Math.abs(v) <= 9, fmt:v => (v>=0?'+':'')+v.toFixed(1)+' cm',
+  },
+  squatDepth:{
+    label:'Depth', sub:'hip crease vs. knee', unit:'cm',
+    read:P => (P.hips.y - P.kneeR.y) * 100,
+    /* depth only means anything at the bottom of the rep */
+    ok:(v,S) => !AT_END(S) || v <= 2,
+    fmt:v => (v>=0?'+':'')+v.toFixed(1)+' cm',
+  },
+  kneeValgus:{
+    label:'Knee tracking', sub:'knee vs. foot, seen from the front', unit:'cm',
+    /* measured against the FOOT, not the hip-ankle line — the line angles
+       outward with a wide stance, so a knee that is visibly collapsing can
+       still read as neutral against it. From the front, foot is the datum. */
+    read:P => (P.ankleR.z - P.kneeR.z) * 100,
+    ok:(v,S) => S.d < 0.15 || v <= 2,
+    fmt:v => (v > 0 ? 'in ' : 'out ') + Math.abs(v).toFixed(1) + ' cm',
+  },
+  spineNeutral:{
+    label:'Spine', sub:'hips–spine–chest, 180° = neutral', unit:'°',
+    read:P => angle3(P.hips, P.spine, P.chest),
+    ok:v => v >= 158, fmt:v => Math.round(v)+'°',
+  },
+  torsoAngle:{
+    label:'Torso angle', sub:'from vertical', unit:'°',
+    read:P => {
+      const t = new V3().subVectors(P.chest, P.hips).normalize();
+      return deg(Math.acos(clamp(t.dot(new V3(0,1,0)), -1, 1)));
+    },
+    ok:v => v >= 0, fmt:v => Math.round(v)+'°',
+  },
+  hipHeight:{
+    label:'Hip height', sub:'above the floor', unit:'cm',
+    read:P => P.hips.y * 100,
+    ok:v => v >= 0, fmt:v => Math.round(v)+' cm',
+  },
+  /* Where the arc has to FINISH. A straight-arm pulldown that stops with
+     the bar still out in front never reached the lats' shortened position. */
+  sweepDown:{
+    label:'Sweep', sub:'arm within 20° of vertical at the finish', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.handR, P.shoulderR);
+      return deg(Math.acos(clamp(-u.y / (u.length() || 1e-6), -1, 1)));
+    },
+    ok:(v,S) => !AT_END(S) || v <= 20, fmt:v => Math.round(v)+'°',
+  },
+  /* The adductor's mirror of it: this machine is judged at the CLOSED end,
+     not the open one. Stopping short is the whole failure mode. */
+  adductClose:{
+    label:'Squeeze', sub:'knees within 14° of together at the finish', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.kneeR, P.hipR);
+      return deg(Math.asin(clamp(Math.abs(u.z) / (u.length() || 1e-6), 0, 1)));
+    },
+    ok:(v,S) => !AT_END(S) || v <= 14, fmt:v => Math.round(v)+'°',
+  },
+  /* The whole lift in one number: how far the thigh has swung out of the
+     sagittal plane. Everything else on this machine is furniture. */
+  abductRange:{
+    label:'Abduction', sub:'thigh out of the sagittal plane, over 30° at the finish', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.kneeR, P.hipR);
+      return deg(Math.asin(clamp(Math.abs(u.z) / (u.length() || 1e-6), 0, 1)));
+    },
+    ok:(v,S) => !AT_END(S) || v >= 30, fmt:v => Math.round(v)+'°',
+  },
+  /* Three numbers for three things that all have to happen at once, and a
+     face pull done wrong loses exactly one of them. */
+  elbowHigh:{
+    label:'Elbow height', sub:'elbow level with the shoulder at the finish', unit:'cm',
+    /* Measured against the SHOULDER, not the hand. The hand finishes at the
+       ear and the elbow does not — the forearm points up and in, so an
+       elbow "above the hand" is not what this lift looks like. Drop the
+       elbow below the shoulder, though, and it stops being a face pull:
+       the lat takes it and the rear delt does nothing. */
+    read:P => (P.elbowR.y - P.shoulderR.y) * 100,
+    ok:(v,S) => !AT_END(S) || v >= -4,
+    fmt:v => (v >= 0 ? '+' : '') + v.toFixed(1) + ' cm',
+  },
+  faceHeight:{
+    label:'Pull height', sub:'hands level with the face at the finish', unit:'cm',
+    read:P => (P.handR.y - P.shoulderR.y) * 100,
+    ok:(v,S) => !AT_END(S) || v >= 8,
+    fmt:v => (v >= 0 ? '+' : '') + Math.round(v) + ' cm',
+  },
+  bladeSqueeze:{
+    label:'Blades', sub:'shoulder joints travel back, over 4 cm', unit:'cm',
+    /* scapular retraction, measured rather than asserted: the joint's own
+       distance behind the mid-line of the ribcage. It is the half of the
+       lift a still frame cannot show. */
+    read:P => (P.chest.x - (P.shoulderR.x + P.shoulderL.x) / 2) * 100,
+    /* 4cm, and that is not a soft threshold — it is what the clavicle can
+       actually give. The joint swings on a 13.5cm bone, so a hard squeeze
+       moves it about 4cm on a 165cm figure and no cue moves it further. */
+    ok:(v,S) => !AT_END(S) || v >= 4, fmt:v => v.toFixed(1) + ' cm',
+  },
+  /* The one thing a leg press can get badly wrong at the finish: snapping
+     the knee straight with a stack on it. Extended is the goal, locked is
+     the injury, and 25 degrees of bend is the difference. */
+  pressLockout:{
+    label:'Knee at lockout', sub:'extended but not locked — 148° to 175°', unit:'°',
+    read:P => angle3(P.hipR, P.kneeR, P.ankleR),
+    ok:(v,S) => !AT_END(S) || (v >= 148 && v <= 175), fmt:v => Math.round(v)+'°',
+  },
+  /* A lateral raise is ONE hinge, like a fly — flyLock already says the
+     elbow may not change. These two say where the arc has to STOP. */
+  raiseTop:{
+    label:'Raise height', sub:'hand level with the shoulder at the top', unit:'cm',
+    read:P => (P.handR.y - P.shoulderR.y) * 100,
+    /* above the shoulder is not more range, it is the traps taking over —
+       which is exactly what the fault variant shows */
+    ok:(v,S) => !AT_END(S) || Math.abs(v) <= 6,
+    fmt:v => (v >= 0 ? '+' : '') + Math.round(v) + ' cm',
+  },
+  elbowLead:{
+    label:'Elbow lead', sub:'elbow at or above the hand at the top', unit:'cm',
+    read:P => (P.elbowR.y - P.handR.y) * 100,
+    ok:(v,S) => !AT_END(S) || v >= -2,
+    fmt:v => (v >= 0 ? '+' : '') + v.toFixed(1) + ' cm',
+  },
+  /* A dip's depth is not a distance, it is a RELATIONSHIP: the shoulder
+     has to finish below the elbow. Measured in cm because that is what
+     the difference between a full rep and a half rep looks like. */
+  dipDepth:{
+    label:'Depth', sub:'shoulder below the elbow at the bottom', unit:'cm',
+    read:P => (P.elbowR.y - P.shoulderR.y) * 100,
+    ok:(v,S) => !AT_END(S) || v >= 0,
+    fmt:v => (v >= 0 ? '+' : '') + v.toFixed(1) + ' cm',
+  },
+  /* and the direction that separates a dip from an upright press: the
+     elbow travels BEHIND the shoulder, not out beside it. */
+  elbowBack:{
+    label:'Elbow path', sub:'elbow behind the shoulder at the bottom', unit:'cm',
+    read:P => (P.shoulderR.x - P.elbowR.x) * 100,
+    ok:(v,S) => !AT_END(S) || v >= 12, fmt:v => Math.round(v)+' cm',
+  },
+  /* the whole point of a hip thrust: the hip, not the knee, finishes the
+     rep. Under 168° at the top and the glutes never shortened. */
+  hipLockout:{
+    label:'Hip extension', sub:'trunk–hip–thigh, over 158° at the top', unit:'°',
+    read:P => angle3(P.chest, P.hipR, P.kneeR),
+    /* 158, not 180: the chest joint is on the midline and the hip and
+       knee are 9.5cm out, so a dead-straight hip measures 166 here. */
+    ok:(v,S) => !AT_END(S) || v >= 158, fmt:v => Math.round(v)+'°',
+  },
+  /* and the foot placement that makes it one: shins vertical at lockout.
+     Feet too close and it becomes a quad press; too far and a hamstring
+     bridge. Measured, not asserted. */
+  shinVertical:{
+    label:'Shin', sub:'vertical at lockout, under 12°', unit:'°',
+    read:P => {
+      const u = new V3().subVectors(P.kneeR, P.ankleR).normalize();
+      return deg(Math.acos(clamp(Math.abs(u.y), -1, 1)));
+    },
+    ok:(v,S) => !AT_END(S) || v <= 12, fmt:v => Math.round(v)+'°',
+  },
+};
+function angle3(a,b,c){
+  const u = new V3().subVectors(a,b).normalize();
+  const v = new V3().subVectors(c,b).normalize();
+  return deg(Math.acos(clamp(u.dot(v), -1, 1)));
+}
+
+/* muscle-group gradient — lifted from Theme.muscleGroupGradient */
+const GRAD = {
+  chest:[0xFF9900,0xFF4D00], back:[0x3399FF,0x0066E6],
+  legsQuad:[0x33E680,0x00B34D], shoulders:[0xB34DFF,0x801AE6],
+  biceps:[0xFF6680,0xE6334D], triceps:[0xFF4D66,0xE61A33],
+  core:[0xFFCC00,0xE69900], traps:[0x4D80FF,0x1A4DE6],
+  /* the posterior chain gets its own colour — the quads already own green */
+  legs:[0x2ED9C4,0x0E9E92],
+};
+
+/* ── 4. SCENE ──────────────────────────────────────────────────
+   Neutral three-point light. No coloured rim, no fog. An anatomy
+   reference has to read as shape, not as mood.                  */
+const stage = document.getElementById('stage');
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(36, 1, 0.1, 100);
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.outputEncoding = THREE.sRGBEncoding;
+stage.appendChild(renderer.domElement);
+
+const controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true; controls.dampingFactor = 0.08;
+controls.minDistance = 1.2; controls.maxDistance = 9;
+controls.maxPolarAngle = Math.PI/2 - 0.03;
+controls.target.set(0, 0.95, 0);
+
+const key  = new THREE.DirectionalLight(0xffffff, 0.72);
+key.position.set(3.5, 6, 4.5); key.castShadow = true;
+key.shadow.mapSize.set(2048,2048); key.shadow.bias = -0.0004;
+key.shadow.camera.left=-3; key.shadow.camera.right=3;
+key.shadow.camera.top=3; key.shadow.camera.bottom=-3;
+scene.add(key);
+const fill = new THREE.DirectionalLight(0xffffff, 0.30); fill.position.set(-4,2.5,3); scene.add(fill);
+const back = new THREE.DirectionalLight(0xffffff, 0.22); back.position.set(0,3,-5); scene.add(back);
+const hemi = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.55); scene.add(hemi);
+
+const floorMat = new THREE.MeshStandardMaterial({roughness:0.95, metalness:0});
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(40,40), floorMat);
+floor.rotation.x = -Math.PI/2; floor.receiveShadow = true; scene.add(floor);
+const gridHelper = new THREE.GridHelper(12, 24);
+gridHelper.position.y = 0.002; scene.add(gridHelper);
+
+/* ── 5. MATERIALS & MESH HELPERS ───────────────────────────────*/
+const MANNEQUIN = 0x9AA2AF;
+const bodyMat  = new THREE.MeshStandardMaterial({color:MANNEQUIN, roughness:0.62, metalness:0.02});
+const jointMat = new THREE.MeshStandardMaterial({color:0x8891A0, roughness:0.62, metalness:0.02});
+const steelMat = new THREE.MeshStandardMaterial({color:0x6E7480, roughness:0.30, metalness:0.85});
+const plateMat = new THREE.MeshStandardMaterial({color:0x4A4F59, roughness:0.55, metalness:0.10,
+  transparent:true, opacity:0.20, depthWrite:false});   // see the lifter through the plates
+const benchMat = new THREE.MeshStandardMaterial({color:0x555B66, roughness:0.55, metalness:0.05});
+
+function capsuleGeom(r, len, seg=10){
+  const half = len/2, pts=[];
+  for(let i=0;i<=seg;i++){ const a=-Math.PI/2+(Math.PI/2)*(i/seg); pts.push(new THREE.Vector2(Math.cos(a)*r, -half+Math.sin(a)*r)); }
+  for(let i=0;i<=seg;i++){ const a=(Math.PI/2)*(i/seg);            pts.push(new THREE.Vector2(Math.cos(a)*r,  half+Math.sin(a)*r)); }
+  return new THREE.LatheGeometry(pts, 22);
+}
+/* A capsule that TAPERS. capsuleGeom() gives both ends the same radius, and
+   a plain CylinderGeometry gives you flat caps and a hard rim — which is
+   exactly what stuck out of the lats: every other part of this body is a
+   lathe with rounded ends, so the one cylinder read as a loose sheet. */
+function spindleGeom(rBot, rTop, len, seg=10){
+  const half = len/2, pts = [];
+  for (let i=0;i<=seg;i++){ const a = -Math.PI/2 + (Math.PI/2)*(i/seg);
+    pts.push(new THREE.Vector2(Math.cos(a)*rBot, -half + Math.sin(a)*rBot)); }
+  for (let i=0;i<=seg;i++){ const a = (Math.PI/2)*(i/seg);
+    pts.push(new THREE.Vector2(Math.cos(a)*rTop,  half + Math.sin(a)*rTop)); }
+  return new THREE.LatheGeometry(pts, 24);
+}
+
+/* a limb mesh hanging from its bone down to the child joint */
+function limb(bone, length, rTop, rBot, mat){
+  const g = capsuleGeom((rTop+rBot)/2, Math.max(0.001, length - (rTop+rBot)/2), 8);
+  const m = new THREE.Mesh(g, mat || bodyMat);
+  m.position.y = -length/2;
+  m.castShadow = true; m.receiveShadow = true;
+  bone.add(m);
+  return m;
+}
+function blob(bone, rx, ry, rz, pos, mat){
+  const g = new THREE.SphereGeometry(1, 22, 18); g.scale(rx, ry, rz);
+  const m = new THREE.Mesh(g, mat || bodyMat);
+  m.position.set(pos[0], pos[1], pos[2]);
+  m.castShadow = true; m.receiveShadow = true;
+  bone.add(m);
+  return m;
+}
+
+/* ── 6. BUILD THE RIG ──────────────────────────────────────────*/
+const root = new THREE.Group(); scene.add(root);
+const B = {};
+for (const [n, d] of Object.entries(SKELETON)){
+  const o = new THREE.Object3D();
+  o.position.fromArray(d.offset);
+  (d.parent ? B[d.parent] : root).add(o);
+  B[n] = o;
+}
+/* named mesh groups so we can tint the working muscle */
+const M = {};
+M.quadL  = limb(B.hipL, 0.44, 0.085, 0.068);
+M.quadR  = limb(B.hipR, 0.44, 0.085, 0.068);
+M.shinL  = limb(B.kneeL, 0.42, 0.062, 0.040);
+M.shinR  = limb(B.kneeR, 0.42, 0.062, 0.040);
+M.gluteL = blob(B.hips, 0.095, 0.085, 0.085, [-0.03,-0.03,-0.085]);
+M.gluteR = blob(B.hips, 0.095, 0.085, 0.085, [-0.03,-0.03, 0.085]);
+blob(B.hips, 0.112, 0.095, 0.122, [0,-0.01,0]);
+
+/* the waist: narrowed, so the shoulders and lats have something to
+   taper down TO. This was 0.145 — as wide as the chest. */
+M.backL = blob(B.spine, 0.100, 0.115, 0.112, [-0.005,0.06,0]);
+M.backR = M.backL;
+M.chest = blob(B.chest, 0.122, 0.118, 0.152, [0.005,0.058,0]);
+/* Lats, as their own meshes — and as the shape that makes the V.
+
+   An ellipsoid was wrong for this. A lat is widest just under the armpit
+   and tapers to almost nothing at the waist, so a blob of constant girth
+   put the width in the middle of the trunk and read as barrel-chested.
+   This is a TAPERED sheet: broad at the top, narrow at the bottom,
+   flattened front-to-back, and tilted so the top swings out under the
+   arm. Widest point of the back, and it gets there high up. */
+function latMesh(side){                       // -1 = left, +1 = right
+  const g = spindleGeom(0.020, 0.062, 0.215);  // narrow at the waist, broad up top
+  g.scale(0.50, 1, 1);                         // a sheet, not a sausage
+  const m = new THREE.Mesh(g, bodyMat);
+  m.position.set(-0.044, -0.040, side * 0.088);
+  m.rotation.x = side * 0.26;                  // top swings out to the armpit
+  m.castShadow = m.receiveShadow = true;
+  B.chest.add(m);
+  return m;
+}
+M.latL = latMesh(-1);
+M.latR = latMesh( 1);
+
+/* Hamstrings and calves as their own meshes. The thigh and shin have always
+   been single limb capsules, which is fine until a lift targets the BACK of
+   one: tinting `quad` for a leg curl would light up the front of the thigh,
+   which is the muscle that is resting. Same reasoning that split the lats
+   out of the back. Tapered sheets, flattened front-to-back, sitting on the
+   posterior side (local -X is behind the leg). */
+function backOfLimb(bone, rBot, rTop, len, x, y, flat){
+  const g = spindleGeom(rBot, rTop, len);
+  g.scale(flat, 1, 1);
+  const m = new THREE.Mesh(g, bodyMat);
+  m.position.set(x, y, 0);
+  m.castShadow = m.receiveShadow = true;
+  bone.add(m);
+  return m;
+}
+/* The UPPER back — a PATCH OF THE CHEST'S OWN SURFACE, not a shape sitting
+   on top of it. The first attempt added tapered sheets the way the lats and
+   hamstrings are built, and it looked like a growth: those two work because
+   a lat and a hamstring genuinely stand proud of the limb, and the upper
+   back does not — it is the same surface, differently coloured.
+
+   So this is the chest ellipsoid re-cut: the same radii and the same origin,
+   0.6% larger to stay off the original, clipped to the rear-upper quadrant
+   by sphere angles. It lies exactly on the body and reads as colour.
+
+   `backL/backR` remains the mid and lower back, on the SPINE bone. */
+function surfacePatch(bone, r, pos, phi0, phiLen, th0, thLen){
+  const g = new THREE.SphereGeometry(1, 20, 14, phi0, phiLen, th0, thLen);
+  g.scale(r[0] * 1.006, r[1] * 1.006, r[2] * 1.006);
+  const m = new THREE.Mesh(g, bodyMat);
+  m.position.set(pos[0], pos[1], pos[2]);
+  m.receiveShadow = true;
+  bone.add(m);
+  return m;
+}
+{
+  /* the chest blob's own numbers, so the patch cannot drift off it */
+  const CR = [0.122, 0.118, 0.152], CP = [0.005, 0.058, 0];
+  /* phi runs about +Y with the BACK at 0 and the figure's right at +phi;
+     theta from the top pole down. This is the scapular third. */
+  M.upperBackR = surfacePatch(B.chest, CR, CP,  0.04, 1.16, 0.40, 1.02);
+  M.upperBackL = surfacePatch(B.chest, CR, CP, -1.20, 1.16, 0.40, 1.02);
+}
+
+for (const s2 of ['L','R']){
+  /* These have to PROTRUDE past the limb capsule or they are invisible: the
+     thigh's own surface sits 7.7cm behind the bone, so a sheet whose outer
+     edge lands at 7.8cm is buried in it no matter how it is tinted. First
+     attempt did exactly that. Outer edge now stands ~2cm proud, which is
+     what the lats needed too. */
+  M['ham'+s2]  = backOfLimb(B['hip'+s2],  0.042, 0.066, 0.330, -0.056, -0.175, 0.70);
+  M['calf'+s2] = backOfLimb(B['knee'+s2], 0.022, 0.056, 0.235, -0.040, -0.130, 0.72);
+}
+blob(B.neck, 0.048, 0.055, 0.048, [0,0.02,0]);
+blob(B.head, 0.083, 0.098, 0.080, [0.008,0.04,0]);
+/* face + hair: the mannequin stays abstract, but you can always tell which
+   way it is facing — the single most useful orientation cue in a 3D demo */
+const hairMat = new THREE.MeshStandardMaterial({color:0x5C6371, roughness:0.85, metalness:0});
+const darkMat = new THREE.MeshStandardMaterial({color:0x3A3F49, roughness:0.55, metalness:0});
+blob(B.head, 0.086, 0.100, 0.084, [-0.026,0.050,0], hairMat);      // cap, sits back off the face
+blob(B.head, 0.016, 0.014, 0.024, [ 0.068,0.062,0], bodyMat);      // brow ridge
+{
+  const nose = new THREE.Mesh(new THREE.ConeGeometry(0.016, 0.036, 12), bodyMat);
+  nose.rotation.z = -Math.PI/2; nose.position.set(0.086, 0.034, 0);
+  nose.castShadow = true; B.head.add(nose);
+}
+blob(B.head, 0.011, 0.010, 0.011, [0.072,0.046,-0.034], darkMat);  // eyes
+blob(B.head, 0.011, 0.010, 0.011, [0.072,0.046, 0.034], darkMat);
+blob(B.head, 0.020, 0.026, 0.014, [0.062,-0.030,0], bodyMat);      // chin
+
+for (const s of ['L','R']){
+  const sign = s === 'L' ? -1 : 1;
+  M['delt'+s]    = blob(B['shoulder'+s], 0.085, 0.082, 0.082, [0,0.015,0]);
+  /* one mesh for the whole upper arm — it is the biceps on a pull and the
+     triceps on a press, so it is named for the limb, not the muscle */
+  M['upperArm'+s] = limb(B['shoulder'+s], 0.285, 0.062, 0.052);
+  M['fore'+s]    = limb(B['elbow'+s], 0.255, 0.052, 0.038);
+  blob(B['elbow'+s], 0.052, 0.052, 0.052, [0,0,0], jointMat);
+  blob(B['knee'+s], 0.058, 0.058, 0.056, [0,0,0], jointMat);
+  blob(B['wrist'+s], 0.036, 0.040, 0.030, [0,-0.02,0], jointMat);
+  /* hand: palm + a curled grip block, so it reads as gripping */
+  const palm = new THREE.Mesh(new THREE.BoxGeometry(0.058,0.075,0.040), bodyMat);
+  palm.position.set(0.004,-0.028,0); palm.castShadow = true; B['hand'+s].add(palm);
+  const grip = new THREE.Mesh(new THREE.BoxGeometry(0.052,0.038,0.046), jointMat);
+  grip.position.set(0.038,-0.048,0); grip.castShadow = true; B['hand'+s].add(grip);
+  /* foot */
+  const foot = new THREE.Mesh(new THREE.BoxGeometry(0.235,0.055,0.098), bodyMat);
+  foot.position.set(0.062,-0.005,0); foot.castShadow = true; B['foot'+s].add(foot);
+  void sign;
+}
+/* per-mesh original colour so tinting can be undone */
+const tintable = {};
+for (const [k,v] of Object.entries(M)) if (v) tintable[k] = v;
+
+/* ── 7. EQUIPMENT ──────────────────────────────────────────────*/
+const bar = new THREE.Group(); scene.add(bar);
+{
+  const shaft = new THREE.Mesh(new THREE.CylinderGeometry(0.0145,0.0145,2.15,20), steelMat);
+  shaft.rotation.x = Math.PI/2; shaft.castShadow = true; bar.add(shaft);
+  for (const z of [-1,1]){
+    const sl = new THREE.Mesh(new THREE.CylinderGeometry(0.024,0.024,0.40,16), steelMat);
+    sl.rotation.x = Math.PI/2; sl.position.z = z*0.88; sl.castShadow = true; bar.add(sl);
+    for (const off of [0.70,0.755]){
+      const p = new THREE.Mesh(new THREE.CylinderGeometry(0.225,0.225,0.048,32), plateMat);
+      p.rotation.x = Math.PI/2; p.position.z = z*off; p.castShadow = true; bar.add(p);
+    }
+  }
+  /* the hip-thrust pad. It rides the bar rather than the floor, so it is a
+     child of the bar group and moves with it for free — and it is the one
+     piece of equipment that exists because the lift would look brutal
+     without it. Hidden everywhere else. */
+  const hipPad = new THREE.Mesh(new THREE.CylinderGeometry(0.052,0.052,0.42,20), benchMat);
+  hipPad.rotation.x = Math.PI/2; hipPad.castShadow = true;
+  hipPad.name = 'hipPad'; hipPad.visible = false; bar.add(hipPad);
+  window.__hipPad = hipPad;
+}
+const benchProp = new THREE.Group(); scene.add(benchProp);
+{
+  const pad = new THREE.Mesh(new THREE.BoxGeometry(1.28,0.085,0.30), benchMat);
+  pad.position.set(-0.10,0.435,0); pad.castShadow = pad.receiveShadow = true; benchProp.add(pad);
+  for (const x of [0.44,-0.62]){
+    const leg = new THREE.Mesh(new THREE.BoxGeometry(0.07,0.39,0.07), steelMat);
+    leg.position.set(x,0.20,0); leg.castShadow = true; benchProp.add(leg);
+    const ft = new THREE.Mesh(new THREE.BoxGeometry(0.09,0.035,0.46), steelMat);
+    ft.position.set(x,0.018,0); ft.castShadow = true; benchProp.add(ft);
+  }
+}
+
+/* ── the decline bench ──────────────────────────────────────────
+   Built from the SAME angle and root position the solver uses, not from a
+   second set of numbers that look about right — a pad authored independently
+   is a pad the figure floats above. The group is parked at the hips and
+   rotated by the decline, so everything inside is in body-line coordinates:
+   local +X runs down the bench toward the legs, local +Y is off the pad. */
+const DEC_ANGLE = 22, DEC_AT = new V3(0.24, 0.86, 0);
+const declineProp = new THREE.Group(); scene.add(declineProp);
+{
+  const bed = new THREE.Group();
+  bed.position.copy(DEC_AT);
+  bed.rotation.z = rad(DEC_ANGLE);
+  declineProp.add(bed);
+
+  const pad = new THREE.Mesh(new THREE.BoxGeometry(1.24, 0.085, 0.30), benchMat);
+  pad.position.set(-0.085, -0.173, 0);
+  pad.castShadow = pad.receiveShadow = true; bed.add(pad);
+
+  /* The rollers the legs brace against — this is what holds a lifter on a
+     decline bench, and without them the figure reads as falling head-first.
+
+     Head-down, the body wants to slide toward the head, so the shins press
+     into pads sitting on the HEAD side of them. That is the placement rule,
+     and it is worth stating because the first two attempts ignored it: the
+     rollers went where leg pads *look* like they belong and passed 6cm and
+     10cm THROUGH the leg. These sit a shin-radius plus a roller-radius off
+     the solved shin axis, so they touch it and clear the thigh by 5cm. */
+  const SHIN_PADS = [[0.415, -0.120], [0.485, -0.300]];
+  for (const z of [-0.135, 0.135]) {
+    for (const at of SHIN_PADS) {
+      const roll = new THREE.Mesh(new THREE.CylinderGeometry(0.062, 0.062, 0.19, 14), benchMat);
+      roll.rotation.x = Math.PI / 2;
+      roll.position.set(at[0], at[1], z);
+      roll.castShadow = true; bed.add(roll);
+    }
+    const post = new THREE.Mesh(new THREE.BoxGeometry(0.046, 0.26, 0.046), steelMat);
+    post.position.set(0.450, -0.230, z);
+    post.rotation.z = -0.38;
+    post.castShadow = true; bed.add(post);
+  }
+
+  /* the frame stands on the FLOOR, so it is built in world space — inside the
+     rotated group its uprights would lean with the pad */
+  const foot = (x, top) => {
+    const leg = new THREE.Mesh(new THREE.BoxGeometry(0.07, top, 0.07), steelMat);
+    leg.position.set(x, top / 2, 0); leg.castShadow = true; declineProp.add(leg);
+    const ft = new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.035, 0.46), steelMat);
+    ft.position.set(x, 0.018, 0); ft.castShadow = true; declineProp.add(ft);
+  };
+  foot(-0.16, 0.52);
+  foot( 0.68, 0.86);
+}
+
+/* ── the incline bench ──────────────────────────────────────────
+   Same construction as the decline and the same rule: the angle and the
+   root come from solve.js, not from a second set of numbers that look
+   about right. The sign is the only difference — rotation.z is NEGATIVE
+   here, so local +X still runs down the bench toward the legs (which is
+   now downhill) and local +Y is still off the pad.
+
+   Unlike the decline this bench has a SEAT, because the feet are on the
+   floor and the weight goes through the backside rather than through the
+   legs. The seat is built in world space: pitched with the backrest it
+   would fall away from under the hips. */
+const INC_ANGLE = 32, INC_AT = new V3(0.16, 0.50, 0);
+const inclineProp = new THREE.Group(); scene.add(inclineProp);
+{
+  const bed = new THREE.Group();
+  bed.position.copy(INC_AT);
+  bed.rotation.z = rad(-INC_ANGLE);
+  inclineProp.add(bed);
+
+  /* the backrest: from just below the hip joint to a hand's width past the
+     top of the skull (head is at local x -0.58), 17.3cm behind the body
+     line — the trunk's own radius plus half the pad */
+  const back = new THREE.Mesh(new THREE.BoxGeometry(0.78, 0.085, 0.30), benchMat);
+  back.position.set(-0.33, -0.173, 0);
+  back.castShadow = back.receiveShadow = true; bed.add(back);
+
+  /* the seat, in world space and pitched UP at the front so the lifter does
+     not slide out of the bench — which is what the pitch is for on the real
+     thing too. Its top lands at y 0.354, where the backrest's lower end is. */
+  const seat = new THREE.Mesh(new THREE.BoxGeometry(0.38, 0.085, 0.30), benchMat);
+  seat.position.set(0.31, 0.309, 0); seat.rotation.z = rad(7);
+  seat.castShadow = seat.receiveShadow = true; inclineProp.add(seat);
+
+  /* frame: a post under the head end of the backrest, a post under the seat,
+     and a rail on the floor between them. World space — inside the rotated
+     group the uprights would lean with the pad. */
+  const steelBox = (w, h, d, x, y, z, rz) => {
+    const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), steelMat);
+    m.position.set(x, y, z); if (rz) m.rotation.z = rz;
+    m.castShadow = true; inclineProp.add(m); return m;
+  };
+  steelBox(0.07, 0.70, 0.07, -0.505, 0.35, 0);      // rear upright
+  steelBox(0.07, 0.28, 0.07,  0.475, 0.14, 0);      // front leg
+  steelBox(1.12, 0.055, 0.09, -0.015, 0.028, 0);    // floor rail
+  steelBox(0.09, 0.035, 0.46, -0.505, 0.018, 0);    // rear foot
+  steelBox(0.09, 0.035, 0.46,  0.475, 0.018, 0);    // front foot
+
+  /* the rack. Posts stand OUTSIDE the shoulders and INSIDE the plates
+     (which live at z 0.70 and out), so they can be tall enough to hold the
+     bar without the bar ever meeting them. */
+  for (const z of [-0.30, 0.30]) {
+    steelBox(0.06, 1.20, 0.06, -0.545, 0.60, z);
+    const hook = new THREE.Mesh(new THREE.BoxGeometry(0.15, 0.045, 0.05), steelMat);
+    hook.position.set(-0.482, 1.185, z); hook.rotation.z = rad(18);
+    hook.castShadow = true; inclineProp.add(hook);
+  }
+}
+
+/* ── the seated abductor machine ────────────────────────────────────────
+   Seat, back pad, a mast and a stack — and TWO SWING ARMS whose pads press
+   on the outside of the thighs. The pads are solved from the knees the same
+   way the leg curl's roller is solved from the ankle: a pad placed by hand
+   is a pad the leg pushes through the moment the angle changes.
+
+   The pad face is perpendicular to the THIGH, not to the world, so it lies
+   flat against the leg at every angle instead of digging in a corner. */
+const abProp = new THREE.Group(); scene.add(abProp);
+const _abPad = [], _abArm = [], _abFoot = [], _abStalk = [];
+{
+  const bed = new THREE.Group();
+  bed.position.set(0, 0.680, 0); bed.rotation.z = rad(6);
+  abProp.add(bed);
+  const back = new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.62, 0.34), benchMat);
+  back.position.set(-0.165, 0.29, 0);
+  back.castShadow = back.receiveShadow = true; bed.add(back);
+
+  /* Top at 0.535 — the GLUTE's own underside, not the thigh's. Those are
+     3cm apart on this figure and it matters: set to the thigh the seat
+     swallows the backside, set to the glutes the thigh floats clear over
+     the front of the pan, which is what sitting on a machine looks like.
+     Short, too: a pan that runs the length of a level femur is a pan the
+     quad is inside of. */
+  const seat = new THREE.Mesh(new THREE.BoxGeometry(0.34, 0.08, 0.36), benchMat);
+  seat.position.set(0.010, 0.495, 0);
+  seat.castShadow = seat.receiveShadow = true; abProp.add(seat);
+
+  for (const z of [-0.240, 0.240]){
+    const h = new THREE.Mesh(new THREE.CylinderGeometry(0.021, 0.021, 0.22, 12), benchMat);
+    h.rotation.z = Math.PI/2; h.position.set(-0.050, 0.575, z);
+    h.castShadow = true; abProp.add(h);
+  }
+
+  const steel3 = (w,h,d,x,y,z) => {
+    const m = new THREE.Mesh(new THREE.BoxGeometry(w,h,d), steelMat);
+    m.position.set(x,y,z); m.castShadow = true; abProp.add(m); return m;
+  };
+  for (const z of [-0.400, 0.400]) steel3(1.30, 0.06, 0.09, 0.16, 0.030, z);
+  steel3(0.09, 0.06, 0.89, -0.42, 0.030, 0);
+  steel3(0.12, 0.455, 0.12, 0.01, 0.2275, 0);          // seat post
+  /* the pivot the arms hang from. Low and short on purpose: the linkage
+     lives UNDER the seat on the real machine, and a column standing up
+     between the knees reads as something the lifter is straddling. */
+  steel3(0.11, 0.32, 0.10, 0.26, 0.195, 0);
+  for (const z of [-0.170, 0.170]) steel3(0.09, 1.44, 0.09, -0.46, 0.72, z);
+  steel3(0.09, 0.09, 0.43, -0.46, 1.42, 0);
+  for (let i = 0; i < 8; i++){
+    const pl = new THREE.Mesh(new THREE.BoxGeometry(0.15, 0.075, 0.28), darkMat);
+    pl.position.set(-0.40, 0.145 + i*0.085, 0);
+    pl.castShadow = true; abProp.add(pl);
+  }
+
+  /* the moving half */
+  for (let i = 0; i < 2; i++){
+    const pad = new THREE.Mesh(new THREE.BoxGeometry(0.30, 0.24, 0.075), benchMat);
+    pad.castShadow = pad.receiveShadow = true; abProp.add(pad); _abPad.push(pad);
+    const arm = new THREE.Mesh(new THREE.CylinderGeometry(0.026, 0.026, 1, 12), steelMat);
+    arm.castShadow = true; abProp.add(arm); _abArm.push(arm);
+    const stem = new THREE.Mesh(new THREE.CylinderGeometry(0.026, 0.026, 1, 12), steelMat);
+    stem.castShadow = true; abProp.add(stem); _abArm.push(stem);
+    const plate = new THREE.Mesh(new THREE.BoxGeometry(0.24, 0.045, 0.17), benchMat);
+    plate.castShadow = true; abProp.add(plate); _abFoot.push(plate);
+    const stalk = new THREE.Mesh(new THREE.CylinderGeometry(0.020, 0.020, 1, 10), steelMat);
+    stalk.castShadow = true; abProp.add(stalk); _abStalk.push(stalk);
+  }
+}
+
+/* ── the face-pull tower and its rope ───────────────────────────────────
+   A separate anchor from the pushdown tower, and the distance is the point:
+   a face pull is done a stride BACK from the column with the pulley at head
+   height, so the cable runs to the hands at about 25 degrees. Anchored on
+   the pushdown tower at 2.02m the cable would come down almost vertically
+   and the lift would read as a pulldown. */
+const FACE_PULLEY = new V3(1.160, 1.860, 0);
+const faceProp = new THREE.Group(); scene.add(faceProp);
+{
+  for (const z of [-1, 1]){
+    const post = new THREE.Mesh(new THREE.BoxGeometry(0.085, 2.06, 0.085), steelMat);
+    post.position.set(1.30, 1.03, z*0.26); post.castShadow = true; faceProp.add(post);
+  }
+  const head2 = new THREE.Mesh(new THREE.BoxGeometry(0.42, 0.085, 0.62), steelMat);
+  head2.position.set(1.24, 2.10, 0); head2.castShadow = true; faceProp.add(head2);
+  const stack2 = new THREE.Mesh(new THREE.BoxGeometry(0.24, 1.12, 0.36), plateMat);
+  stack2.position.set(1.30, 0.62, 0); faceProp.add(stack2);
+  const base2 = new THREE.Mesh(new THREE.BoxGeometry(0.36, 0.06, 0.80), steelMat);
+  base2.position.set(1.30, 0.03, 0); faceProp.add(base2);
+  const foot2 = new THREE.Mesh(new THREE.BoxGeometry(0.90, 0.06, 0.14), steelMat);
+  foot2.position.set(0.98, 0.03, 0); faceProp.add(foot2);
+  const arm2 = new THREE.Mesh(new THREE.BoxGeometry(0.20, 0.07, 0.10), steelMat);
+  arm2.position.set(1.26, 1.905, 0); arm2.castShadow = true; faceProp.add(arm2);
+  const wheel2b = new THREE.Mesh(new THREE.CylinderGeometry(0.070, 0.070, 0.035, 20), steelMat);
+  wheel2b.rotation.x = Math.PI/2; wheel2b.position.copy(FACE_PULLEY);
+  wheel2b.castShadow = true; faceProp.add(wheel2b);
+}
+
+/* The rope. Two strands of FIXED length meeting at a clip, which is the
+   whole reason a rope splays as you pull: the clip can only be as far from
+   the hands as the strands allow, so as the hands come apart it is dragged
+   in toward them. Solve it and the splay is free; animate it and it is a
+   guess that disagrees with the hands.
+
+   The clip sits on the perpendicular bisector of the two hands — that is
+   what makes the strands equal — leaning toward the pulley. */
+const ROPE_STRAND = 0.360;
+const ropeProp = new THREE.Group(); scene.add(ropeProp);
+const _ropeStrand = [], _ropeClip = new V3(), _rMid = new V3(), _rAx = new V3(), _rU = new V3();
+{
+  for (let i = 0; i < 2; i++){
+    const st = new THREE.Mesh(new THREE.CylinderGeometry(0.011, 0.011, 1, 10), benchMat);
+    st.castShadow = true; ropeProp.add(st); _ropeStrand.push(st);
+  }
+  const ferrule = new THREE.Mesh(new THREE.CylinderGeometry(0.019, 0.019, 0.055, 12), steelMat);
+  ferrule.castShadow = true; ropeProp.add(ferrule); _ropeStrand.push(ferrule);
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(0.022, 0.007, 8, 16), steelMat);
+  ring.castShadow = true; ropeProp.add(ring); _ropeStrand.push(ring);
+  for (let i = 0; i < 2; i++){
+    const stop = new THREE.Mesh(new THREE.SphereGeometry(0.020, 12, 10), benchMat);
+    stop.castShadow = true; ropeProp.add(stop); _ropeStrand.push(stop);
+  }
+}
+
+/* ── the horizontal leg press ───────────────────────────────────────────
+   Seat, reclined back pad, a rail, a weight stack — and a FOOTPLATE that is
+   the only support surface in the rig that moves. It is placed from the
+   ankles in the render loop, exactly like the leg curl's roller arm: the
+   plate is an output of the pose, so it cannot end up somewhere the feet
+   are not.
+
+   The back pad is built in a group rotated by the trunk's own lean, so
+   local +Y runs up the spine and local -X is the pad face. The lean, the
+   hip position and the ankle track all come from solve.js. */
+const LP_LEAN_D = 38, LP_AT = new V3(0, 0.470, 0), LP_FOOT_Y = 0.520;
+const legPressProp = new THREE.Group(); scene.add(legPressProp);
+const _lpPlate = new THREE.Group(), _lpCar = [];
+{
+  const bed = new THREE.Group();
+  bed.position.copy(LP_AT); bed.rotation.z = rad(LP_LEAN_D);
+  legPressProp.add(bed);
+  const back = new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.70, 0.34), benchMat);
+  back.position.set(-0.165, 0.34, 0);
+  back.castShadow = back.receiveShadow = true; bed.add(back);
+
+  const seat = new THREE.Mesh(new THREE.BoxGeometry(0.46, 0.08, 0.36), benchMat);
+  seat.position.set(0.12, 0.28, 0);
+  seat.castShadow = seat.receiveShadow = true; legPressProp.add(seat);
+
+  /* the handles the hands are actually on — drawn along X because that is
+     the grip axis the solver was given */
+  for (const z of [-0.250, 0.250]) {
+    const h = new THREE.Mesh(new THREE.CylinderGeometry(0.022, 0.022, 0.22, 12), benchMat);
+    h.rotation.z = Math.PI/2; h.position.set(-0.060, 0.330, z);
+    h.castShadow = true; legPressProp.add(h);
+    const stem = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.14, 0.05), steelMat);
+    stem.position.set(-0.060, 0.255, z * 0.86);
+    stem.castShadow = true; legPressProp.add(stem);
+  }
+
+  const steel = (w,h,d,x,y,z) => {
+    const m = new THREE.Mesh(new THREE.BoxGeometry(w,h,d), steelMat);
+    m.position.set(x,y,z); m.castShadow = true; legPressProp.add(m); return m;
+  };
+  for (const z of [-0.340, 0.340]) steel(1.90, 0.06, 0.09, 0.40, 0.030, z);   // floor runners
+  for (const z of [-0.260, 0.260]) steel(1.05, 0.07, 0.07, 0.70, 0.235, z);   // the rail
+  steel(0.09, 0.26, 0.07, -0.22, 0.150, -0.30); steel(0.09, 0.26, 0.07, -0.22, 0.150, 0.30);
+  steel(0.10, 0.30, 0.10,  0.30, 0.150,  0.00);                               // seat post
+
+  /* the stack, parked past the plate's furthest travel so it is always
+     visible and never in the legs' way */
+  for (const z of [-0.210, 0.210]) steel(0.07, 1.30, 0.07, 1.255, 0.65, z);
+  steel(0.07, 0.07, 0.49, 1.255, 1.285, 0);
+  for (let i = 0; i < 8; i++) {
+    const pl = new THREE.Mesh(new THREE.BoxGeometry(0.15, 0.075, 0.30), darkMat);
+    pl.position.set(1.155, 0.135 + i * 0.085, 0);
+    pl.castShadow = true; legPressProp.add(pl);
+  }
+
+  /* the moving parts */
+  legPressProp.add(_lpPlate);
+  const plate = new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.62, 0.54), benchMat);
+  plate.castShadow = plate.receiveShadow = true; _lpPlate.add(plate);
+  const spine2 = new THREE.Mesh(new THREE.BoxGeometry(0.07, 0.30, 0.09), steelMat);
+  spine2.position.set(0.075, -0.42, 0); spine2.castShadow = true; _lpPlate.add(spine2);
+  for (const z of [-0.260, 0.260]) {
+    const car = new THREE.Mesh(new THREE.BoxGeometry(0.20, 0.10, 0.10), steelMat);
+    car.castShadow = true; legPressProp.add(car); _lpCar.push([car, z]);
+  }
+}
+
+/* ── the dip station ────────────────────────────────────────────
+   Two parallel bars at DIP_HAND's height, DIP_GRIP out either side — the
+   same two numbers the solver grips, so the hands cannot end up in the
+   air beside them. Everything else is the tower they are bolted to.
+
+   The tower stands IN FRONT of the lifter, which is how a power tower is
+   actually used: you face the column and the bars cantilever back past
+   you, so the legs swing out into open air rather than into the frame.
+   Every x below is mirrored about the grip (x' = 2*0.140 - x), which is
+   why the grip itself is the one number that did not move — and why the
+   pose did not have to change at all to turn the figure round. */
+const DIP_Y = 1.060, DIP_Z = 0.220;
+const dipProp = new THREE.Group(); scene.add(dipProp);
+{
+  for (const z of [-DIP_Z, DIP_Z]) {
+    const rail = new THREE.Mesh(new THREE.CylinderGeometry(0.022, 0.022, 0.94, 16), steelMat);
+    rail.rotation.z = Math.PI / 2;             // three.js cylinders stand on Y
+    rail.position.set(0.270, DIP_Y, z);
+    rail.castShadow = true; dipProp.add(rail);
+    /* a fatter sleeve where the hand actually is — the one piece of the
+       prop that has to line up with the pose, so it is drawn from it */
+    const grip = new THREE.Mesh(new THREE.CylinderGeometry(0.029, 0.029, 0.22, 16), benchMat);
+    grip.rotation.z = Math.PI / 2;
+    grip.position.set(0.140, DIP_Y, z);
+    grip.castShadow = true; dipProp.add(grip);
+    /* the post each rail sits on, and the runner it stands on */
+    const post = new THREE.Mesh(new THREE.BoxGeometry(0.07, DIP_Y - 0.05, 0.07), steelMat);
+    post.position.set(0.720, (DIP_Y - 0.05) / 2 + 0.05, z);
+    post.castShadow = true; dipProp.add(post);
+    /* the runner reaches back under the hanging feet — they finish at
+       x -0.39, and a base that stopped short of them read as a machine
+       the lifter was falling out of */
+    const run = new THREE.Mesh(new THREE.BoxGeometry(1.22, 0.05, 0.09), steelMat);
+    run.position.set(0.290, 0.025, z); run.castShadow = true; dipProp.add(run);
+  }
+  const cross = new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.05, 0.53), steelMat);
+  cross.position.set(0.720, 0.025, 0); cross.castShadow = true; dipProp.add(cross);
+
+  /* the mast and back pad. Not structural to the lift, but without them a
+     dip reads as a man holding two floating poles. The pad faces the
+     lifter and clears his head by 29cm at the bottom, where he is
+     closest to it. */
+  for (const z of [-0.15, 0.15]) {
+    const mast = new THREE.Mesh(new THREE.BoxGeometry(0.07, 1.50, 0.07), steelMat);
+    mast.position.set(0.860, 0.75, z); mast.castShadow = true; dipProp.add(mast);
+  }
+  const top = new THREE.Mesh(new THREE.BoxGeometry(0.07, 0.07, 0.37), steelMat);
+  top.position.set(0.860, 1.47, 0); top.castShadow = true; dipProp.add(top);
+  const pad = new THREE.Mesh(new THREE.BoxGeometry(0.085, 0.44, 0.34), benchMat);
+  pad.position.set(0.798, 1.26, 0);
+  pad.castShadow = pad.receiveShadow = true; dipProp.add(pad);
+}
+
+/* ── the hip-thrust bench ───────────────────────────────────────
+   A flat bench turned side-on: the body lies ACROSS it, so the pad's long
+   axis runs along Z. Its top is HT_PAD in solve.js and the upper back is
+   pinned to it — the two numbers are the same number, and if they ever
+   stop being the same the figure levitates. */
+const HT_TOP = 0.400;
+const hipThrustProp = new THREE.Group(); scene.add(hipThrustProp);
+{
+  const pad = new THREE.Mesh(new THREE.BoxGeometry(0.44, 0.085, 1.05), benchMat);
+  pad.position.set(-0.51, HT_TOP - 0.0425, 0);
+  pad.castShadow = pad.receiveShadow = true; hipThrustProp.add(pad);
+  for (const z of [-0.42, 0.42]) {
+    const leg = new THREE.Mesh(new THREE.BoxGeometry(0.07, HT_TOP - 0.085, 0.07), steelMat);
+    leg.position.set(-0.51, (HT_TOP - 0.085) / 2, z);
+    leg.castShadow = true; hipThrustProp.add(leg);
+    const ft = new THREE.Mesh(new THREE.BoxGeometry(0.46, 0.035, 0.09), steelMat);
+    ft.position.set(-0.51, 0.018, z); ft.castShadow = true; hipThrustProp.add(ft);
+  }
+}
+
+/* ── the lat pulldown machine ───────────────────────────────────
+   Seat, thigh pad, upright and an overhead pulley. PULLEY is the
+   point the cable runs to, and the cable is drawn to it every frame
+   from wherever the hands actually are — an output, exactly like the
+   bar path. */
+const PULLEY = new V3(0.13, 2.05, 0);
+const machineProp = new THREE.Group(); scene.add(machineProp);
+{
+  const seat = new THREE.Mesh(new THREE.BoxGeometry(0.34,0.075,0.36), benchMat);
+  seat.position.set(-0.03,0.455,0); seat.castShadow = seat.receiveShadow = true; machineProp.add(seat);
+
+  /* the thigh pad — the thing that stops the lifter being pulled out of the seat */
+  const padH = new THREE.Mesh(new THREE.CylinderGeometry(0.055,0.055,0.34,16), benchMat);
+  padH.rotation.x = Math.PI/2; padH.position.set(0.30,0.63,0);
+  padH.castShadow = true; machineProp.add(padH);
+  const padStem = new THREE.Mesh(new THREE.BoxGeometry(0.05,0.26,0.05), steelMat);
+  padStem.position.set(0.30,0.76,0); machineProp.add(padStem);
+  const padArm = new THREE.Mesh(new THREE.BoxGeometry(0.56,0.05,0.05), steelMat);
+  padArm.position.set(0.58,0.88,0); machineProp.add(padArm);
+
+  /* The lifter FACES the machine, so the upright and the stack are in
+     front of them (+x) and the top arm reaches back overhead. Having it
+     behind read as a cable crossover, not a pulldown. */
+  const upright = new THREE.Mesh(new THREE.BoxGeometry(0.085,2.10,0.085), steelMat);
+  upright.position.set(0.86,1.05,0); upright.castShadow = true; machineProp.add(upright);
+  const topArm = new THREE.Mesh(new THREE.BoxGeometry(0.80,0.075,0.075), steelMat);
+  topArm.position.set(0.48,2.07,0); topArm.castShadow = true; machineProp.add(topArm);
+  const base = new THREE.Mesh(new THREE.BoxGeometry(0.16,0.05,0.72), steelMat);
+  base.position.set(0.86,0.025,0); machineProp.add(base);
+  const rail = new THREE.Mesh(new THREE.BoxGeometry(1.10,0.05,0.10), steelMat);
+  rail.position.set(0.36,0.025,0); machineProp.add(rail);
+  const seatStem = new THREE.Mesh(new THREE.BoxGeometry(0.07,0.44,0.07), steelMat);
+  seatStem.position.set(-0.03,0.23,0); machineProp.add(seatStem);
+  const weightStack = new THREE.Mesh(new THREE.BoxGeometry(0.22,1.10,0.36), plateMat);
+  weightStack.position.set(0.86,0.62,0); machineProp.add(weightStack);
+
+  const wheel = new THREE.Mesh(new THREE.CylinderGeometry(0.075,0.075,0.035,20), steelMat);
+  wheel.rotation.x = Math.PI/2; wheel.position.copy(PULLEY); machineProp.add(wheel);
+}
+
+/* the cable: hands -> pulley, recomputed every frame */
+const cableMat = new THREE.LineBasicMaterial({color:0x8A909C});
+const cableGeo = new THREE.BufferGeometry();
+cableGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3));
+const cable = new THREE.Line(cableGeo, cableMat); cable.frustumCulled = false; scene.add(cable);
+
+/* a cylinder spanning two points — the only honest way to build a bent bar.
+   Positioning by rotation.set() is what left the angled ends detached from
+   the shaft and pointing at the ceiling. */
+function segment(a, b, r, mat, parent){
+  const d = new V3().subVectors(b, a), len = d.length();
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, len, 14), mat);
+  m.position.copy(a).addScaledVector(d, 0.5);
+  m.quaternion.setFromUnitVectors(new V3(0,1,0), d.clone().normalize());
+  m.castShadow = true; parent.add(m);
+  return m;
+}
+
+/* A lat bar: straight in the middle, ends swept down and out. A wide grip
+   is taken ON the bend — which is why the hands sit GRIP_DROP below the
+   bar's own centreline, and why the bar has to be drawn that far above the
+   hand midpoint rather than through it. `barLift` in solve.js is the same
+   number, so the collision checks see the bar where it really is. */
+const GRIP_DROP = 0.081;
+const pullupProp = new THREE.Group(); scene.add(pullupProp);
+for (const p of [{"geo": "CylinderGeometry", "par": {"radiusTop": 0.019, "radiusBottom": 0.019, "height": 1.55}, "col": "#707c8b", "op": 1, "metal": 0.8, "rough": 0.3, "m": [0.12, 2.25, 0, 0.7071067811865476, 0, 0, 0.7071067811865476, 1, 1, 1]}, {"geo": "CylinderGeometry", "par": {"radiusTop": 0.028, "radiusBottom": 0.028, "height": 2.24}, "col": "#707c8b", "op": 1, "metal": 0.8, "rough": 0.3, "m": [0.12, 1.12, -0.775, 0, 0, 0, 1, 1, 1, 1]}, {"geo": "CylinderGeometry", "par": {"radiusTop": 0.035, "radiusBottom": 0.035, "height": 0.9}, "col": "#707c8b", "op": 1, "metal": 0.8, "rough": 0.3, "m": [0.12, 0.035, -0.775, 0, 0, 0.7071067811865476, 0.7071067811865476, 1, 1, 1]}, {"geo": "CylinderGeometry", "par": {"radiusTop": 0.028, "radiusBottom": 0.028, "height": 2.24}, "col": "#707c8b", "op": 1, "metal": 0.8, "rough": 0.3, "m": [0.12, 1.12, 0.775, 0, 0, 0, 1, 1, 1, 1]}, {"geo": "CylinderGeometry", "par": {"radiusTop": 0.035, "radiusBottom": 0.035, "height": 0.9}, "col": "#707c8b", "op": 1, "metal": 0.8, "rough": 0.3, "m": [0.12, 0.035, 0.775, 0, 0, 0.7071067811865476, 0.7071067811865476, 1, 1, 1]}]) {
+ const m = new THREE.Mesh(new THREE.CylinderGeometry(p.par.radiusTop,p.par.radiusBottom,p.par.height,24),steelMat);
+ m.position.fromArray(p.m); m.quaternion.fromArray(p.m.slice(3,7)); pullupProp.add(m);
+}
+
+const extensionSeat = new THREE.Group(); scene.add(extensionSeat);
+for(const p of [{"geo": "BoxGeometry", "par": {"width": 1.05, "height": 0.08, "depth": 0.3}, "col": "#303947", "op": 1, "metal": 0.5, "rough": 0.55, "m": [-0.25, 0.45, 0, 0, 0, 0, 1, 1, 1, 1]}, {"geo": "BoxGeometry", "par": {"width": 0.06, "height": 0.43, "depth": 0.25}, "col": "#8995a4", "op": 1, "metal": 0.5, "rough": 0.55, "m": [-0.65, 0.215, 0, 0, 0, 0, 1, 1, 1, 1]}, {"geo": "BoxGeometry", "par": {"width": 0.06, "height": 0.43, "depth": 0.25}, "col": "#8995a4", "op": 1, "metal": 0.5, "rough": 0.55, "m": [0.15, 0.215, 0, 0, 0, 0, 1, 1, 1, 1]}]) { const m=new THREE.Mesh(new THREE.BoxGeometry(p.par.width,p.par.height,p.par.depth),steelMat); m.position.fromArray(p.m); extensionSeat.add(m); }
+const extensionWeight = new THREE.Group(); scene.add(extensionWeight);
+{const m=new THREE.Mesh(new THREE.CylinderGeometry(0.014,0.014,0.15,24),steelMat);m.position.y=-0.075;extensionWeight.add(m);}
+{const m=new THREE.Mesh(new THREE.CylinderGeometry(0.065,0.065,0.065,24),steelMat);m.position.y=-0.18;extensionWeight.add(m);}
+{const m=new THREE.Mesh(new THREE.CylinderGeometry(0.065,0.065,0.065,24),steelMat);m.position.y=0.03;extensionWeight.add(m);}
+const latBar = new THREE.Group(); scene.add(latBar);
+{
+  const BEND_Z = 0.24, TIP_Z = 0.52, TIP_Y = -0.190;
+  const at = f => new V3(0, TIP_Y*f, BEND_Z + (TIP_Z-BEND_Z)*f);   // along the bend
+  segment(new V3(0,0,-BEND_Z), new V3(0,0,BEND_Z), 0.0145, steelMat, latBar);
+  for (const z of [-1,1]){
+    const flip = v => new V3(v.x, v.y, z*v.z);
+    segment(flip(at(0)), flip(at(1)), 0.0145, steelMat, latBar);
+    const cap = new THREE.Mesh(new THREE.SphereGeometry(0.019, 12, 10), steelMat);
+    cap.position.copy(flip(at(1))); latBar.add(cap);
+    /* the grip sits ON the swept end, centred where the solver puts the
+       hand — 0.36 out, which is 0.43 of the way along the bend */
+    const g0 = flip(at(0.20)), g1 = flip(at(0.66));
+    segment(g0, g1, 0.021, benchMat, latBar);
+  }
+  /* the swivel the cable clips to, at the centre of the straight section */
+  segment(new V3(0,0,0), new V3(0,0.055,0), 0.010, steelMat, latBar);
+}
+
+/* ── the seated row station ─────────────────────────────────────────────
+   A long rail with a seat on it, an angled footplate at the far end, and a
+   LOW pulley — which is the whole difference from the pulldown: the load
+   arrives roughly horizontally instead of from overhead.
+
+   PLATE_PITCH and PLATE_AT are the SAME numbers the solver pitches the foot
+   by and the rule engine checks the sole against. Drawing the plate from
+   its own separate numbers is how you end up with a rig that passes every
+   rule while the feet visibly float. */
+const PLATE_PITCH = 50, PLATE_AT = new V3(0.856, 0.100, 0);
+/* The cable runs HORIZONTALLY into the handle — a low-row pulley sits at
+   handle height, not down by the floor. Drawn from the pose, so if the
+   hands are right the cable angle is right. */
+const LOW_PULLEY  = new V3(1.145, 0.735, 0);
+const rowProp = new THREE.Group(); scene.add(rowProp);
+{
+  const rad = d => d * Math.PI / 180;
+  const rail = new THREE.Mesh(new THREE.BoxGeometry(1.86,0.055,0.13), steelMat);
+  rail.position.set(0.32,0.028,0); rail.castShadow = true; rowProp.add(rail);
+  for (const x of [-0.52, 1.14]){
+    const ft = new THREE.Mesh(new THREE.BoxGeometry(0.10,0.05,0.56), steelMat);
+    ft.position.set(x,0.025,0); rowProp.add(ft);
+  }
+  /* the seat: long enough to sit on, low enough that the thighs run forward */
+  const seat = new THREE.Mesh(new THREE.BoxGeometry(0.52,0.075,0.34), benchMat);
+  seat.position.set(0.03,0.3895,0); seat.castShadow = seat.receiveShadow = true; rowProp.add(seat);
+  const stem = new THREE.Mesh(new THREE.BoxGeometry(0.10,0.30,0.10), steelMat);
+  stem.position.set(0.03,0.20,0); rowProp.add(stem);
+
+  /* the footplate. Its FACE passes through PLATE_AT at PLATE_PITCH from
+     horizontal; the box is pushed half a thickness back along the face
+     normal so the face, not the centre, is where the soles land. */
+  const th = rad(PLATE_PITCH);
+  const nrm = new V3(-Math.sin(th), Math.cos(th), 0);      // out of the face
+  const fwd = new V3( Math.cos(th), Math.sin(th), 0);      // up the face
+  /* long enough that the whole shoe lands ON it: the toes point UP the face,
+     so the plate is centred on the SHOE (whose box runs -5.6cm to +18cm
+     from the foot bone), not on the contact point. A plate the foot sits at
+     one end of looks broken even when the sole check passes. */
+  const plate = new THREE.Mesh(new THREE.BoxGeometry(0.40,0.05,0.46), steelMat);
+  plate.position.copy(PLATE_AT).addScaledVector(fwd, 0.062).addScaledVector(nrm, -0.025);
+  plate.rotation.z = th; plate.castShadow = true; rowProp.add(plate);
+
+  /* upright + stack, out past the footplate */
+  const col = new THREE.Mesh(new THREE.BoxGeometry(0.085,1.55,0.085), steelMat);
+  col.position.set(1.22,0.78,0); col.castShadow = true; rowProp.add(col);
+  const stack = new THREE.Mesh(new THREE.BoxGeometry(0.22,0.95,0.36), plateMat);
+  stack.position.set(1.22,0.53,0); rowProp.add(stack);
+  const base2 = new THREE.Mesh(new THREE.BoxGeometry(0.30,0.05,0.62), steelMat);
+  base2.position.set(1.22,0.025,0); rowProp.add(base2);
+
+  const wheel2 = new THREE.Mesh(new THREE.CylinderGeometry(0.070,0.070,0.035,20), steelMat);
+  wheel2.rotation.x = Math.PI/2; wheel2.position.copy(LOW_PULLEY); rowProp.add(wheel2);
+  const guard = new THREE.Mesh(new THREE.BoxGeometry(0.11,0.20,0.10), steelMat);
+  guard.position.set(LOW_PULLEY.x + 0.055, LOW_PULLEY.y, 0); rowProp.add(guard);
+}
+
+/* A V-handle: two arms meeting at a clip, with the grips across the back of
+   it. The hands are 11cm apart and NEUTRAL — the first narrow grip in the
+   library, and the reason the solver's grip mirroring had to stop taking an
+   absolute value. Built in the same local frame as the bar: +Z is the hand
+   axis, +X points away from the lifter, toward the pulley. */
+const V_APEX = 0.150, V_CLIP = V_APEX + 0.026, V_GZ = 0.055, V_GH = 0.072;
+const _palmL = new V3(), _palmR = new V3(), _vClip = new V3(), _vAx = new V3();
+const vHandle = new THREE.Group(); scene.add(vHandle);
+{
+  /* A V-grip: two VERTICAL handles side by side, joined top and bottom, with
+     the two arms of the V meeting at the clip out front. Local +X is the
+     apex direction, local +Y is the grip axis, local +Z is lateral —
+     everything meets on shared endpoints, because the lat bar's ends came
+     adrift when parts that should join were built from separate offsets. */
+  for (const z of [-1, 1]){
+    const lo = new V3(0, -V_GH, z*V_GZ), hi = new V3(0, V_GH, z*V_GZ);
+    segment(lo, hi, 0.020, benchMat, vHandle);              // the handle itself
+    const cap = new THREE.Mesh(new THREE.SphereGeometry(0.021, 12, 10), benchMat);
+    cap.position.copy(lo); vHandle.add(cap);
+  }
+  for (const y of [-1, 1]){
+    segment(new V3(0, y*V_GH, -V_GZ), new V3(0, y*V_GH, V_GZ), 0.013, steelMat, vHandle);
+    segment(new V3(0, y*V_GH, 0), new V3(V_APEX, 0, 0), 0.013, steelMat, vHandle);
+  }
+  const clip = new THREE.Mesh(new THREE.TorusGeometry(0.026, 0.008, 8, 18), steelMat);
+  clip.position.set(V_CLIP, 0, 0); clip.rotation.y = Math.PI/2; vHandle.add(clip);
+}
+
+/* ── the dumbbells ──────────────────────────────────────────────────────
+   TWO objects, not one. Every other implement in the rig is a single thing
+   spanning both hands, so its transform is built from the pair — a midpoint
+   and an axis through them. A dumbbell belongs to ONE hand and takes that
+   hand's own orientation, which is why each is placed from its own hand
+   bone rather than from anything averaged.
+
+   Built along local Z because that is the hand's grip axis — the direction
+   a bar runs when it is held — so copying the hand's world quaternion is
+   the whole placement. Nothing here decides which way a dumbbell points;
+   `handAxis` in the solver does, and this just follows. */
+const dumbbells = { L: new THREE.Group(), R: new THREE.Group() };
+for (const S of ['L','R']) {
+  const g = dumbbells[S]; scene.add(g);
+  const bar1 = new THREE.Mesh(new THREE.CylinderGeometry(0.0155, 0.0155, 0.145, 14), steelMat);
+  bar1.rotation.x = Math.PI/2; bar1.castShadow = true; g.add(bar1);
+  for (const z of [-1, 1]) {
+    const collar = new THREE.Mesh(new THREE.CylinderGeometry(0.023, 0.023, 0.016, 14), steelMat);
+    collar.rotation.x = Math.PI/2; collar.position.z = z*0.064;
+    collar.castShadow = true; g.add(collar);
+    /* darkMat, not benchMat: a dumbbell head reads as a WEIGHT or it reads
+       as another bit of upholstery, and at phone size that is the whole
+       difference between "he is holding something" and "his hands are odd" */
+    const head = new THREE.Mesh(new THREE.CylinderGeometry(0.056, 0.056, 0.072, 18), darkMat);
+    head.rotation.x = Math.PI/2; head.position.z = z*0.108;
+    head.castShadow = true; g.add(head);
+  }
+}
+const _dbQ = new THREE.Quaternion();
+
+/* ── the pec deck ───────────────────────────────────────────────────────
+   Seat, back pad, mast behind, and two swing arms whose pivots sit on the
+   SHOULDER's own vertical axis. That is not decoration: a fly holds the
+   elbow angle fixed, so the hand travels a circle of constant radius about
+   the shoulder — which means a boom of fixed length, hinged over the
+   shoulder, tracks it exactly. Real pec decks are built that way for the
+   same reason, and here it means the arms are drawn from the pose rather
+   than animated alongside it. If the hands are right the machine is right. */
+const PEC_PIVOT_Y = 1.66, PEC_BOOM_Y = 1.15;
+const pecProp = new THREE.Group(); scene.add(pecProp);
+const pecArms = new THREE.Group(); scene.add(pecArms);
+const _pecShaft = [], _pecBoom = [], _pecPost = [];
+{
+  const seat = new THREE.Mesh(new THREE.BoxGeometry(0.38,0.075,0.36), benchMat);
+  seat.position.set(-0.03,0.4525,0); seat.castShadow = seat.receiveShadow = true; pecProp.add(seat);
+  const stem = new THREE.Mesh(new THREE.BoxGeometry(0.09,0.42,0.09), steelMat);
+  stem.position.set(-0.03,0.22,0); pecProp.add(stem);
+  /* the back pad — the reason the torso does not move all rep */
+  const pad = new THREE.Mesh(new THREE.BoxGeometry(0.07,0.50,0.34), benchMat);
+  pad.position.set(-0.205,0.80,0); pad.castShadow = true; pecProp.add(pad);
+  const padStem = new THREE.Mesh(new THREE.BoxGeometry(0.06,0.30,0.06), steelMat);
+  padStem.position.set(-0.245,0.58,0); pecProp.add(padStem);
+
+  const mast = new THREE.Mesh(new THREE.BoxGeometry(0.095,1.74,0.095), steelMat);
+  mast.position.set(-0.62,0.87,0); mast.castShadow = true; pecProp.add(mast);
+  const stack = new THREE.Mesh(new THREE.BoxGeometry(0.22,1.00,0.34), plateMat);
+  stack.position.set(-0.62,0.56,0); pecProp.add(stack);
+  const spine = new THREE.Mesh(new THREE.BoxGeometry(0.62,0.075,0.075), steelMat);
+  spine.position.set(-0.32,PEC_PIVOT_Y+0.04,0); spine.castShadow = true; pecProp.add(spine);
+  const cross = new THREE.Mesh(new THREE.BoxGeometry(0.075,0.075,0.46), steelMat);
+  cross.position.set(-0.02,PEC_PIVOT_Y+0.04,0); cross.castShadow = true; pecProp.add(cross);
+  const base = new THREE.Mesh(new THREE.BoxGeometry(1.05,0.055,0.62), steelMat);
+  base.position.set(-0.30,0.028,0); pecProp.add(base);
+  const foot = new THREE.Mesh(new THREE.BoxGeometry(0.10,0.055,0.62), steelMat);
+  foot.position.set(0.22,0.028,0); pecProp.add(foot);
+
+  /* the moving parts: two shafts, two booms, two vertical handles */
+  const unit = (r, mat) => {
+    const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, 1, 12), mat);
+    m.castShadow = true; pecArms.add(m); return m;
+  };
+  for (let i = 0; i < 2; i++){
+    _pecShaft.push(unit(0.030, steelMat));
+    _pecBoom .push(unit(0.028, steelMat));
+    _pecPost .push(unit(0.021, benchMat));
+  }
+}
+/* ── the prone leg curl ─────────────────────────────────────────────────
+   Broken bench — flat under the hips, angled down under the chest — and a
+   roller arm whose pivot sits on the KNEE's own axis. Same reason as the
+   pec deck: the shin is a fixed-length lever swinging about the knee, so a
+   fixed-length arm hinged there tracks the ankle exactly, and the machine
+   is drawn from the pose rather than animated beside it. Real leg curls
+   line the pivot up with the knee for exactly this reason. */
+const LC_PAD_TOP = 0.615, LC_BREAK_X = 0.02, LC_TILT = 16 * Math.PI / 180;
+const legCurlProp = new THREE.Group(); scene.add(legCurlProp);
+const _lcArm = [], _lcRoll = [];
+{
+  /* hip and thigh pad: flat, from past the knee back to the hip break */
+  const hipPad = new THREE.Mesh(new THREE.BoxGeometry(0.66,0.085,0.34), benchMat);
+  hipPad.position.set(LC_BREAK_X - 0.33, LC_PAD_TOP - 0.0425, 0);
+  hipPad.castShadow = hipPad.receiveShadow = true; legCurlProp.add(hipPad);
+
+  /* torso pad: hinged at the break and running DOWN toward the head end */
+  const L = 0.42, fwd = new V3(Math.cos(-LC_TILT), Math.sin(-LC_TILT), 0);
+  const up  = new V3(Math.sin(LC_TILT), Math.cos(LC_TILT), 0);
+  const torso = new THREE.Mesh(new THREE.BoxGeometry(L,0.085,0.34), benchMat);
+  torso.position.set(LC_BREAK_X, LC_PAD_TOP, 0)
+       .addScaledVector(fwd, L/2).addScaledVector(up, -0.0425);
+  torso.rotation.z = -LC_TILT;
+  torso.castShadow = torso.receiveShadow = true; legCurlProp.add(torso);
+
+  const rail = new THREE.Mesh(new THREE.BoxGeometry(1.62,0.06,0.14), steelMat);
+  rail.position.set(-0.16,0.032,0); rail.castShadow = true; legCurlProp.add(rail);
+  for (const x of [-0.86, 0.30]){
+    const leg = new THREE.Mesh(new THREE.BoxGeometry(0.075,0.52,0.075), steelMat);
+    leg.position.set(x,0.30,0); leg.castShadow = true; legCurlProp.add(leg);
+    const ft = new THREE.Mesh(new THREE.BoxGeometry(0.10,0.05,0.52), steelMat);
+    ft.position.set(x,0.025,0); legCurlProp.add(ft);
+  }
+  /* the tower and stack, at the head end */
+  const mast = new THREE.Mesh(new THREE.BoxGeometry(0.09,1.32,0.09), steelMat);
+  mast.position.set(0.88,0.66,0); mast.castShadow = true; legCurlProp.add(mast);
+  const stack = new THREE.Mesh(new THREE.BoxGeometry(0.21,0.80,0.32), plateMat);
+  stack.position.set(0.88,0.46,0); legCurlProp.add(stack);
+  const top = new THREE.Mesh(new THREE.BoxGeometry(0.30,0.075,0.30), steelMat);
+  top.position.set(0.88,1.35,0); top.castShadow = true; legCurlProp.add(top);
+  const base3 = new THREE.Mesh(new THREE.BoxGeometry(0.34,0.06,0.60), steelMat);
+  base3.position.set(0.88,0.03,0); legCurlProp.add(base3);
+  /* the grips the lifter hangs on to */
+  for (const z of [-1,1]){
+    const g = new THREE.Mesh(new THREE.CylinderGeometry(0.019,0.019,0.16,12), benchMat);
+    g.rotation.x = Math.PI/2; g.position.set(0.793,0.381,z*0.16);
+    g.castShadow = true; legCurlProp.add(g);
+    const st = new THREE.Mesh(new THREE.BoxGeometry(0.05,0.05,0.16), steelMat);
+    st.position.set(0.793,0.381,z*0.30); legCurlProp.add(st);
+  }
+  /* the moving arm: one strut per side plus the roller they carry */
+  for (let i=0;i<2;i++){
+    const arm = new THREE.Mesh(new THREE.CylinderGeometry(0.024,0.024,1,12), steelMat);
+    arm.castShadow = true; legCurlProp.add(arm); _lcArm.push(arm);
+  }
+  /* ONE roller across both ankles, on a U-shaped arm — which is what the
+     machine actually is, and it is also the only version that does not have
+     a strut running through the shin */
+  const r = new THREE.Mesh(new THREE.CylinderGeometry(0.062,0.062,0.44,18), benchMat);
+  r.rotation.x = Math.PI/2; r.castShadow = true; legCurlProp.add(r); _lcRoll.push(r);
+  const cross = new THREE.Mesh(new THREE.CylinderGeometry(0.020,0.020,0.60,12), steelMat);
+  cross.rotation.x = Math.PI/2; cross.castShadow = true; legCurlProp.add(cross); _lcRoll.push(cross);
+}
+
+/* ── the seated leg extension ───────────────────────────────────────────
+   The leg curl's mirror: the same knee-axis pivot and the same fixed-length
+   arm, with the roller on the FRONT of the shin instead of the back. Which
+   side is a single sign — `rollerSide` on the exercise — because the roller
+   always sits on the side the ankle is travelling toward. */
+const LE_SEAT_TOP = 0.473, LE_KNEE_X = 0.440;
+const legExtProp = new THREE.Group(); scene.add(legExtProp);
+const _leArm = [], _leRoll = [];
+{
+  /* The seat stops SHORT of the knee — 6.5cm short, so the hanging shin
+     clears its front edge instead of passing through it. That is also where
+     a real one ends: the cue is "knees at the edge of the seat", and the
+     knee joint has to be past the edge for the lever to line up with it. */
+  const seat = new THREE.Mesh(new THREE.BoxGeometry(0.565,0.085,0.36), benchMat);
+  seat.position.set(0.0925, LE_SEAT_TOP - 0.0425, 0);
+  seat.castShadow = seat.receiveShadow = true; legExtProp.add(seat);
+  const stem = new THREE.Mesh(new THREE.BoxGeometry(0.10,0.40,0.10), steelMat);
+  stem.position.set(0.06,0.23,0); legExtProp.add(stem);
+
+  /* Back pad, reclined the same 16° the torso is — and leaning BACKWARD.
+     The sign was wrong before: rotating the pad the other way tips its top
+     toward the lifter, which is why it read as jammed into the shoulders
+     while the lower back had nothing behind it. */
+  const rec = 16 * Math.PI/180;
+  const back = new THREE.Mesh(new THREE.BoxGeometry(0.075,0.62,0.36), benchMat);
+  back.position.set(-0.2315,0.80,0); back.rotation.z = rec;
+  back.castShadow = true; legExtProp.add(back);
+  const backStem = new THREE.Mesh(new THREE.BoxGeometry(0.07,0.34,0.07), steelMat);
+  backStem.position.set(-0.185,0.36,0); legExtProp.add(backStem);
+
+  const mast = new THREE.Mesh(new THREE.BoxGeometry(0.09,1.40,0.09), steelMat);
+  mast.position.set(-0.52,0.70,0); mast.castShadow = true; legExtProp.add(mast);
+  const stack = new THREE.Mesh(new THREE.BoxGeometry(0.21,0.78,0.32), plateMat);
+  stack.position.set(-0.52,0.45,0); legExtProp.add(stack);
+  const rail = new THREE.Mesh(new THREE.BoxGeometry(1.40,0.06,0.14), steelMat);
+  rail.position.set(0.05,0.032,0); rail.castShadow = true; legExtProp.add(rail);
+  for (const x of [-0.52, 0.52]){
+    const ft = new THREE.Mesh(new THREE.BoxGeometry(0.11,0.05,0.54), steelMat);
+    ft.position.set(x,0.025,0); legExtProp.add(ft);
+  }
+  /* The handles come OUT OF THE SEAT SIDES and point outwards, at seat
+     height — that is where a leg extension's grips actually are, and it is
+     what lets the arms hang beside the hips instead of reaching upward. */
+  for (const z of [-1,1]){
+    const g = new THREE.Mesh(new THREE.CylinderGeometry(0.020,0.020,0.20,14), benchMat);
+    g.rotation.x = Math.PI/2; g.position.set(-0.02,0.500,z*0.255);
+    g.castShadow = true; legExtProp.add(g);
+    const cap = new THREE.Mesh(new THREE.SphereGeometry(0.022,12,10), benchMat);
+    cap.position.set(-0.02,0.500,z*0.355); legExtProp.add(cap);
+    const st = new THREE.Mesh(new THREE.BoxGeometry(0.05,0.05,0.10), steelMat);
+    st.position.set(-0.02,0.500,z*0.135); legExtProp.add(st);
+  }
+  for (let i=0;i<2;i++){
+    const arm = new THREE.Mesh(new THREE.CylinderGeometry(0.024,0.024,1,12), steelMat);
+    arm.castShadow = true; legExtProp.add(arm); _leArm.push(arm);
+  }
+  const r = new THREE.Mesh(new THREE.CylinderGeometry(0.060,0.060,0.42,18), benchMat);
+  r.rotation.x = Math.PI/2; r.castShadow = true; legExtProp.add(r); _leRoll.push(r);
+  const cross = new THREE.Mesh(new THREE.CylinderGeometry(0.020,0.020,0.58,12), steelMat);
+  cross.rotation.x = Math.PI/2; cross.castShadow = true; legExtProp.add(cross); _leRoll.push(cross);
+}
+
+/* ── the reverse pec deck ───────────────────────────────────────────────
+   Same machine, lifter turned around: chest on a pad, mast in front, arms
+   sweeping open instead of closed. The swing arms are the pec deck's own —
+   they are solved from the shoulder and the hand, so they do not care which
+   way the lifter is facing. Only the furniture is new. */
+const rearProp = new THREE.Group(); scene.add(rearProp);
+{
+  const seat = new THREE.Mesh(new THREE.BoxGeometry(0.38,0.075,0.36), benchMat);
+  seat.position.set(-0.03,0.4525,0); seat.castShadow = seat.receiveShadow = true; rearProp.add(seat);
+  const stem = new THREE.Mesh(new THREE.BoxGeometry(0.09,0.42,0.09), steelMat);
+  stem.position.set(-0.03,0.22,0); rearProp.add(stem);
+  /* The chest pad: VERTICAL, and stopping at the sternum. Tilted, its top
+     leaned back INTO the lifter and cut through the face — the height where
+     a chest pad has no business being anyway. Its rear face sits just clear
+     of the chest's own surface (x 0.156) with the nose at 0.15. */
+  const pad = new THREE.Mesh(new THREE.BoxGeometry(0.075,0.30,0.30), benchMat);
+  pad.position.set(0.205,0.930,0);
+  pad.castShadow = true; rearProp.add(pad);
+  const padStem = new THREE.Mesh(new THREE.BoxGeometry(0.06,0.40,0.06), steelMat);
+  padStem.position.set(0.250,0.60,0); rearProp.add(padStem);
+
+  /* mast and stack in FRONT of the lifter, which is what turning around means */
+  const mast = new THREE.Mesh(new THREE.BoxGeometry(0.095,1.74,0.095), steelMat);
+  mast.position.set(0.80,0.87,0); mast.castShadow = true; rearProp.add(mast);
+  const stack = new THREE.Mesh(new THREE.BoxGeometry(0.22,1.00,0.34), plateMat);
+  stack.position.set(0.80,0.56,0); rearProp.add(stack);
+  const spine2 = new THREE.Mesh(new THREE.BoxGeometry(0.76,0.075,0.075), steelMat);
+  spine2.position.set(0.44,PEC_PIVOT_Y+0.04,0); spine2.castShadow = true; rearProp.add(spine2);
+  const cross2 = new THREE.Mesh(new THREE.BoxGeometry(0.075,0.075,0.46), steelMat);
+  cross2.position.set(0.07,PEC_PIVOT_Y+0.04,0); cross2.castShadow = true; rearProp.add(cross2);
+  const base4 = new THREE.Mesh(new THREE.BoxGeometry(1.15,0.055,0.62), steelMat);
+  base4.position.set(0.36,0.028,0); rearProp.add(base4);
+  const foot4 = new THREE.Mesh(new THREE.BoxGeometry(0.10,0.055,0.62), steelMat);
+  foot4.position.set(-0.28,0.028,0); rearProp.add(foot4);
+}
+
+/* ── the cable tower ────────────────────────────────────────────────────
+   A plain plate-loaded tower with a HIGH pulley, which is the whole machine
+   a pushdown needs. The cable is drawn from the bar to the pulley every
+   frame, the same way the pulldown's and the row's are — an output of the
+   pose, not an animation beside it. */
+const HIGH_PULLEY = new V3(0.62, 2.02, 0);
+const towerProp = new THREE.Group(); scene.add(towerProp);
+{
+  for (const z of [-1, 1]){
+    const post = new THREE.Mesh(new THREE.BoxGeometry(0.085,2.10,0.085), steelMat);
+    post.position.set(0.62,1.05,z*0.26); post.castShadow = true; towerProp.add(post);
+  }
+  const head = new THREE.Mesh(new THREE.BoxGeometry(0.30,0.085,0.62), steelMat);
+  head.position.set(0.62,2.14,0); head.castShadow = true; towerProp.add(head);
+  const stack = new THREE.Mesh(new THREE.BoxGeometry(0.24,1.15,0.36), plateMat);
+  stack.position.set(0.62,0.62,0); towerProp.add(stack);
+  const base = new THREE.Mesh(new THREE.BoxGeometry(0.36,0.06,0.80), steelMat);
+  base.position.set(0.62,0.03,0); towerProp.add(base);
+  const foot = new THREE.Mesh(new THREE.BoxGeometry(0.90,0.06,0.14), steelMat);
+  foot.position.set(0.30,0.03,0); towerProp.add(foot);
+  const wheel = new THREE.Mesh(new THREE.CylinderGeometry(0.075,0.075,0.035,20), steelMat);
+  wheel.rotation.x = Math.PI/2; wheel.position.copy(HIGH_PULLEY); towerProp.add(wheel);
+  const guard = new THREE.Mesh(new THREE.BoxGeometry(0.10,0.20,0.11), steelMat);
+  guard.position.set(HIGH_PULLEY.x + 0.06, HIGH_PULLEY.y, 0); towerProp.add(guard);
+}
+
+/* the short straight bar a pushdown is done with */
+const PB_CLIP = 0.075;
+const pushBar = new THREE.Group(); scene.add(pushBar);
+{
+  segment(new V3(0,0,-0.230), new V3(0,0,0.230), 0.0145, steelMat, pushBar);
+  for (const z of [-1,1]){
+    segment(new V3(0,0,z*0.075), new V3(0,0,z*0.220), 0.021, benchMat, pushBar);
+    const cap = new THREE.Mesh(new THREE.SphereGeometry(0.020,12,10), steelMat);
+    cap.position.set(0,0,z*0.234); pushBar.add(cap);
+  }
+  /* the swivel the cable clips to, at the centre */
+  segment(new V3(0,0,0), new V3(0,PB_CLIP,0), 0.010, steelMat, pushBar);
+}
+
+/* stretch a unit-height cylinder between two points */
+const _spanD = new V3();
+function spanTo(mesh, a, b){
+  _spanD.subVectors(b, a);
+  const len = _spanD.length() || 1e-4;
+  mesh.position.copy(a).addScaledVector(_spanD, 0.5);
+  mesh.quaternion.setFromUnitVectors(new V3(0,1,0), _spanD.clone().divideScalar(len));
+  mesh.scale.set(1, len, 1);
+}
+
+/* bar path trace — recorded from where the hands ACTUALLY go */
+const traceMat = new THREE.LineBasicMaterial({color:0x33D999, linewidth:2});
+const traceGeo = new THREE.BufferGeometry();
+const TRACE_N = 220;
+traceGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(TRACE_N*3), 3));
+const trace = new THREE.Line(traceGeo, traceMat); trace.frustumCulled = false; scene.add(trace);
+
+/* ── 8. POSING ─────────────────────────────────────────────────*/
+function cueAt(ex, t){
+  let c = ex.cues[0], i = 0;
+  ex.cues.forEach((q, qi) => { if (t >= q[0]) { c = q; i = qi; } });
+  return { label:c[1], cue:c[2], index:i };
+}
+/* Poses ship as QUATERNIONS and are slerped. Euler is fine to solve in; it
+   is not fine to interpolate — near a gimbal, two valid triples describe the
+   same rotation and lerping between them spins the limb the long way round.
+   That is exactly what wrecked the overhead press. */
+const _qa = new THREE.Quaternion(), _qb = new THREE.Quaternion();
+const _pool = {}; for (const n in SKELETON) _pool[n] = new THREE.Quaternion();
+function poseAt(ex, t, useFault){
+  const S = (useFault && ex.faultSamples) ? ex.faultSamples : ex.samples;
+  let i = 0; while (i < S.length - 2 && t > S[i+1].t) i++;
+  const a = S[i], b = S[i+1] || S[i];
+  const p = (b.t === a.t) ? 0 : clamp((t - a.t) / (b.t - a.t), 0, 1);
+  const q = {};
+  for (const bone in a.q){
+    _qa.fromArray(a.q[bone]);
+    _qb.fromArray(b.q[bone] || a.q[bone]);
+    q[bone] = _pool[bone].copy(_qa).slerp(_qb, p);   // r128-safe; slerpQuaternions returns undefined here
+  }
+  return { q,
+    hips:[ a.hips[0] + (b.hips[0]-a.hips[0])*p, a.hips[1] + (b.hips[1]-a.hips[1])*p ],
+    /* how far through its OWN range the lift is — 0 at the start position,
+       1 at the far end. Metrics gate on this, not on the clock. */
+    d: (a.d ?? 0) + ((b.d ?? 0) - (a.d ?? 0)) * p,
+    phase: cueAt(ex, t) };
+}
+/* A fault is authored in degrees, so it round-trips through Euler. Fault
+   poses are static offsets on joints far from any gimbal, so that is safe. */
+const _e = new THREE.Euler(0,0,0,'XYZ');
+function addFault(P, delta){
+  for (const [bone, d] of Object.entries(delta || {})){
+    const q = P.q[bone]; if (!q) continue;
+    _e.setFromQuaternion(q, 'XYZ');
+    _e.set(_e.x + rad(d.rx||0), _e.y + rad(d.ry||0), _e.z + rad(d.rz||0), 'XYZ');
+    q.setFromEuler(_e);
+  }
+}
+function applyPose(ex, P){
+  root.position.fromArray(ex.root.pos);
+  root.rotation.set(rad(ex.root.rot[0]), rad(ex.root.rot[1]), rad(ex.root.rot[2]));
+  for (const n in SKELETON){
+    const o = B[n], d = SKELETON[n].offset;
+    if (n === 'hips') o.position.set(P.hips[0], P.hips[1], 0);
+    else o.position.set(d[0], d[1], d[2]);
+    if (P.q[n]) o.quaternion.copy(P.q[n]); else o.quaternion.identity();
+  }
+  root.updateMatrixWorld(true);
+}
+function worldPoints(){
+  const P = {};
+  for (const n in B) P[n] = B[n].getWorldPosition(new V3());
+  return P;
+}
+
+/* ── 9. STATE ──────────────────────────────────────────────────*/
+let exKey = 'benchPress', ex = EX[exKey];
+let t = 0, playing = true, speed = 1, faultOn = false, camKey = ex.defaultCam;
+let barStartX = 0;
+const tracePts = [];
+
+function setExercise(k){
+  exKey = k; ex = EX[k];
+  t = 0; tracePts.length = 0; faultOn = false;
+  faultBtn.setAttribute('aria-pressed','false');
+  faultLabel.textContent = 'Show common error';
+  faultBanner.classList.remove('show');
+  benchProp.visible = !!ex.bench;
+  extensionSeat.visible = ex.equipment === 'singleDumbbell';
+  extensionWeight.visible = ex.equipment === 'singleDumbbell';
+  pullupProp.visible = ex.equipment === 'pullupbar';
+  machineProp.visible = ex.machine === 'pulldown';
+  declineProp.visible = ex.machine === 'decline';
+  inclineProp.visible = ex.machine === 'incline';
+  hipThrustProp.visible = ex.machine === 'hipthrust';
+  dipProp.visible = ex.machine === 'dip';
+  legPressProp.visible = ex.machine === 'legpress';
+  faceProp.visible = ex.machine === 'facepull';
+  /* ONE prop for both machines. An adductor is an abductor with the pads
+     on the other side of the thigh — the seat, frame, stack, pedals and
+     pivot are the same object, so they are the same object here too. */
+  abProp.visible = ex.machine === 'abductor' || ex.machine === 'adductor';
+  ropeProp.visible = ex.equipment === 'rope';
+  window.__hipPad.visible = ex.machine === 'hipthrust';
+  rowProp.visible     = ex.machine === 'row';
+  pecProp.visible     = ex.machine === 'pec';
+  rearProp.visible    = ex.machine === 'rear';
+  towerProp.visible   = ex.machine === 'tower';
+  legCurlProp.visible = ex.machine === 'legcurl';
+  legExtProp.visible  = ex.machine === 'legext';
+  camKey = ex.defaultCam;
+  buildCamTabs(); buildMetricRows(); buildTrack();
+  exMeta.textContent = ex.family + ' · ' + ex.group;
+  /* prime movers first, then what assists — the tinted meshes are the
+     same list, so the chips and the highlight can never disagree */
+  targetsEl.innerHTML = '';
+  for (const [cls, list] of [['p', (ex.targets||{}).primary || []],
+                            ['s', (ex.targets||{}).secondary || []]])
+    for (const nm of list){
+      const el = document.createElement('span');
+      el.className = cls; el.textContent = nm; targetsEl.appendChild(el);
+    }
+  tEnd.textContent = ex.duration.toFixed(2) + 's';
+  document.querySelectorAll('#exTabs button').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.k === k)));
+  applyMuscleTint();
+  setCam(camKey);
+  /* prime the start bar x for drift measurement */
+  applyPose(ex, poseAt(ex, 0));
+  const P = worldPoints();
+  barStartX = (P.handL.x + P.handR.x)/2;
+}
+function setCam(k){
+  camKey = k;
+  const p = ex.cams[k]; if (!p) return;
+  camera.position.set(p[0], p[1], p[2]);
+  const f = ex.focus || [0,1,0];
+  controls.target.set(f[0], f[1], f[2]);
+  controls.update();
+  document.querySelectorAll('#camTabs button').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.k === k)));
+}
+/* Which mesh a chip NAMES. The chips and the tinted meshes are two lists
+   that mean the same thing, and they have drifted apart twice now — once
+   when a rename left every upper arm untinted, and once when the deadlift
+   claimed "Hamstrings" while lighting up the quads, because no hamstring
+   mesh existed yet. This asserts they agree: every PRIMARY chip must have
+   its mesh in the tint list. Runs once, at load, and shouts in the console. */
+const CHIP_MESH = {
+  'Pectorals':['chest'], 'Quadriceps':['quadL','quadR'], 'Glutes':['gluteL','gluteR'],
+  'Hamstrings':['hamL','hamR'], 'Calves':['calfL','calfR'], 'Lats':['latL','latR'],
+  'Mid-back':['backL','backR'], 'Spinal erectors':['backL','backR'],
+  'Upper back':['upperBackL','upperBackR'],
+  'Deltoids':['deltL','deltR'], 'Front deltoids':['deltL','deltR'],
+  'Rear deltoids':['deltL','deltR'], 'Rear delts':['deltL','deltR'],
+  'Biceps':['upperArmL','upperArmR'], 'Triceps':['upperArmL','upperArmR'],
+  'Forearms':['foreL','foreR'],
+};
+for (const [k,v] of Object.entries(EX)){
+  for (const chip of (v.targets||{}).primary || []){
+    const want = CHIP_MESH[chip];
+    if (!want) continue;                       // a chip with no mesh to light
+    for (const m of want)
+      if (!(v.muscles||[]).includes(m))
+        console.error(`${k}: chip "${chip}" but ${m} is not tinted`);
+  }
+}
+
+function applyMuscleTint(){
+  for (const [k,mesh] of Object.entries(tintable)){
+    if (!mesh) continue;
+    mesh.material = (ex.muscles || []).includes(k)
+      ? (mesh.userData.tintMat ||= new THREE.MeshStandardMaterial({roughness:0.55, metalness:0.03}))
+      : bodyMat;
+  }
+}
+
+/* ── 10. UI CONSTRUCTION ───────────────────────────────────────*/
+const exTabs=document.getElementById('exTabs'), camTabs=document.getElementById('camTabs'),
+      spdTabs=document.getElementById('spdTabs'), metricsEl=document.getElementById('metrics'),
+      trackEl=document.getElementById('track'), exMeta=document.getElementById('exMeta'),
+      phaseName=document.getElementById('phaseName'), phaseCue=document.getElementById('phaseCue'),
+      targetsEl=document.getElementById('targets'),
+      tNow=document.getElementById('tNow'), tEnd=document.getElementById('tEnd'),
+      tPct=document.getElementById('tPct'), scrub=document.getElementById('scrub'),
+      playBtn=document.getElementById('playBtn'), faultBtn=document.getElementById('faultBtn'),
+      faultLabel=document.getElementById('faultLabel'), faultBanner=document.getElementById('faultBanner'),
+      faultNameEl=document.getElementById('faultName'), verdict=document.getElementById('verdict');
+
+for (const [k,v] of Object.entries(EX)){
+  const b = document.createElement('button');
+  b.textContent = v.name; b.dataset.k = k;
+  b.onclick = () => setExercise(k);
+  exTabs.appendChild(b);
+}
+const CAM_LABEL = {side:'Side', front:'Front', back:'Back', threeQ:'3/4', top:'Top'};
+function buildCamTabs(){
+  camTabs.innerHTML = '';
+  for (const k of Object.keys(ex.cams)){
+    const b = document.createElement('button');
+    b.textContent = CAM_LABEL[k] || k; b.dataset.k = k;
+    b.onclick = () => setCam(k);
+    camTabs.appendChild(b);
+  }
+}
+for (const s of [0.25,0.5,1,1.5]){
+  const b = document.createElement('button');
+  b.textContent = s + '×'; b.dataset.s = s;
+  b.setAttribute('aria-pressed', String(s === 1));
+  b.onclick = () => { speed = s; [...spdTabs.children].forEach(x =>
+    x.setAttribute('aria-pressed', String(+x.dataset.s === s))); };
+  spdTabs.appendChild(b);
+}
+let metricRows = [];
+function buildMetricRows(){
+  metricsEl.innerHTML = ''; metricRows = [];
+  for (const id of ex.metrics){
+    const def = METRICS[id]; if (!def) continue;
+    const row = document.createElement('div'); row.className = 'm-row';
+    row.innerHTML = '<div class="m-name"><b>'+def.label+'</b><span>'+def.sub+'</span></div>'
+                  + '<div class="m-val mono">—</div><div class="m-flag"></div>';
+    metricsEl.appendChild(row);
+    metricRows.push({id, def, val:row.querySelector('.m-val'), flag:row.querySelector('.m-flag')});
+  }
+}
+function buildTrack(){
+  trackEl.innerHTML = '';
+  for (let i=0;i<ex.cues.length;i++) trackEl.appendChild(document.createElement('i'));
+}
+
+playBtn.onclick = () => { playing = !playing; playBtn.textContent = playing ? '❚❚' : '▶'; };
+document.getElementById('resetBtn').onclick = () => { t = 0; tracePts.length = 0; };
+scrub.oninput = e => { t = e.target.value/1000; playing = false; playBtn.textContent = '▶'; };
+faultBtn.onclick = () => {
+  faultOn = !faultOn;
+  faultBtn.setAttribute('aria-pressed', String(faultOn));
+  faultLabel.textContent = faultOn ? 'Correct form' : 'Show common error';
+  faultNameEl.textContent = ex.fault.name;
+  faultBanner.classList.toggle('show', faultOn);
+};
+document.getElementById('themeBtn').onclick = e => {
+  const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.documentElement.setAttribute('data-theme', dark ? 'light' : 'dark');
+  e.target.textContent = dark ? 'Dark' : 'Light';
+  syncTheme();
+};
+document.getElementById('exportBtn').onclick = () => {
+  const payload = { slug:ex.slug, name:ex.name, group:ex.group, family:ex.family,
+    duration:ex.duration, camera:ex.defaultCam,
+    cues:ex.cues, samples:ex.samples,
+    constraints:ex.metrics.map(id => ({id, label:METRICS[id].label, rule:METRICS[id].sub})) };
+  const blob = new Blob([JSON.stringify(payload,null,2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = ex.slug + '.keyframes.json'; a.click();
+};
+
+function syncTheme(){
+  const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+  scene.background = new THREE.Color(dark ? 0x1A1B1F : 0xE9ECF2);
+  floorMat.color.set(dark ? 0x2A2B30 : 0xDDE1E8);
+  gridHelper.material.color.set(dark ? 0x3A3C43 : 0xC6CCD6);
+  gridHelper.material.opacity = 0.7; gridHelper.material.transparent = true;
+  hemi.intensity = dark ? 0.38 : 0.55;
+  key.intensity = dark ? 0.85 : 0.72;
+  bodyMat.color.set(dark ? 0xA6AEBB : 0x9AA2AF);
+}
+
+/* ── 11. LOOP ──────────────────────────────────────────────────*/
+const clock = new THREE.Clock();
+function resize(){
+  const w = stage.clientWidth, h = stage.clientHeight;
+  camera.aspect = w/h; camera.updateProjectionMatrix(); renderer.setSize(w,h);
+}
+addEventListener('resize', resize);
+
+function frame(){
+  requestAnimationFrame(frame);
+  const dt = clock.getDelta();
+  if (playing){
+    t += dt * speed / ex.duration;
+    if (t >= 1){ t = 0; tracePts.length = 0; }
+    scrub.value = t * 1000;
+  }
+
+  const P0 = poseAt(ex, t, faultOn);
+  const phase = P0.phase;
+  if (faultOn && !ex.faultSamples && ex.fault && t >= (ex.fault.from ?? 0))
+    addFault(P0, ex.fault.delta);
+  applyPose(ex, P0);
+
+  const P = worldPoints();
+
+  /* bar follows the hands — the bar path is an OUTPUT of the pose,
+     never a hardcoded curve. If the pose is right the path is right. */
+  const mid = new V3().addVectors(P.handL, P.handR).multiplyScalar(0.5);
+  /* Build a full basis rather than swinging +Z onto the hand axis. The hand
+     axis is very nearly the bar's own -Z, and setFromUnitVectors between
+     near-antiparallel vectors picks an ARBITRARY perpendicular to spin
+     about — invisible on a symmetric barbell, but it flips an asymmetric
+     lat bar upside down. */
+  const axis = new V3().subVectors(P.handR, P.handL).normalize();
+  const fwd  = new V3().crossVectors(new V3(0,1,0), axis).normalize();
+  const upv  = new V3().crossVectors(axis, fwd).normalize();
+  bar.position.copy(mid);
+  bar.quaternion.setFromRotationMatrix(new THREE.Matrix4().makeBasis(fwd, upv, axis));
+  bar.visible    = ex.equipment === 'barbell';
+  latBar.visible = ex.equipment === 'latbar';
+  latBar.quaternion.copy(bar.quaternion);
+  /* the hands are on the bends, so the bar rides above the hand midpoint */
+  latBar.position.copy(bar.position).addScaledVector(upv, GRIP_DROP);
+  /* The V-handle is placed in the PALMS, not on the hand bones. Every other
+     piece of equipment is a long bar where a 3cm offset is invisible; a
+     handle this small sits visibly on top of the fists instead of in them. */
+  pushBar.visible = ex.equipment === 'pushbar';
+  pushBar.quaternion.copy(bar.quaternion);
+  pushBar.position.copy(bar.position);
+  /* The abductor's pads and footplates, solved from the LEG. The pad rides
+     the outside of the thigh at the knee: out along the thigh's own
+     horizontal normal by a thigh radius plus half a pad, and turned by the
+     same angle so its face lies flat on the leg rather than cornering into
+     it. The arm and the footplate follow from there. */
+  if (ex.machine === 'abductor' || ex.machine === 'adductor'){
+    const PIV = new V3(0.30, 0.300, 0);
+    /* the sign that turns one machine into the other: outward onto the
+       outer thigh, or inward between the knees */
+    const side = ex.machine === 'adductor' ? -1 : 1;
+    for (let i = 0; i < 2; i++){
+      const sg = i ? 1 : -1;
+      const hip = i ? P.hipR : P.hipL, knee = i ? P.kneeR : P.kneeL;
+      const ank = i ? P.ankleR : P.ankleL;
+      /* the thigh flattened into the horizontal plane, and its outward
+         normal there — the direction the pad presses along */
+      const tx = knee.x - hip.x, tz = knee.z - hip.z;
+      const tl = Math.hypot(tx, tz) || 1e-6;
+      const nx = -tz / tl * sg, nz = tx / tl * sg;          // outward, horizontal
+      const off = side * (0.076 + 0.0375);                    // thigh radius + half pad
+      _abPad[i].position.set(knee.x + nx*off, knee.y, knee.z + nz*off);
+      _abPad[i].rotation.set(0, Math.atan2(nx, nz), 0);
+      const base = new V3(knee.x + nx*off, PIV.y, knee.z + nz*off);
+      spanTo(_abArm[i*2],     new V3(PIV.x, PIV.y, sg*0.055), base);
+      spanTo(_abArm[i*2 + 1], base, _abPad[i].position);
+      /* the PEDAL, and its top is the sole's own height: the foot is
+         0.088 above its sole, the plate is 0.045 thick, so the plate's
+         centre is 0.1105 under the ankle joint and the foot lands ON it
+         rather than through it or hovering over it. */
+      _abFoot[i].position.set(ank.x + 0.050, ank.y - 0.1105, ank.z);
+      _abFoot[i].rotation.set(0, Math.atan2(nx, nz), 0);
+      /* the stalk that hangs the pedal off the swing arm — without it the
+         feet are resting on something with no visible attachment */
+      spanTo(_abStalk[i], _abFoot[i].position,
+             new V3(knee.x + nx*off, ank.y - 0.1105, knee.z + nz*off));
+    }
+  }
+
+  /* The rope, solved from the two hands rather than animated beside them.
+     The clip lies on the perpendicular bisector of the hands — that is what
+     makes the two strands equal lengths — pushed toward the pulley by
+     however much the fixed strand length has left over once the hands have
+     spread. So the splay is an OUTPUT: hands together, the clip is 35cm out
+     and the rope is nearly straight; hands at the ears, it is 16cm out and
+     the rope is a wide V. Nothing decides that but the hands. */
+  if (ex.equipment === 'rope'){
+    _palmL.set(0.008,-0.035,0); B.handL.localToWorld(_palmL);
+    _palmR.set(0.008,-0.035,0); B.handR.localToWorld(_palmR);
+    _rMid.addVectors(_palmL, _palmR).multiplyScalar(0.5);
+    _rAx.subVectors(_palmR, _palmL);
+    const half = _rAx.length() * 0.5;
+    _rAx.normalize();
+    /* toward the pulley, with the component along the hand axis removed:
+       anything else would make one strand longer than the other */
+    _rU.subVectors(FACE_PULLEY, _rMid);
+    _rU.addScaledVector(_rAx, -_rU.dot(_rAx));
+    if (_rU.lengthSq() < 1e-9) _rU.set(1, 0, 0);
+    _rU.normalize();
+    const out = Math.sqrt(Math.max(0.0025, ROPE_STRAND*ROPE_STRAND - half*half));
+    _ropeClip.copy(_rMid).addScaledVector(_rU, out);
+    spanTo(_ropeStrand[0], _ropeClip, _palmL);
+    spanTo(_ropeStrand[1], _ropeClip, _palmR);
+    spanTo(_ropeStrand[2], _ropeClip, _ropeClip.clone().addScaledVector(_rU, 0.055));  // ferrule
+    _ropeStrand[3].position.copy(_ropeClip).addScaledVector(_rU, 0.075);               // clip ring
+    _ropeStrand[3].quaternion.setFromUnitVectors(new V3(0,1,0), _rU);
+    _ropeStrand[4].position.copy(_palmL);
+    _ropeStrand[5].position.copy(_palmR);
+  }
+
+  /* the footplate: the one support surface in the rig that MOVES, so it is
+     solved from the pose like the leg curl's roller arm rather than parked.
+     The face sits an ankle-height in front of the ankle joints — that is
+     where the sole is — and the whole plate is raked back by the same
+     angle the solver pitched the foot to. */
+  if (ex.machine === 'legpress'){
+    const ax = (P.ankleL.x + P.ankleR.x) / 2;
+    const rake = rad(90 - 82);                       // matches frame()'s footPitch
+    _lpPlate.position.set(ax + 0.088 + 0.030, LP_FOOT_Y + 0.055, 0);
+    _lpPlate.rotation.z = -rake;
+    for (const [car, z] of _lpCar) car.position.set(ax + 0.118, 0.235, z);
+  }
+
+  /* each dumbbell in its own fist, taking its own hand's orientation —
+     the one implement in the rig that is not built from the pair */
+  if(ex.equipment === 'singleDumbbell') extensionWeight.position.copy(P.handL).add(P.handR).multiplyScalar(0.5);
+  for (const S of ['L','R']){
+    const g = dumbbells[S];
+    g.visible = ex.equipment === 'dumbbells';
+    if (!g.visible) continue;
+    const palm = S === 'L' ? _palmL : _palmR;
+    palm.set(0.008, -0.035, 0); B['hand'+S].localToWorld(palm);
+    g.position.copy(palm);
+    g.quaternion.copy(B['hand'+S].getWorldQuaternion(_dbQ));
+  }
+  vHandle.visible = ex.equipment === 'vhandle';
+  if (vHandle.visible){
+    /* into the fist, not onto the hand BONE: the palm mesh sits ~3.5cm
+       further down the limb, and the offset runs along the bone's own -Y so
+       it is unaffected by the grip roll. */
+    _palmL.set(0.008,-0.035,0); B.handL.localToWorld(_palmL);
+    _palmR.set(0.008,-0.035,0); B.handR.localToWorld(_palmR);
+    vHandle.position.copy(_palmL).add(_palmR).multiplyScalar(0.5);
+    /* The handle is a rigid object hanging on a cable: its grip axis is
+       vertical and STAYS vertical. Building its basis from the hands would
+       let it roll with them, which is the artefact this is fixing. */
+    const ax2 = new V3().subVectors(_palmR, _palmL).setY(0).normalize();
+    const up2 = new V3(0,1,0);
+    const fw2 = new V3().crossVectors(up2, ax2).normalize();
+    vHandle.quaternion.setFromRotationMatrix(new THREE.Matrix4().makeBasis(fw2, up2, ax2));
+    _vClip.copy(vHandle.position).addScaledVector(fw2, V_CLIP);
+  }
+  /* the cable is an output too: it runs from the handle's clip to the
+     pulley, so if the pose is right the cable angle is right, automatically */
+  /* the pec deck is a linkage, not a cable machine — its arms ARE the load path */
+  cable.visible = ex.machine === 'pulldown' || ex.machine === 'row'
+              || ex.machine === 'tower'     || ex.machine === 'facepull';
+  if (cable.visible){
+    const ca = cableGeo.attributes.position.array;
+    /* where the cable clips: the lat bar's swivel, or the V-handle's apex —
+       never the lifter's hands */
+    const clip = new V3();
+    const pull = ex.machine === 'row'      ? LOW_PULLEY
+               : ex.machine === 'tower'    ? HIGH_PULLEY
+               : ex.machine === 'facepull' ? FACE_PULLEY : PULLEY;
+    /* the rope clips to the cable at its own ring, not at the hands — which
+       is the only reason the cable stays straight while the rope splays */
+    if (ex.equipment === 'rope') clip.copy(_ropeClip).addScaledVector(_rU, 0.095);
+    else if (ex.equipment === 'vhandle') clip.copy(_vClip);
+    else if (ex.equipment === 'pushbar') clip.copy(bar.position).addScaledVector(upv, PB_CLIP);
+    else clip.set(latBar.position.x, latBar.position.y + 0.055, latBar.position.z);
+    ca[0]=clip.x; ca[1]=clip.y; ca[2]=clip.z;
+    ca[3]=pull.x; ca[4]=pull.y; ca[5]=pull.z;
+    cableGeo.attributes.position.needsUpdate = true;
+  }
+
+  /* the leg curl's roller arm, solved from the pose: the pivot is the knee,
+     the arm is the shin's own length, and the roller rides the ankle on the
+     side the leg is pushing into. */
+  if (ex.machine === 'legcurl' || ex.machine === 'legext'){
+    const curl = ex.machine === 'legcurl';
+    const ARM = curl ? _lcArm : _leArm, ROLL = curl ? _lcRoll : _leRoll;
+    const kx = (P.kneeL.x + P.kneeR.x)/2, ky = (P.kneeL.y + P.kneeR.y)/2;
+    const ax = (P.ankleL.x + P.ankleR.x)/2, ay = (P.ankleL.y + P.ankleR.y)/2;
+    const sx = ax - kx, sy = ay - ky, sl = Math.hypot(sx, sy) || 1e-4;
+    /* perpendicular to the shin, on the side the ankle is travelling toward —
+       the Achilles on a curl, the front of the shin on an extension. One
+       sign is the whole difference between the two machines. */
+    const sg = ex.rollerSide || 1;
+    const rx = ax + sg*(sy/sl)*0.098, ry = ay - sg*(sx/sl)*0.098;
+    ROLL[0].position.set(rx, ry, 0);
+    ROLL[1].position.set(rx, ry, 0);
+    for (let i = 0; i < 2; i++){
+      const z = i ? 0.30 : -0.30;
+      spanTo(ARM[i], new V3(kx, ky, z), new V3(rx, ry, z));
+    }
+  }
+
+  /* the pec deck's arms, solved from the pose: pivot over the shoulder,
+     boom out to the hand, handle hanging vertically off the end */
+  pecArms.visible = ex.equipment === 'pecarms';
+  if (pecArms.visible){
+    const hands = [P.handL, P.handR], shoulders = [P.shoulderL, P.shoulderR];
+    for (let i = 0; i < 2; i++){
+      const sh = shoulders[i], hd = hands[i];
+      spanTo(_pecShaft[i], new V3(sh.x, PEC_BOOM_Y, sh.z), new V3(sh.x, PEC_PIVOT_Y, sh.z));
+      spanTo(_pecBoom[i],  new V3(sh.x, PEC_BOOM_Y, sh.z), new V3(hd.x, PEC_BOOM_Y, hd.z));
+      spanTo(_pecPost[i],  new V3(hd.x, 0.845, hd.z),      new V3(hd.x, PEC_BOOM_Y + 0.03, hd.z));
+    }
+  }
+
+  if (playing || tracePts.length === 0){
+    tracePts.push(mid.clone());
+    if (tracePts.length > TRACE_N) tracePts.shift();
+  }
+  const arr = traceGeo.attributes.position.array;
+  for (let i=0;i<TRACE_N;i++){
+    const p = tracePts[Math.min(i, tracePts.length-1)] || mid;
+    arr[i*3]=p.x; arr[i*3+1]=p.y; arr[i*3+2]=p.z;
+  }
+  traceGeo.attributes.position.needsUpdate = true;
+  traceGeo.setDrawRange(0, Math.max(2, tracePts.length));
+  trace.visible = tracePts.length > 3;
+
+  /* measure */
+  const S = { bar:mid, barStartX, t, d: P0.d ?? 0 };
+  let allOK = true, worst = null;
+  for (const r of metricRows){
+    const v = r.def.read(P, S);
+    const ok = r.def.ok(v, S);
+    r.val.textContent = r.def.fmt(v);
+    r.val.className = 'm-val mono ' + (ok ? '' : 'bad');
+    r.flag.className = 'm-flag ' + (ok ? 'ok' : 'bad');
+    if (!ok){ allOK = false; worst ||= r.def.label; }
+  }
+  verdict.textContent = allOK ? 'Form within tolerance'
+    : worst + ' is outside the safe range for this lift';
+  verdict.className = allOK ? '' : 'bad';
+
+  /* muscle tint by activation = how far the prime mover is loaded */
+  const act = 0.35 + 0.65 * Math.max(0, Math.sin(t * Math.PI));
+  const g = GRAD[ex.group] || GRAD.chest;
+  const c = new THREE.Color(g[0]).lerp(new THREE.Color(g[1]), act);
+  for (const [k,mesh] of Object.entries(tintable)){
+    if (mesh && (ex.muscles||[]).includes(k) && mesh.material !== bodyMat){
+      mesh.material.color.copy(new THREE.Color(bodyMat.color).lerp(c, 0.45 + 0.35*act));
+      mesh.material.emissive = c; mesh.material.emissiveIntensity = 0.06 + 0.10*act;
+    }
+  }
+
+  /* hud */
+  phaseName.textContent = phase.label;
+  phaseCue.textContent = phase.cue;
+  tNow.textContent = (t * ex.duration).toFixed(2) + 's';
+  tPct.textContent = Math.round(t*100) + '%';
+  [...trackEl.children].forEach((el,i) => el.classList.toggle('on', i <= phase.index));
+
+  controls.update();
+  renderer.render(scene, camera);
+}
+
+/* boot */
+document.documentElement.setAttribute('data-theme','dark');
+document.getElementById('themeBtn').textContent = 'Light';
+syncTheme();
+setExercise('chestFly');
+resize();
+frame();
+controls.enablePan = false;
+function zoomDemo(factor){ const d=camera.position.clone().sub(controls.target); const length=THREE.MathUtils.clamp(d.length()*factor,controls.minDistance,controls.maxDistance); camera.position.copy(controls.target).add(d.setLength(length)); controls.update(); }
+document.getElementById('zoomIn').onclick=()=>zoomDemo(.85);
+document.getElementById('zoomOut').onclick=()=>zoomDemo(1.18);
+const initialView=camera.position.clone(), initialTarget=controls.target.clone();
+document.getElementById('resetView').onclick=()=>{camera.position.copy(initialView);controls.target.copy(initialTarget);controls.update();};
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){playing=false;playBtn.textContent='▶';}
+document.addEventListener('visibilitychange',()=>{if(document.hidden){playing=false;playBtn.textContent='▶';}});
+</script>
+</body>
+</html>

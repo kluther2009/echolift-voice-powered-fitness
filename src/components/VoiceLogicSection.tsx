@@ -19,7 +19,7 @@ const VoiceLogicSection = () => {
           >
             <div className="glass-card p-8 lg:p-10">
               <div className="flex items-center justify-between mb-8">
-                <h4 className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-medium">Between Sets, For Real</h4>
+                <h4 className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-medium">Example Siri conversation</h4>
                 <div className="flex items-center gap-2 text-xs text-success">
                   <Lock className="w-3 h-3" />
                   Screen locked
@@ -43,7 +43,7 @@ const VoiceLogicSection = () => {
               >
                 <RotateCcw className="w-4 h-4 text-primary shrink-0" />
                 <p className="text-sm text-muted-foreground">
-                  Next set? Just say <span className="text-foreground font-medium">"log again"</span> — same lift, zero questions.
+                  Next set? Just say <span className="text-foreground font-medium">"log again in EchoLift"</span> to repeat the previous entry.
                 </p>
               </motion.div>
 
@@ -104,32 +104,32 @@ const VoiceLogicSection = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-              AirPods in, phone face-down in your bag. One sentence between sets and
-              it's in your logbook — exercise, sets, reps, weight. Hit a PR and
-              Siri tells you on the spot.
+              Speak your exercise, sets, reps and weight between sets. Listen to the
+              confirmation, then get back to lifting. You can also log and edit
+              directly in the app whenever you prefer.
             </p>
 
-            {/* Smart Noise Correction - Modern card */}
+            {/* Hear what you logged - Modern card */}
             <div className="glass-card-subtle p-6 rounded-3xl">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary/20 to-primary-glow/20 flex items-center justify-center">
                   <Zap className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-display font-semibold">Smart Noise Correction</h4>
-                  <p className="text-xs text-muted-foreground">Automatically filters background noise and heavy breathing</p>
+                  <h4 className="font-display font-semibold">Hear what you logged</h4>
+                  <p className="text-xs text-muted-foreground">Spoken confirmations help you check each entry</p>
                 </div>
               </div>
 
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between p-4 rounded-2xl bg-background-elevated border border-border/50">
                   <div className="flex-1">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">What Siri Heard (Heavy Breathing):</span>
-                    <p className="text-sm font-mono text-destructive mt-1 font-semibold">"log hate wraps on bench at a tree 1050"</p>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Example command:</span>
+                    <p className="text-sm font-mono text-foreground mt-1 font-semibold">"Log bench press, 3 sets of 10 at 50 kilograms"</p>
                   </div>
                   <ArrowRight className="w-5 h-5 text-muted-foreground/30 hidden sm:block rotate-90 sm:rotate-0 self-center" />
                   <div className="flex-1 bg-success/5 border border-success/20 p-3 rounded-xl w-full">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-success">Clean Log Saved:</span>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-success">Entry to confirm:</span>
                     <p className="text-sm font-semibold text-foreground mt-1">Bench Press: 3 sets × 10 reps @ 50 kg</p>
                   </div>
                 </div>
