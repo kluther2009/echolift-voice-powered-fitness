@@ -67,8 +67,8 @@ const Footer = () => {
               <h3 className="font-display text-xl font-semibold mb-4">About EchoLift</h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 A family collaboration led by our daughter, who designed the app and
-                managed its development, supported by over 30 years of lifting
-                experience and feedback from regular users.
+                managed its development. I contribute over 30 years of personal lifting
+                experience, alongside feedback from regular users.
               </p>
               <p className="text-sm text-muted-foreground">
                 A focused, independent app built around the details that matter
