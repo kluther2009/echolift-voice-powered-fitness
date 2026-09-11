@@ -7,6 +7,8 @@ import "./landing.css";
 
 const store = "https://apps.apple.com/app/id6757499671";
 const faqs = [
+  ["Can I log a workout without a plan or Siri?", "Yes. Choose an exercise and enter your sets, reps and weight manually, or log with Siri. You can start logging without creating a workout plan."],
+  ["Can I rotate and zoom the exercise animations?", "Yes. EchoLift includes interactive 3D exercise demonstrations so you can rotate the view and zoom in to inspect the movement. Try the chest fly demo on this page."],
   ["Do I need the latest iPhone?", "The core tracker supports iOS 17.6 and later. Siri logging depends on Siri availability and your settings; it does not require Apple Intelligence. Heart-rate tracking needs iOS 26 and compatible hardware."],
   ["Do I need AirPods?", "No. Log through Siri on your iPhone or use the manual controls. For heart-rate tracking you need compatible heart-rate hardware, such as AirPods Pro 3. Ordinary AirPods do not measure heart rate."],
   ["What does the AI Coach require?", "On-device coaching requires an Apple Intelligence–compatible iPhone, supported software and language, and Apple Intelligence enabled. You can use workout logging and exercise demonstrations without it."],
@@ -27,7 +29,7 @@ export default function Index() {
     </header>
     <main>
       <section className="el-hero el-wrap">
-        <div className="el-hero-copy"><p className="el-eyebrow"><span /> YOUR TRAINING. UNINTERRUPTED.</p><h1>Stay in<br />your <em>flow.</em></h1><p className="el-intro">The strength tracker that listens.<br />Log your sets with Siri, explore exercises in 3D and make every session count.</p><Download /><p className="el-fine">Made for iPhone. No EchoLift account required.</p><div className="el-hero-note"><span className="el-small-line" /> Family-built. Refined between sets.</div></div>
+        <div className="el-hero-copy"><p className="el-eyebrow"><span /> YOUR TRAINING. UNINTERRUPTED.</p><h1>Stay in<br />your <em>flow.</em></h1><p className="el-intro">The voice workout tracker for iPhone.<br />Log your sets with Siri, explore exercises in 3D and make every session count.</p><Download /><p className="el-fine">Made for iPhone. No EchoLift account required.</p><div className="el-hero-note"><span className="el-small-line" /> Family-built. Refined between sets.</div></div>
         <div className="el-hero-stage"><div className="el-stage-label">LESS SCREEN TIME. MORE TRAINING.</div><a className="el-phone" href={screenshot} target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution workout screenshot"><img src={screenshot} alt="Current EchoLift workout screen showing sample logged sets" fetchPriority="high" width={1206} height={2622} /></a><div className="el-voice-chip"><span className="el-chip-icon"><AudioLines /></span><div><small>YOU SAY IT. ECHOLIFT LOGS IT.</small><p>“Log bench press in EchoLift”</p></div></div><div className="el-stage-bottom"><span>Tap screen for full resolution · Sample data</span><span>01 / WORKOUT</span></div></div>
       </section>
       <div className="el-strip el-wrap"><span>A more focused way to train</span><span><AudioLines size={17} /> Voice logging</span><span><Rotate3D size={17} /> 3D exercise form</span><span><Heart size={17} /> Heart-rate tracking*</span><span><ShieldCheck size={17} /> Your history, on device</span></div>
